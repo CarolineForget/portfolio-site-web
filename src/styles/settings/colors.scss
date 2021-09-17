@@ -1,0 +1,27 @@
+/* ==========================================================================
+   COLORS / SETTINGS
+   ========================================================================== */
+
+:root {
+    // Couleur de base
+    --color-white: #F4F4F4;
+    --color-black: #171218;
+
+    // Couleurs du projet
+    --color-text-primary: var(--color-black);
+    --color-text-secondary: var(--color-white);
+
+    --color-bg-primary: var(--color-white);
+    --color-bg-primary-dark: #E5E5E5;
+    --color-bg-secondary: var(--color-black);
+    --color-bg-secondary-light: #2D2A2E;
+
+    --color-icons: #A6A6A6;
+
+    --color-button-primary: #FEFE01;
+    --color-button-dark: #DEDE00;
+    --color-button-light: #FFFFC1;
+
+    --color-link-primary: #3E9E78;
+    --color-link-light: #84CFB2;
+}
