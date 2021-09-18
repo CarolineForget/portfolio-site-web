@@ -1,0 +1,19 @@
+/* ==========================================================================
+   BUTTON / COMPONENTS
+   ========================================================================== */
+
+.btn_primary {
+    padding: var(--spacing-xs) var(--spacing-s);
+    border: none;
+
+    font-weight: bold;
+    background-color: var(--color-button-primary);
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sct_button {
+    margin: var(--spacing-lg) 0;
+    .wrapper {
+        text-align: center;
+    }
+}

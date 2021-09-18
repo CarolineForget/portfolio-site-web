@@ -1,0 +1,52 @@
+/* ==========================================================================
+   BANNER / COMPONENTS
+   ========================================================================== */
+
+.banner {
+    position: relative;
+
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    margin-top: var(--spacing-lg);
+
+    font-family: var(--font-tertiary);
+    font-style: italic;
+
+    opacity: 0.5;
+
+    .content {
+        display: block;
+        height: 200px;
+        width: 100vw;
+
+        position: absolute;
+        z-index: -1;
+        top: -70%;
+
+        background-color: var(--color-bg-primary-dark);
+    }
+
+    p {
+        margin: 0;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: var(--color-icons);
+
+        .fill {
+            color: var(--color-icons);
+        }
+    }
+}
+
+.banner_secondary {
+    font-size: var(--font-size-animate-sm);
+
+    .content {
+        height: 100px;
+    }
+}
+
+.banner_primary {
+    font-size: var(--font-size-animate-xl);
+}

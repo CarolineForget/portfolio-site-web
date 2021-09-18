@@ -1,0 +1,40 @@
+/* ==========================================================================
+   HERO / COMPONENTS
+   ========================================================================== */
+
+.hero {
+    height: 100vh;
+}
+
+.hero_about {
+    position: relative;
+    height: auto;
+
+    img {
+        display: inline;
+        height: 75vh;
+        width: 100%;
+    }
+
+    .content {
+        display: block;
+        height: 154px;
+        width: 154px;
+
+        position: absolute;
+        top: 65vh;
+        left: var(--spacing-md);
+
+        border-radius: 100%;
+        background-color: rgba(62, 158, 120, 0.5);
+    }
+
+    h1 {
+        position: relative;
+        z-index: 2;
+    }
+
+    .summary p:first-child {
+        margin-top: var(--spacing-md);
+    }
+}
