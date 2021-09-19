@@ -3,12 +3,37 @@
    ========================================================================== */
 
 .btn_primary {
+    cursor: pointer;
+
     padding: var(--spacing-xs) var(--spacing-s);
     border: none;
 
     font-weight: bold;
     background-color: var(--color-button-primary);
-    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.5);
+
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
+
+    .content {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        opacity: 0;
+
+        position: relative;
+        top: -10px;
+
+        background: var(--color-text-primary);
+
+        transition: all 0.3s $ease-in-sine;
+    }
+
+    &:hover {
+        .content {
+            opacity: 1;
+            width: 100%;
+        }
+    }
 }
 
 .sct_button {
