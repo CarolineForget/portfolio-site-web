@@ -45,6 +45,12 @@
     .content {
         height: 100px;
     }
+
+    @media screen and (min-width: $breakpoint-md) {
+        position: relative;
+        top: -120px;
+        z-index: -1;
+    }
 }
 
 .banner_primary {

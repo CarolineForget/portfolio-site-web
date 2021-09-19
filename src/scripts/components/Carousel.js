@@ -39,9 +39,6 @@ export default class Carousel {
             768: {
               slidesPerView: 2,
             },
-            1024: {
-              slidesPerView: 3,
-            },
           },
         },
       };

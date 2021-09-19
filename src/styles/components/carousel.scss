@@ -16,6 +16,10 @@
     .swiper-button-prev {
         position: absolute;
         top: 95%;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            display: none;
+        }
     }
 
     h3 {
@@ -29,6 +33,24 @@
 
     .slide-2 {
         background: var(--color-bg-primary-dark);
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        .swiper-slide {
+            margin: 0 !important;
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        margin-top: 0;
+
+        .swiper-slide-1 {
+            width: 60% !important;
+        }
+        .swiper-slide-2 {
+            width: 40% !important;
+        }
     }
 }
 

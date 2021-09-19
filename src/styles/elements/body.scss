@@ -10,4 +10,8 @@ body {
     color: var(--color-text-primary);
     line-height: 1.6;
     background: var(--color-bg-primary);
+
+    /*     @media screen and (min-width: $breakpoint-md) {
+        font-size: var(--font-size-content-desktop);
+    } */
 }
