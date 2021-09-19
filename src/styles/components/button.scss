@@ -2,16 +2,34 @@
    BUTTON / COMPONENTS
    ========================================================================== */
 
-.btn_primary {
+.btn {
     cursor: pointer;
+
+    text-transform: uppercase;
 
     padding: var(--spacing-xs) var(--spacing-s);
     border: none;
 
-    font-weight: bold;
     background-color: var(--color-button-primary);
 
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
+
+    a {
+        color: var(--color-text-primary);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-text-primary);
+        }
+
+        &:active {
+            color: inherit;
+        }
+
+        &:focus {
+            color: inherit;
+        }
+    }
 
     .content {
         content: '';
@@ -33,6 +51,16 @@
             opacity: 1;
             width: 100%;
         }
+    }
+}
+
+.btn__more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        padding-right: var(--spacing-s);
     }
 }
 

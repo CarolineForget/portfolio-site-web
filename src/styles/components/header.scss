@@ -12,6 +12,24 @@ header {
     width: 100%;
     z-index: 9;
 
+    a {
+        color: var(--color-text-primary);
+        font-weight: normal;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-text-primary);
+        }
+
+        &:active {
+            color: inherit;
+        }
+
+        &:focus {
+            color: inherit;
+        }
+    }
+
     .toggle__bar {
         display: flex;
         justify-content: space-between;
