@@ -1,0 +1,45 @@
+/* ==========================================================================
+   CAROUSEL / COMPONENTS
+   ========================================================================== */
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper__about {
+    margin-top: var(--spacing-lg);
+    height: 375px;
+
+    /* overflow-y: visible; */
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 95%;
+    }
+
+    h3 {
+        padding: var(--spacing-s);
+    }
+
+    .slide-1 {
+        background: var(--color-link-primary);
+        color: var(--color-text-secondary);
+    }
+
+    .slide-2 {
+        background: var(--color-bg-primary-dark);
+    }
+}
+
+.swiper-button-next {
+    content: url(../../assets/icons/arrow-next.svg);
+    height: 40px;
+    width: 40px;
+}
+
+.swiper-button-prev {
+    content: url(../../assets/icons/arrow-previous.svg);
+    height: 40px;
+    width: 40px;
+}
