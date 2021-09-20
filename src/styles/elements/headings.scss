@@ -23,7 +23,7 @@ h2 {
     font-weight: 600;
     font-size: var(--font-size-h2-mobile);
 
-    @media screen and (min-width: $breakpoint-md) {
+    @media screen and (min-width: $breakpoint-l) {
         font-size: var(--font-size-h2-desktop);
     }
 }
@@ -41,7 +41,7 @@ h4 {
     font-weight: 400;
     font-size: var(--font-size-h4-mobile);
 
-    @media screen and (min-width: $breakpoint-md) {
+    @media screen and (min-width: $breakpoint-l) {
         font-size: var(--font-size-h4-desktop);
     }
 }
