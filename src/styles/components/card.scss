@@ -9,15 +9,16 @@
 
     img {
         margin-top: var(--spacing-sm);
+        display: block;
+
         height: 100%;
         width: 100%;
     }
 
     .title {
-        position: relative;
-
         background: var(--color-bg-primary-dark);
         padding: var(--spacing-s) var(--spacing-s) var(--spacing-sm);
+        margin: 0;
 
         h4,
         h2 {
@@ -26,11 +27,15 @@
     }
 
     .more {
+        position: relative;
+    }
+
+    .flex {
         display: flex;
         justify-content: space-between;
 
         position: absolute;
-        bottom: -20px;
+        bottom: -60px;
         left: 0;
         right: 0;
         width: 100%;
@@ -40,7 +45,7 @@
             justify-content: space-between;
             align-items: center;
 
-            margin: 0 0 0 var(--spacing-s);
+            margin: 0;
             padding: 0;
 
             list-style: none;
@@ -52,10 +57,6 @@
             .icon {
                 fill: var(--color-icons);
             }
-        }
-
-        .content {
-            display: none;
         }
     }
 
@@ -76,6 +77,80 @@
             list-style: none;
             margin: var(--spacing-xs) 0 0;
             padding: 0;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        img {
+            height: 50vh;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin: var(--spacing-xl) 0;
+
+        &.card__first {
+            margin-top: var(--spacing-l);
+        }
+
+        position: relative;
+
+        img {
+            width: 60%;
+            height: 100%;
+        }
+
+        .column {
+            width: 50%;
+            position: absolute;
+            left: 0;
+            top: var(--spacing-l);
+
+            margin-top: var(--spacing-s);
+        }
+
+        .summary {
+            width: 80%;
+            padding: var(--spacing-s) var(--spacing-sm);
+        }
+
+        .icon--md {
+            height: 2em;
+            width: 2em;
+        }
+
+        .title {
+            padding: var(--spacing-sm);
+
+            .flex {
+                bottom: -70px;
+            }
+        }
+    }
+}
+
+.card__even {
+    @media screen and (min-width: $breakpoint-md) {
+        flex-direction: row;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+
+            left: auto;
+            right: 0;
+        }
+
+        .summary {
+            align-self: flex-end;
+        }
+
+        .flex ul {
+            position: relative;
+            left: 20%;
         }
     }
 }
