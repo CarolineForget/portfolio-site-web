@@ -3,13 +3,28 @@
    ========================================================================== */
 
 .sct-contact {
+    @media screen and (min-width: $breakpoint-sm) {
+        padding-top: var(--spacing-lg);
+    }
+
     .wrapper {
         display: flex;
         flex-direction: column;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     .column {
         margin: var(--spacing-lg) 0 var(--spacing-sm);
+
+        @media screen and (min-width: $breakpoint-sm) {
+            width: 55%;
+            margin: 0;
+        }
     }
 
     p,
@@ -17,9 +32,19 @@
         margin: 0;
     }
 
+    p {
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-content-mobile);
+        }
+    }
+
     .title {
         background: var(--color-bg-primary-dark);
         padding: var(--spacing-sm) var(--spacing-xs) var(--spacing-sm);
+
+        @media screen and (min-width: $breakpoint-sm) {
+            padding: var(--spacing-sm);
+        }
     }
 
     .more {
@@ -48,10 +73,23 @@
 
             li {
                 padding: 0 var(--spacing-xs) 0 0;
+
+                @media screen and (min-width: $breakpoint-md) {
+                    padding: 0 var(--spacing-s) 0 0;
+                }
             }
 
             .icon {
                 fill: var(--color-icons);
+
+                &:hover {
+                    fill: var(--color-button-dark);
+                }
+
+                @media screen and (min-width: $breakpoint-md) {
+                    height: 1.75em;
+                    width: 1.75em;
+                }
             }
         }
     }
@@ -71,6 +109,10 @@
             background: var(--color-text-primary);
 
             margin-left: var(--spacing-xs);
+
+            @media screen and (min-width: $breakpoint-sm) {
+                margin-left: var(--spacing-sm);
+            }
         }
 
         ul {

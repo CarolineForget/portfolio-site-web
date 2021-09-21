@@ -2,6 +2,12 @@
    FORM / COMPONENTS
    ========================================================================== */
 
+.form-contact {
+    @media screen and (min-width: $breakpoint-sm) {
+        width: 40%;
+    }
+}
+
 .form {
     --input-radius: 3px;
     --input-padding: 1em;
@@ -46,10 +52,6 @@
     display: block;
     font-family: var(--font-secondary);
     font-size: var(--font-size-h4-mobile);
-
-    @media screen and (min-width: $breakpoint-md) {
-        font-size: var(--font-size-h4-desktop);
-    }
 }
 
 .input {
