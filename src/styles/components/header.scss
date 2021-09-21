@@ -47,8 +47,7 @@ header {
     }
 
     .header-is-hidden.is-scrolling-down & {
-        transform: translateY(-90%);
-        background: var(--color-bg-primary-dark);
+        transform: translateY(-100%);
     }
 }
 

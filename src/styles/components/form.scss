@@ -1,0 +1,130 @@
+/* ==========================================================================
+   FORM / COMPONENTS
+   ========================================================================== */
+
+.form {
+    --input-radius: 3px;
+    --input-padding: 1em;
+
+    fieldset {
+        border: none;
+        padding: 0;
+    }
+}
+
+.form__footer {
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.form__body {
+    .is-sent & {
+        display: none;
+    }
+}
+
+.form__confirmation {
+    display: none;
+    text-align: center;
+    padding: var(--spacing-md);
+
+    h3 {
+        margin: 0;
+    }
+
+    .is-sent & {
+        display: block;
+    }
+}
+
+/*
+   INPUT
+   =================================================================================================== */
+
+.form__label {
+    display: block;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-h4-mobile);
+
+    @media screen and (min-width: $breakpoint-md) {
+        font-size: var(--font-size-h4-desktop);
+    }
+}
+
+.input {
+    margin: var(--spacing-sm) 0;
+}
+
+.input__element {
+    border-radius: var(--input-radius);
+    border: solid 2px var(--color-bg-primary-dark);
+    cursor: pointer;
+    font-family: inherit;
+    outline: none;
+    padding: var(--input-padding);
+    width: 100%;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:active {
+        -webkit-text-fill-color: inherit !important;
+        background-color: #fff;
+    }
+
+    //hover
+    &:hover,
+    + .form__label:hover::before {
+        background-color: #fff;
+        -webkit-box-shadow: inset -2px 2px 4px rgba(77, 77, 77, 0.3) !important;
+    }
+
+    //focus
+    &:focus,
+    &:-webkit-autofill:focus,
+    &:focus + .form__label::before {
+        background-color: #fff;
+        -webkit-box-shadow: inset -2px 2px 4px rgba(77, 77, 77, 0.3) !important;
+    }
+
+    //autocomplet
+    &::placeholder {
+        color: var(--color-black);
+        background-color: #fff;
+    }
+}
+
+/*
+   TEXT AREA
+   =================================================================================================== */
+
+.textarea {
+    .input__element {
+        resize: vertical;
+        height: 150px;
+    }
+}
+
+/*
+   ERROR
+   =================================================================================================== */
+
+.error {
+    .input__element,
+    .check .form__label::before,
+    .radio .form__label::before,
+    &.check .form__label::before,
+    &.radio .form__label::before {
+        border-color: lightcoral;
+    }
+
+    .form__error {
+        display: block;
+
+        font-size: 0.8rem;
+        color: red;
+    }
+}
+
+.form__error {
+    display: none;
+}

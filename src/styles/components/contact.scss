@@ -1,0 +1,100 @@
+/* ==========================================================================
+   CONTACT / COMPONENTS
+   ========================================================================== */
+
+.sct-contact {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column {
+        margin: var(--spacing-lg) 0 var(--spacing-sm);
+    }
+
+    p,
+    h2 {
+        margin: 0;
+    }
+
+    .title {
+        background: var(--color-bg-primary-dark);
+        padding: var(--spacing-sm) var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .more {
+        position: relative;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        right: 0;
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            li {
+                padding: 0 var(--spacing-xs) 0 0;
+            }
+
+            .icon {
+                fill: var(--color-icons);
+            }
+        }
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        margin-top: var(--spacing-sm);
+
+        .content {
+            content: '';
+            display: block;
+            height: 275px;
+            width: 2px;
+            background: var(--color-text-primary);
+
+            margin-left: var(--spacing-xs);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            margin-left: var(--spacing-xs);
+
+            li {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+                padding: var(--spacing-xs);
+            }
+
+            p {
+                padding-left: var(--spacing-xs);
+            }
+
+            .icon {
+                fill: var(--color-icons);
+            }
+        }
+    }
+}
