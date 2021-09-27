@@ -6,6 +6,22 @@
     position: relative;
 }
 
+.swiper-button-next {
+    content: url(../../assets/icons/arrow-next.svg);
+    height: 40px;
+    width: 40px;
+}
+
+.swiper-button-prev {
+    content: url(../../assets/icons/arrow-previous.svg);
+    height: 40px;
+    width: 40px;
+}
+
+/*
+    swiper__about
+ =========================================================================== */
+
 .swiper__about {
     margin-top: var(--spacing-lg);
     height: 375px;
@@ -54,14 +70,23 @@
     }
 }
 
-.swiper-button-next {
-    content: url(../../assets/icons/arrow-next.svg);
-    height: 40px;
-    width: 40px;
-}
+/*
+    swiper__exemples
+ =========================================================================== */
 
-.swiper-button-prev {
-    content: url(../../assets/icons/arrow-previous.svg);
-    height: 40px;
-    width: 40px;
+.swiper__exemples {
+    position: relative;
+    top: var(--spacing-l);
+
+    height: 265px;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 95%;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            display: none;
+        }
+    }
 }
