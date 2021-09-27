@@ -1,0 +1,20 @@
+/* ==========================================================================
+   THEME / COMPONENTS
+   ========================================================================== */
+
+.dark {
+    background: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+
+    .sct--title {
+        background: var(--color-bg-secondary-light);
+    }
+
+    .content {
+        background: var(--color-text-secondary);
+    }
+
+    .exemple {
+        background: var(--color-bg-secondary-light);
+    }
+}
