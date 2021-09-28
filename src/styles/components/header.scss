@@ -232,20 +232,38 @@ header {
     }
 
     .content__select {
+        display: block;
+        height: 20px;
+        width: 0px;
+
         opacity: 0.5;
         background: var(--color-link-light);
-        width: 125%;
+        width: 122%;
+
+        position: relative;
+        top: 20px;
+        left: -5px;
+        z-index: -1;
+
+        transition: all 0.3s $ease-in-sine;
+
+        .content__hover {
+            position: absolute;
+            top: 0;
+        }
     }
 
     &:hover {
         .content__hover {
-            width: 125%;
+            width: 122%;
         }
 
         .content__select {
-            background: var(--color-button-primary);
             opacity: 1;
-            width: 125%;
+
+            .content__hover {
+                width: 106%;
+            }
         }
     }
 

@@ -73,6 +73,7 @@
 
             li {
                 padding: 0 var(--spacing-xs) 0 0;
+                margin: 0;
 
                 @media screen and (min-width: $breakpoint-md) {
                     padding: 0 var(--spacing-s) 0 0;
@@ -80,16 +81,12 @@
             }
 
             .icon {
-                fill: var(--color-icons);
+                position: relative;
+                z-index: 3;
+            }
 
-                &:hover {
-                    fill: var(--color-button-dark);
-                }
-
-                @media screen and (min-width: $breakpoint-md) {
-                    height: 1.75em;
-                    width: 1.75em;
-                }
+            .content__link {
+                z-index: 2;
             }
         }
     }

@@ -112,8 +112,25 @@
         }
     }
 
-    .more {
+    .button__container {
         margin-top: var(--spacing-md);
+
+        .btn {
+            padding: 0;
+        }
+
+        .btn p {
+            margin: 0;
+            padding: var(--spacing-xs) var(--spacing-s);
+            position: relative;
+
+            background: var(--color-button-primary);
+            z-index: 2;
+        }
+
+        .content__link {
+            z-index: 1;
+        }
 
         @media screen and (min-width: $breakpoint-sm) {
             margin-top: 0;
