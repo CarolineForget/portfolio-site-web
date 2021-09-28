@@ -10,6 +10,15 @@
     h2 {
         margin: 0;
         font-size: var(--font-size-h3-mobile);
+        font-weight: 600;
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-h3-desktop);
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        width: 42%;
     }
 }
 
@@ -21,13 +30,31 @@
 }
 
 .single--image,
-.summary,
+.summary__detailed,
 .single--carousel,
 .single--columns {
     padding-bottom: var(--spacing-lg);
 
     .text {
         margin: var(--spacing-sm) 0;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            width: 57%;
+            margin: 0 0 var(--spacing-sm);
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        padding: var(--spacing-md) 0;
+        margin-bottom: var(--spacing-md);
+    }
+}
+
+.principal {
+    @media screen and (min-width: $breakpoint-sm) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }
 
@@ -40,8 +67,11 @@
     flex-direction: column;
     justify-content: space-between;
 
+    position: relative;
+
     img {
-        display: block;
+        display: inline;
+        object-fit: cover;
         height: 100%;
         width: 100%;
     }
@@ -50,6 +80,10 @@
         font-family: var(--font-secondary);
         font-weight: 600;
         margin: 0;
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-h2-desktop);
+        }
     }
 
     h4 {
@@ -63,10 +97,29 @@
         align-items: center;
 
         padding: var(--spacing-l) 0;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     .more {
         margin-top: var(--spacing-md);
+
+        @media screen and (min-width: $breakpoint-sm) {
+            margin-top: 0;
+        }
+    }
+
+    .info {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        background: var(--color-bg-primary-dark);
     }
 }
 
@@ -74,7 +127,7 @@
     summary
  =========================================================================== */
 
-.summary {
+.summary__detailed {
     .content {
         content: '';
         display: block;
@@ -87,6 +140,21 @@
         margin: var(--spacing-s) 0 0;
         padding: 0;
         list-style: none;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                width: 45%;
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 }
 
@@ -100,6 +168,10 @@
 
         background: var(--color-bg-primary-dark);
         padding: var(--spacing-s) 0;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            padding: var(--spacing-md) 0;
+        }
     }
 
     .list--info {
@@ -119,6 +191,10 @@
             margin: 0;
         }
     }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        padding: var(--spacing-md) 0 var(--spacing-lg);
+    }
 }
 
 /*
@@ -129,6 +205,18 @@
     img {
         display: block;
         margin-bottom: var(--spacing-s);
+
+        @media screen and (min-width: $breakpoint-sm) {
+            width: 31%;
+        }
+    }
+
+    .columns {
+        @media screen and (min-width: $breakpoint-sm) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 }
 
@@ -150,7 +238,8 @@
         justify-content: space-between;
         align-items: center;
 
-        div {
+        .prev,
+        .next {
             width: 48%;
             position: relative;
 
@@ -160,13 +249,29 @@
         }
     }
 
-    .btn {
-        position: relative;
-        top: -10px;
-        left: 10px;
+    button {
+        font-size: var(--font-size-comment);
+        bottom: -20px;
     }
 
-    .btn_secondary {
-        left: -10px;
+    .prev {
+        .btn__more {
+            .icon {
+                margin-right: var(--spacing-xs);
+                margin-left: 0;
+            }
+        }
+
+        button {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    .next {
+        button {
+            position: absolute;
+            right: 0;
+        }
     }
 }
