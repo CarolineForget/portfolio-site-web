@@ -33,6 +33,8 @@
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: var(--color-icons);
 
+        animation: animate 40s linear infinite alternate;
+
         .fill {
             color: var(--color-icons);
         }
@@ -46,6 +48,10 @@
         height: 100px;
     }
 
+    p {
+        animation: animate 30s linear infinite alternate;
+    }
+
     @media screen and (min-width: $breakpoint-md) {
         position: relative;
         top: -120px;
@@ -55,4 +61,17 @@
 
 .banner_primary {
     font-size: var(--font-size-animate-xl);
+}
+
+/*
+    Animation Keyframes
+ ============================================================================================================== */
+
+@keyframes animate {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
