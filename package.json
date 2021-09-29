@@ -11,6 +11,7 @@
     "build": "gulp build"
   },
   "dependencies": {
+    "gsap": "^3.8.0",
     "swiper": "^6.8.4",
     "typed.js": "^2.0.12"
   },

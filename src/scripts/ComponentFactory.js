@@ -3,9 +3,10 @@ import Header from './components/Header';
 import Scrolly from './components/Scrolly';
 import Video from './components/Video';
 import Form from './components/Form';
-import Snackbar from './components/Snackbar';
 import Modal from './components/Modal';
 import Type from './components/Type';
+
+import Grid from './components/Grid';
 
 export default class ComponentFactory {
   constructor() {
@@ -16,9 +17,9 @@ export default class ComponentFactory {
       Scrolly,
       Video,
       Form,
-      Snackbar,
       Modal,
       Type, //
+      Grid,
     };
     this.init();
   }
