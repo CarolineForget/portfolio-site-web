@@ -17,6 +17,7 @@
 
         background: var(--color-bg-primary);
         padding: var(--spacing-sm) var(--spacing-s);
+        box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
 
         @media screen and (min-width: $breakpoint-md) {
             padding: var(--spacing-md);
@@ -34,7 +35,6 @@
         h2 {
             font-size: var(--font-size-h4-mobile);
             font-weight: 400;
-            /* text-transform: uppercase; */
             opacity: 0.5;
 
             margin: 0;

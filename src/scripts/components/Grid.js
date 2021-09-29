@@ -44,7 +44,7 @@ export default class Grid {
     this.items = [...this.DOM.el.querySelectorAll('.grid__item')];
     this.items.forEach((item) => this.gridItems.push(new GridItem(item)));
 
-    this.opacity = this.DOM.el.dataset.opacity == '1' ? 1 : 0.3;
+    this.opacity = this.DOM.el.dataset.opacity == '1' ? 1 : 0.2;
 
     this.showItems();
   }

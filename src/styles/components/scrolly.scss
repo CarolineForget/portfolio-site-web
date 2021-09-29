@@ -1,0 +1,112 @@
+/* ==========================================================================
+   scrolly / animations
+   ========================================================================== */
+.has-js {
+    [data-scrolly='flipFromBottom'] {
+        opacity: 0;
+        transform: rotateX(-180deg) translateY(200px);
+
+        transition: all 1.2s ease;
+
+        &.is-active {
+            opacity: 1;
+            transform: rotateX(0) translateY(0);
+        }
+    }
+
+    [data-scrolly='flipFromRight'] {
+        opacity: 0;
+        transform: rotateY(-180deg) translateX(200px);
+
+        transition: all 1.2s ease;
+
+        &.is-active {
+            opacity: 1;
+            transform: rotateY(0) translateX(0);
+        }
+    }
+
+    [data-scrolly='fromBottom'] {
+        opacity: 0;
+        transform: translateY(60px);
+
+        transition: all 0.4s ease;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromTop'] {
+        opacity: 0;
+        transform: translateY(-100px);
+
+        transition: all 0.4s $ease-in-out-cubic;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromTopDelay'] {
+        opacity: 0;
+        transform: translateY(-60px);
+
+        transition: all 0.4s 0.4s $ease-in-out-cubic;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='fromLeft'] {
+        opacity: 0;
+        transform: translateX(-60px);
+
+        transition: all 0.4s $ease-in-out-cubic;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromLeftDelay'] {
+        opacity: 0;
+        transform: translateX(-60px);
+
+        transition: all 0.4s 0.2s $ease-in-out-cubic;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        opacity: 0;
+        transform: translateX(60px);
+
+        transition: all 0.4s $ease-in-out-cubic;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='fromRightDelay'] {
+        opacity: 0;
+        transform: translateX(60px);
+
+        transition: all 0.4s 0.2s $ease-in-out-cubic;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
