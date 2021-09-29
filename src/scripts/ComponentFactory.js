@@ -5,6 +5,7 @@ import Video from './components/Video';
 import Form from './components/Form';
 import Snackbar from './components/Snackbar';
 import Modal from './components/Modal';
+import Type from './components/Type';
 
 export default class ComponentFactory {
   constructor() {
@@ -16,7 +17,8 @@ export default class ComponentFactory {
       Video,
       Form,
       Snackbar,
-      Modal, //
+      Modal,
+      Type, //
     };
     this.init();
   }
