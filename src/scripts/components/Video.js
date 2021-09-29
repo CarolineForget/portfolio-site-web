@@ -10,9 +10,11 @@ export default class Video {
     this.videoContainer = this.element.querySelector('.js-video');
     this.poster = this.element.querySelector('.js-poster');
     this.videoId = this.element.dataset.videoId;
-    this.autoplay = this.poster ? 1 : 0;
+    this.playlistId = this.element.dataset.videoId;
+    this.autoplay = 0;
     this.playerReady = false;
     this.showControls = this.element.dataset.showControls == 'true' ? 1 : 0;
+    this.isLooping = this.element.dataset.isLooping == 'true' ? 1 : 0;
 
     Video.instances.push(this);
 
@@ -43,9 +45,17 @@ export default class Video {
     this.initPlayer = this.initPlayer.bind(this);
 
     if (this.poster) {
+      this.autoplay = 1;
+    }
+
+    if (this.element.dataset.autoPlay == 'true') {
+      this.autoplay = 1;
+    }
+
+    if (this.poster) {
       this.element.addEventListener('click', this.initPlayer);
     } else {
-      this.initPlayer.bind(this);
+      this.initPlayer();
     }
   }
 
@@ -63,10 +73,20 @@ export default class Video {
       height: '100%',
       width: '100%',
       videoId: this.videoId,
-      playerVars: { rel: 0, autoplay: this.autoplay, controls: this.showControls },
+      playerVars: {
+        rel: 0,
+        showinfo: 0,
+        autoplay: this.autoplay,
+        controls: this.showControls,
+        loop: this.isLooping,
+        playlist: this.videoId,
+      },
       events: {
         onReady: () => {
           this.playerReady = true;
+
+          this.player.playVideo();
+          this.player.mute();
 
           const observer = new IntersectionObserver(this.watch.bind(this), {
             rootMargin: '0px 0px 0px 0px',
