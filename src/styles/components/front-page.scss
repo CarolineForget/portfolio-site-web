@@ -16,10 +16,17 @@
         background: var(--color-bg-primary);
         padding: var(--spacing-sm) var(--spacing-s);
 
+        @media screen and (min-width: $breakpoint-md) {
+            padding: var(--spacing-md);
+        }
+
         h1 {
             margin: 0 0 var(--spacing-xs);
             color: var(--color-link-primary);
-            opacity: 1;
+
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: var(--font-size-h2-desktop);
+            }
         }
 
         h2 {
@@ -29,6 +36,49 @@
             opacity: 0.5;
 
             margin: 0;
+
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: var(--font-size-h4-desktop);
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+
+        position: relative;
+        /*         .video {
+            position: absolute;
+            top: 125px;
+            right: 500px;
+        } */
+
+        .video {
+            /*             height: 675px;
+            width: 1200px; */
+            height: 300px;
+            width: 533.33px;
+            padding: 0;
+
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        .video {
+            height: 450px;
+            width: 800px;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        .video {
+            height: 675px;
+            width: 1200px;
         }
     }
 }
