@@ -13,6 +13,8 @@
     justify-content: center;
 
     .title {
+        position: relative;
+
         background: var(--color-bg-primary);
         padding: var(--spacing-sm) var(--spacing-s);
 
@@ -32,13 +34,24 @@
         h2 {
             font-size: var(--font-size-h4-mobile);
             font-weight: 400;
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
             opacity: 0.5;
 
             margin: 0;
 
             @media screen and (min-width: $breakpoint-md) {
                 font-size: var(--font-size-h4-desktop);
+            }
+        }
+
+        .container--button {
+            position: absolute;
+            bottom: -70px;
+            right: 20px;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                bottom: -20px;
+                right: auto;
             }
         }
     }
@@ -49,15 +62,8 @@
         align-items: center;
 
         position: relative;
-        /*         .video {
-            position: absolute;
-            top: 125px;
-            right: 500px;
-        } */
 
         .video {
-            /*             height: 675px;
-            width: 1200px; */
             height: 300px;
             width: 533.33px;
             padding: 0;
