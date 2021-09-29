@@ -63,6 +63,10 @@
             width: 120%;
             padding: var(--spacing-sm);
         }
+
+        @media screen and (min-width: $breakpoint-md) {
+            width: 140%;
+        }
     }
 
     .more {
@@ -109,7 +113,7 @@
             right: var(--spacing-sm);
 
             @media screen and (min-width: $breakpoint-md) {
-                right: var(--spacing-l);
+                right: 85px;
             }
         }
     }
@@ -155,6 +159,13 @@
             position: relative;
             left: -20%;
         }
+
+        @media screen and (min-width: $breakpoint-md) {
+            width: 140%;
+
+            position: relative;
+            left: -40%;
+        }
     }
 
     .flex {
@@ -167,8 +178,14 @@
 
             @media screen and (min-width: $breakpoint-md) {
                 li:first-child {
-                    margin-left: var(--spacing-lg);
+                    margin-left: var(--spacing-xl);
                 }
+            }
+        }
+
+        a {
+            @media screen and (min-width: $breakpoint-md) {
+                right: var(--spacing-l);
             }
         }
     }
