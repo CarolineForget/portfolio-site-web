@@ -71,15 +71,6 @@
 
             list-style: none;
 
-            li {
-                padding: 0 var(--spacing-xs) 0 0;
-                margin: 0;
-
-                @media screen and (min-width: $breakpoint-md) {
-                    padding: 0 var(--spacing-s) 0 0;
-                }
-            }
-
             .icon {
                 position: relative;
                 z-index: 3;
