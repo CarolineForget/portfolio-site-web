@@ -48,12 +48,12 @@
 
         @media screen and (min-width: $breakpoint-sm) {
             width: 55%;
-            margin: 0 0 var(--spacing-sm);
+            margin: 0 0 var(--spacing-l);
         }
     }
 
     @media screen and (min-width: $breakpoint-sm) {
-        padding: var(--spacing-md) 0;
+        padding: var(--spacing-lg) 0;
         margin-bottom: var(--spacing-md);
     }
 }
@@ -169,6 +169,7 @@
         @media screen and (min-width: $breakpoint-sm) {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             li {
                 width: 45%;
