@@ -62,6 +62,7 @@
 
             @media screen and (min-width: $breakpoint-sm) {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
 
@@ -78,6 +79,10 @@
             justify-content: space-between;
             align-items: flex-start;
         }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        margin-top: var(--spacing-lg);
     }
 }
 
