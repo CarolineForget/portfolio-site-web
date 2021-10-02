@@ -74,18 +74,31 @@
     swiper__exemples
  =========================================================================== */
 
-.swiper__exemples {
+.swiper__single {
     /*     position: relative;
     top: var(--spacing-l);
 
     height: 240px; */
+    height: 50vh;
+
+    /*     overflow-y: visible; */
 
     .swiper-slide {
         text-align: center;
 
         img {
-            width: 70%;
-            height: 100%;
+            width: 100%;
+            height: 80%;
+            object-fit: contain;
+            /*             display: inline-block; */
+
+            @media screen and (min-width: $breakpoint-sm) {
+                width: 75%;
+                height: 100%;
+
+                /*                 position: relative;
+                top: 100px; */
+            }
         }
     }
 
@@ -93,9 +106,10 @@
     .swiper-button-prev {
         position: absolute;
         top: 95%;
+        /*         z-index: 1; */
 
         @media screen and (min-width: $breakpoint-sm) {
-            top: 80%;
+            top: 50%;
         }
     }
 

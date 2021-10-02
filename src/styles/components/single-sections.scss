@@ -2,331 +2,260 @@
    SINGLE-SECTIONS / COMPONENTS
    ========================================================================== */
 
-.sct--title {
-    padding: var(--spacing-s) 0;
-    background: var(--color-bg-primary-dark);
-    position: relative;
+.summary_detailed,
+.single--image,
+.single--columns,
+.single--carousel {
+    .title {
+        background: var(--color-bg-primary-dark);
+        padding: var(--spacing-s) var(--spacing-xs);
 
-    text-align: center;
+        h2 {
+            margin: 0;
 
-    h2 {
-        margin: 0;
-        font-size: var(--font-size-h3-mobile);
-        font-weight: 600;
-
-        @media screen and (min-width: $breakpoint-sm) {
-            margin-left: var(--spacing-sm);
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: var(--font-size-h2-mobile);
+            }
         }
 
         @media screen and (min-width: $breakpoint-md) {
-            font-size: var(--font-size-h3-desktop);
+            width: 40%;
+            padding: var(--spacing-sm);
         }
     }
 
-    @media screen and (min-width: $breakpoint-sm) {
-        width: 40%;
-        text-align: left;
-    }
-}
+    .title__button {
+        position: relative;
 
-.sct--title__button {
-    button {
-        position: absolute;
-        right: var(--spacing-s);
+        .btn {
+            position: absolute;
+            right: 5%;
+            bottom: -20px;
+        }
+    }
+
+    .explications {
+        p:first-child {
+            margin-top: var(--spacing-sm);
+        }
+
+        .content {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 100%;
+
+            background: var(--color-text-primary);
+            margin-top: var(--spacing-sm);
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            width: 57%;
+        }
+    }
+
+    .credits {
+        ul {
+            padding: 0;
+            margin: var(--spacing-s) 0 0;
+            list-style: none;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    width: 48%;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        .text {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 }
 
 .single--image,
-.summary__detailed,
-.single--carousel,
-.single--columns {
-    padding-bottom: var(--spacing-lg);
-    padding-top: var(--spacing-sm);
+.single--columns,
+.single--carousel {
+    margin-top: var(--spacing-lg);
 
-    .text {
-        margin: var(--spacing-sm) 0;
-
-        @media screen and (min-width: $breakpoint-sm) {
-            width: 55%;
-            margin: 0 0 var(--spacing-l);
-        }
-    }
-
-    @media screen and (min-width: $breakpoint-sm) {
-        padding: var(--spacing-lg) 0;
-        margin-bottom: var(--spacing-md);
+    @media screen and (min-width: $breakpoint-md) {
+        margin-top: var(--spacing-xl);
     }
 }
 
-.principal {
-    @media screen and (min-width: $breakpoint-sm) {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-}
+/* 
+   HERO
+   ========================================================================== */
 
-/*
-    hero
- =========================================================================== */
-
-.hero__single {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    position: relative;
-
-    img {
-        display: inline;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-    }
-
-    h1 {
-        font-family: var(--font-secondary);
-        font-weight: 600;
-        margin: 0;
-
-        @media screen and (min-width: $breakpoint-md) {
-            font-size: var(--font-size-h2-desktop);
-        }
-    }
-
-    h4 {
-        margin: 0;
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        padding: var(--spacing-l) 0;
-
-        @media screen and (min-width: $breakpoint-sm) {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    }
-
-    .button__container {
-        margin-top: var(--spacing-md);
-
-        .btn {
-            padding: 0;
+.before__single {
+    .title {
+        h1 {
+            color: var(--color-text-primary);
+            font-family: var(--font-secondary);
+            font-weight: 600;
         }
 
-        .btn p {
-            margin: 0;
-            padding: var(--spacing-xs) var(--spacing-s);
-            position: relative;
-
-            background: var(--color-button-primary);
-            z-index: 2;
-        }
-
-        .content__link {
-            z-index: 1;
-        }
-
-        @media screen and (min-width: $breakpoint-sm) {
+        h3 {
+            font-size: var(--font-size-h4-mobile);
             margin-top: 0;
-        }
-    }
 
-    .info {
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-
-        background: var(--color-bg-primary-dark);
-    }
-}
-
-/*
-    summary
- =========================================================================== */
-
-.summary__detailed {
-    .content {
-        content: '';
-        display: block;
-        background: var(--color-text-primary);
-        height: 1px;
-        width: 100%;
-    }
-
-    ul {
-        margin: var(--spacing-s) 0 0;
-        padding: 0;
-        list-style: none;
-
-        @media screen and (min-width: $breakpoint-sm) {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-
-            li {
-                width: 45%;
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: var(--font-size-h4-desktop);
             }
         }
     }
-
-    @media screen and (min-width: $breakpoint-sm) {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
 }
 
-/*
-    single--image
- =========================================================================== */
-
+/* 
+   SINGLE-IMAGE
+   ========================================================================== */
 .single--image {
     img {
         object-fit: cover;
-        height: 100%;
         width: 100%;
+        margin-top: var(--spacing-sm);
+
+        @media screen and (min-width: $breakpoint-md) {
+            margin-top: var(--spacing-l);
+        }
     }
 }
 
-/*
-    single--carousel
- =========================================================================== */
+/* 
+   SINGLE-COLUMNS
+   ========================================================================== */
+.single--columns {
+    .columns {
+        margin-top: var(--spacing-sm);
 
-.single--carousel {
-    .exemple {
-        position: relative;
-
-        background: var(--color-bg-primary-dark);
-        padding: var(--spacing-s) 0;
+        @media screen and (min-width: $breakpoint-sm) {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-s);
+        }
 
         @media screen and (min-width: $breakpoint-md) {
-            padding: var(--spacing-lg) 0;
+            margin-top: var(--spacing-l);
         }
     }
 
-    .list--info {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        .info {
-            width: 48%;
-            background: red;
-
-            margin: var(--spacing-xs) 0;
-            padding: var(--spacing-s);
-
-            @media screen and (min-width: $breakpoint-sm) {
-                width: 23%;
-            }
-        }
-
+    .column_item {
         p {
             margin: 0;
         }
-    }
 
-    img {
-        object-fit: contain;
-        /*         height: 70%;
-        width: 100%; */
+        margin-bottom: var(--spacing-sm);
     }
-
-    /*     @media screen and (min-width: $breakpoint-sm) {
-        padding: var(--spacing-md) 0 var(--spacing-lg);
-    } */
 }
 
-/*
-    single--columns
- =========================================================================== */
+/* 
+   SINGLE-CAROUSEL
+   ========================================================================== */
+.single--carousel {
+    .color-columns {
+        display: grid;
+        grid-template-rows: repeat(2, 0.2fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-s);
 
-.single--columns {
-    img {
-        display: block;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        margin-bottom: var(--spacing-s);
-
-        @media screen and (min-width: $breakpoint-sm) {
-            width: 31%;
+        @media screen and (min-width: $breakpoint-md) {
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 
-    .columns {
-        @media screen and (min-width: $breakpoint-sm) {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    .color_item {
+        padding: var(--spacing-s);
+    }
+
+    .swiper__single {
+        margin-top: var(--spacing-sm);
+
+        /*         @media screen and (min-width: $breakpoint-sm) {
+            margin: 0;
+        } */
+    }
+
+    .extra {
+        background: var(--color-bg-primary-dark);
+        padding: var(--spacing-s) var(--spacing-s) var(--spacing-sm);
+        margin-top: var(--spacing-sm);
+
+        /*         @media screen and (min-width: $breakpoint-sm) {
+            padding-bottom: 0;
+        } */
+
+        @media screen and (min-width: $breakpoint-md) {
+            padding: var(--spacing-md);
+            margin-top: var(--spacing-l);
         }
     }
 }
 
-/*
-    section--button 
- =========================================================================== */
+/* 
+   SEE-OTHER
+   ========================================================================== */
+.see--other {
+    @media screen and (min-width: $breakpoint-sm) {
+        margin-top: var(--spacing-xl);
+    }
 
-.sct_button_project {
-    margin: 0 0 var(--spacing-xl);
-}
+    @media screen and (min-width: $breakpoint-md) {
+        margin: var(--spacing-xl) 0;
+    }
 
-/*
-    next--page
- =========================================================================== */
-
-.next--page {
     .wrapper {
+        height: 20vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .prev,
-        .next {
-            width: 48%;
-            position: relative;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            @media screen and (min-width: $breakpoint-sm) {
-                width: 30%;
-            }
+        @media screen and (min-width: $breakpoint-md) {
+            height: 10vh;
         }
     }
 
-    button {
-        font-size: var(--font-size-comment);
-        bottom: -20px;
+    .prev,
+    .next {
+        width: 45%;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            display: block;
+            height: 100%;
+            width: 100%;
+        }
+
+        .icon {
+            margin: 0;
+        }
+
+        .btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            width: 20%;
+        }
     }
 
     .prev {
-        .btn__more {
-            .icon {
-                margin-right: var(--spacing-xs);
-                margin-left: 0;
-            }
-        }
-
-        button {
-            position: absolute;
+        .btn {
             left: 0;
-        }
-    }
-
-    .next {
-        button {
-            position: absolute;
-            right: 0;
+            right: auto;
         }
     }
 }

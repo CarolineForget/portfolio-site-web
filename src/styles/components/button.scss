@@ -63,3 +63,14 @@
         text-align: center;
     }
 }
+
+/*
+    btn__final (pour les projets)
+ =========================================================================== */
+
+.btn__final {
+    @media screen and (min-width: $breakpoint-sm) {
+        font-size: var(--font-size-content-desktop);
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+}
