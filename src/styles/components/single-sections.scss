@@ -12,6 +12,7 @@
 
         h2 {
             margin: 0;
+            font-size: var(--font-size-h4-desktop);
 
             @media screen and (min-width: $breakpoint-md) {
                 font-size: var(--font-size-h2-mobile);
