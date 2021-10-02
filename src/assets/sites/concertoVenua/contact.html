@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concerto Venua</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="wrapper" data-component="Header" data-scroll-limit="0" data-auto-hide="false">
+        <div class="logo__header">
+            <a href="index.html">
+                <p><span>C</span>V</p>
+            </a>
+        </div>
+        <div class="nav">
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-primary__item">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="programmation.html" class="nav-primary__item">Programmation</a>
+                    </li>
+                    <li class="nav-right">
+                        <a href="invites-list.html" class="nav-primary__item">Artistes</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-primary__item">Contact</a>
+                    </li>
+                    <li class="button--nav">
+                        <div class="container--button_nav nav-primary__item">
+                            <button class="button--primary button--menu">
+                                <a href="#">Acheter</a>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="container--button">
+                <button class="button--primary button--menu"><a href="#">Acheter</a></button>
+            </div>
+        </div>
+
+        <div class="button">
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <div class="site-container" data-component="Scrolly">
+        <header class="wrapper" data-component="Header" data-scroll-limit="0" data-auto-hide="false">
+            <div class="logo__header">
+                <a href="index.html">
+                    <p><span>C</span>V</p>
+                </a>
+            </div>
+            <div class="nav">
+                <nav class="nav-primary">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-primary__item">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="programmation.html" class="nav-primary__item">Programmation</a>
+                        </li>
+                        <li class="nav-right">
+                            <a href="invites-list.html" class="nav-primary__item">Artistes</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-primary__item">Contact</a>
+                        </li>
+                        <li class="button--nav">
+                            <div class="container--button_nav nav-primary__item">
+                                <button class="button--primary button--menu">
+                                    <a href="#">Acheter</a>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="container--button">
+                    <button class="button--primary button--menu"><a href="#">Acheter</a></button>
+                </div>
+            </div>
+
+            <div class="button">
+                <button class="header__toggle js-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <section class="hero hero--secondary hero--invites_list">
+            <div class="wrapper">
+                <div class="title">
+                    <h1>Contactez-nous</h1>
+                    <h2>Contactez-nous</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact__form">
+            <div class="grid--wrapper wrapper contact__content">
+                <form action="" class="form" autocomplete="off" data-component="Form">
+                    <div class="form__body">
+                        <fieldset class="grid form__about">
+                            <div class="input">
+                                <label class="form__label" for="firstName">Votre prénom</label>
+                                <input class="input__element" type="text" name="firstName" id="firstName" placeholder="Prénom" required />
+                                <label class="form__error" for="firstName">Ce n'est pas un prénom.</label>
+                            </div>
+                            <div class="input">
+                                <label class="form__label" for="lastName">Votre nom de famille</label>
+                                <input class="input__element" type="text" name="lastName" id="lastName" placeholder="Nom de famille" required />
+                                <label class="form__error" for="lastName">Ce n'est pas un nom de famille.</label>
+                            </div>
+                            <div class="input">
+                                <label class="form__label" for="email">Votre courriel</label>
+                                <input class="input__element" type="email" name="email" id="email" placeholder="courriel@courriel.com" required />
+                                <label class="form__error" for="email">Ce n'est pas une adresse courriel valide.</label>
+                            </div>
+                            <div class="input">
+                                <label class="form__label" for="phone">Votre numéro de téléphone</label>
+                                <input class="input__element" type="tel" name="phone" id="phone" placeholder="(111) 222-3333" patterns="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" required />
+                                <label class="form__error" for="phone">Ce n'est pas un numéro de téléphone valide.</label>
+                            </div>
+                            <div class="input select">
+                                <label class="form__label" for="day">Quelle journée vous intéresse le plus?</label>
+                                <select class="input__element" name="day" id="day" required>
+                                    <option value="" hidden>Choisir une journée</option>
+                                    <option value="day1">20 juillet</option>
+                                    <option value="day2">21 juillet</option>
+                                    <option value="day3">22 juillet</option>
+                                </select>
+                                <label class="form__error" for="day">Veuillez choisir une journée.</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <p>Comment t'indentifies-tu?</p>
+                            <div class="form__list" data-input-container>
+                                <div class="input radio">
+                                    <input class="input__element" type="radio" name="genre[]" id="genre1" value="femme" required />
+                                    <label class="form__label" for="genre1">Femme</label>
+                                </div>
+                                <div class="input radio">
+                                    <input class="input__element" type="radio" name="genre[]" id="genre2" value="homme" required />
+                                    <label class="form__label" for="genre2">Homme</label>
+                                </div>
+                                <div class="input radio">
+                                    <input class="input__element" type="radio" name="genre[]" id="genre3" value="aucun" required />
+                                    <label class="form__label" for="genre3">Ni l'un ni l'autre</label>
+                                </div>
+                                <label class="form__error" for="genre[]">Veuillez choisir un genre.</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="no-grid">
+                            <p>Qui est ton artiste invité préféré?</p>
+                            <div class="form__list" data-input-container>
+                                <div class="input radio">
+                                    <input class="input__element" type="radio" name="artiste[]" id="artiste1" value="ritaSnickers" required />
+                                    <label class="form__label" for="artiste1">Rita Snickers</label>
+                                </div>
+                                <div class="input radio">
+                                    <input class="input__element" type="radio" name="artiste[]" id="artiste2" value="rosaWu" required />
+                                    <label class="form__label" for="artiste2">Rosa Wu</label>
+                                </div>
+                                <div class="input radio">
+                                    <input class="input__element" type="radio" name="artiste[]" id="artiste3" value="enrickeLopez" required />
+                                    <label class="form__label" for="artiste3">Enricke Lopez</label>
+                                </div>
+                                <div class="input radio">
+                                    <input class="input__element" type="radio" name="artiste[]" id="artiste4" value="trumpetGang" required />
+                                    <label class="form__label" for="artiste4">Trumpet Gang</label>
+                                </div>
+                                <div class="input radio">
+                                    <input class="input__element" type="radio" name="artiste[]" id="artiste5" value="billyJoele" required />
+                                    <label class="form__label" for="artiste5">Billy Joele</label>
+                                </div>
+                                <label class="form__error" for="artiste[]">Veuillez choisir un artiste.</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="form__comments no-grid">
+                            <div class="input textarea u-grid-fullwidth">
+                                <label class="form__label" for="comment">Commentaire</label>
+                                <textarea class="input__element" name="comment" id="comment" maxlength="500" required></textarea>
+                                <label class="form__error" for="comment">Veuillez laisser un commentaire.</label>
+                            </div>
+                            <div class="input checkbox">
+                                <input class="input__element" type="checkbox" name="optin[]" id="optin" value="true" />
+                                <label class="form__label" for="optin">Je veux m'inscrire à l'infolettre.</label>
+                            </div>
+                        </fieldset>
+
+                        <footer class="form__footer">
+                            <div class="container--button">
+                                <button class="button--primary">Envoyer</button>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="form__confirmation">
+                        <h3>Merci!</h3>
+                        <p>Vos commentaires ont été reçus!</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="swiper-container swiper-tertiary" data-component="Carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-component="Modal" data-modal-id="tpl-modal-carousel" data-modal-title="Orchestre symphonique de Montréal" data-modal-bg="assets/images/Event/diapo_01.jpg">
+                    <img src="assets/images/Event/diapo_01.jpg" alt="Photo d'un orchestre" />
+                </div>
+                <div class="swiper-slide" data-component="Modal" data-modal-id="tpl-modal-carousel" data-modal-title="Orchestre de Dublin" data-modal-bg="assets/images/Event/diapo_02.jpg">
+                    <img src="assets/images/Event/diapo_02.jpg" alt="Photo de survol d'un orchestre" />
+                </div>
+                <div class="swiper-slide" data-component="Modal" data-modal-id="tpl-modal-carousel" data-modal-title="Orchestre ElectroClassic" data-modal-bg="assets/images/Event/diapo_03.jpg">
+                    <img src="assets/images/Event/diapo_03.jpg" alt="Photo d'un spectacle" />
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <footer>
+            <div class="wrapper">
+                <div class="grid--wrapper">
+                    <div>
+                        <a href="index.html"><img src="assets/icons/logo/logo.svg" alt="Concerto Venua" /></a>
+                        <h5>Du 20 au 22 juillet, à Dublin.</h5>
+                    </div>
+                    <div class="grid">
+                        <h4>Nous suivre sur</h4>
+                        <ul>
+                            <li>
+                                <a href="https://twitter.com/?lang=fr"><svg class="icon icon--lg">
+                                        <use xlink:href="#icon-twitter"></use>
+                                    </svg></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/?hl=fr"><svg class="icon icon--lg">
+                                        <use xlink:href="#icon-instagram"></use>
+                                    </svg></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/"><svg class="icon icon--lg">
+                                        <use xlink:href="#icon-facebook"></use>
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid grid--button">
+                        <h4>Télécharger l'application</h4>
+                        <button class="button-apple">
+                            <a href="https://www.apple.com/xf/shop">Sur Apple Store</a>
+                        </button>
+                        <button class="button-google">
+                            <a href="https://play.google.com/store">Sur Google Play</a>
+                        </button>
+                    </div>
+                </div>
+                <p class="copyright">
+                    Projet fictif réalisé par Caroline Forget dans le cadre du cours Design d’expériences Techniques
+                    d’intégration multimédia - Collège Édouard-Montpetit
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <template id="tpl-modal-carousel">
+        <div class="modal">
+            <div class="modal__scrim"></div>
+            <div class="modal__box">
+                <div class="modal__content" style="background-image: url({{src}})">
+                    <div class="content">
+                        <h3>{{title}}</h3>
+                    </div>
+                </div>
+                <button class="modal__close js-close">
+                    <svg class="icon icon--lg icon--stroke">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
