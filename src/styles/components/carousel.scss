@@ -75,10 +75,10 @@
  =========================================================================== */
 
 .swiper__exemples {
-    position: relative;
+    /*     position: relative;
     top: var(--spacing-l);
 
-    height: 240px;
+    height: 240px; */
 
     .swiper-slide {
         text-align: center;
@@ -92,7 +92,7 @@
     .swiper-button-next,
     .swiper-button-prev {
         position: absolute;
-        top: 50%;
+        top: 95%;
 
         @media screen and (min-width: $breakpoint-sm) {
             top: 80%;

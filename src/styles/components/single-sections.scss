@@ -207,8 +207,8 @@
         background: var(--color-bg-primary-dark);
         padding: var(--spacing-s) 0;
 
-        @media screen and (min-width: $breakpoint-sm) {
-            padding: var(--spacing-md) 0;
+        @media screen and (min-width: $breakpoint-md) {
+            padding: var(--spacing-lg) 0;
         }
     }
 
@@ -234,9 +234,15 @@
         }
     }
 
-    @media screen and (min-width: $breakpoint-sm) {
-        padding: var(--spacing-md) 0 var(--spacing-lg);
+    img {
+        object-fit: contain;
+        /*         height: 70%;
+        width: 100%; */
     }
+
+    /*     @media screen and (min-width: $breakpoint-sm) {
+        padding: var(--spacing-md) 0 var(--spacing-lg);
+    } */
 }
 
 /*
