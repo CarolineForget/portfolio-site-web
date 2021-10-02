@@ -180,6 +180,10 @@
 
     .color_item {
         padding: var(--spacing-s);
+
+        p {
+            margin: 0;
+        }
     }
 
     .swiper__single {
