@@ -4,6 +4,7 @@
 
 .card__project {
     margin: var(--spacing-sm) 0;
+    overflow-x: hidden;
 
     .wrapper {
         height: 100vh;

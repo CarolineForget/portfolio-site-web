@@ -14,6 +14,7 @@ class GridItem {
     this.DOM = { el: el };
     this.move();
   }
+
   // Move the items when moving the cursor
   move() {
     // amounts to move in each axis
@@ -48,6 +49,7 @@ export default class Grid {
 
     this.showItems();
   }
+
   // Initial animation to scale up and fade in the items
   showItems() {
     console.log(this.opacity);
