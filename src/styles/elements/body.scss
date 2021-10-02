@@ -11,6 +11,8 @@ body {
     line-height: 1.6;
     background: var(--color-bg-primary);
 
+    cursor: url(../assets/icons/dot.svg), auto;
+
     /*     @media screen and (min-width: $breakpoint-md) {
         font-size: var(--font-size-content-desktop);
     } */

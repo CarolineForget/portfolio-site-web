@@ -45,15 +45,13 @@ export default class Grid {
     this.items = [...this.DOM.el.querySelectorAll('.grid__item')];
     this.items.forEach((item) => this.gridItems.push(new GridItem(item)));
 
-    this.opacity = this.DOM.el.dataset.opacity == '1' ? 1 : 0.2;
+    this.opacity = this.DOM.el.dataset.opacity == '1' ? 1 : 0.1;
 
     this.showItems();
   }
 
   // Initial animation to scale up and fade in the items
   showItems() {
-    console.log(this.opacity);
-
     gsap
       .timeline()
       .set(this.items, { scale: 0.7, opacity: 0 }, 0)

@@ -7,6 +7,7 @@ import Modal from './components/Modal';
 import Type from './components/Type';
 
 import Grid from './components/Grid';
+import Cursor from './components/Cursor';
 
 export default class ComponentFactory {
   constructor() {
@@ -20,6 +21,7 @@ export default class ComponentFactory {
       Modal,
       Type, //
       Grid,
+      Cursor,
     };
     this.init();
   }

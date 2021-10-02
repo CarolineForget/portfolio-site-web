@@ -5,7 +5,7 @@
     height: 0;
     padding-bottom: 56.25%;
     position: relative;
-    cursor: pointer;
+    /*     cursor: pointer; */
 
     overflow: hidden;
 
@@ -55,4 +55,5 @@
 
 .video__media {
     @include cover();
+    /*     cursor: none; */
 }
