@@ -33,7 +33,10 @@ export default class Form {
    * @param {HTMLElement} evt - Élément HTML ciblé par l'événement
    */
   onSubmit(evt) {
+    //Empêche l'envoie du formulaire par défaut.
     evt.preventDefault();
+
+    /* this.xmlRequest(); //TEST */
 
     //Vérifie si tous les champs sont bien remplis pour envoyer le formulaire.
     if (this.validate()) {
@@ -98,4 +101,19 @@ export default class Form {
   showConfirmation() {
     this.element.classList.add('is-sent');
   }
+
+  /**/
+  /*   xmlRequest() {
+    let xhr = new XMLHttpRequest(); //créer un nouvel object xml
+    xhr.open('POST', '../../assets/message.php', true); //envoie la requête de post au fichier message.php
+    xhr.onload = () => {
+      //once ajax loaded (200 et 4 signifie qu'il n'y a pas d'erreur)
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        let response = xhr.response; //storing ajax response in a response variable
+        console.log(response);
+      }
+    };
+
+    xhr.send();
+  } */
 }
