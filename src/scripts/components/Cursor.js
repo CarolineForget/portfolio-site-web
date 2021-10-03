@@ -10,7 +10,10 @@ export default class Cursor {
   init() {
     this.moveCursor();
     this.hoverCursorLink();
-    this.hoverCursorCarousel();
+
+    if (this.html.querySelector('.swiper-container')) {
+      this.hoverCursorCarousel();
+    }
   }
 
   moveCursor() {

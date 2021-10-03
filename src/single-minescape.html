@@ -2,12 +2,19 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta
+            name="description"
+            content="Dans Minescape, vous incarnez un être d’origine inconnue aux fin fonds d’une mine
+            dangereuse. Votre but? S’enfuir en détruisant tous les cristaux! Les défis de plateforme
+            et des ennemis sont au rendez-vous."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Caroline Forget</title>
 
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="shortcut icon" href="assets/icons/favicon.ico" />
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
         <script src="scripts/main.js" defer></script>
     </head>
 
@@ -23,7 +30,7 @@
                         </div>
 
                         <div class="button">
-                            <button class="header__toggle js-toggle">
+                            <button class="header__toggle js-toggle" aria-label="Afficher ou cacher le menu">
                                 <span></span>
                                 <span></span>
                             </button>
@@ -280,7 +287,12 @@
                     <div class="text">
                         <div class="title title__button" data-scrolly="fromLeft">
                             <h2>Programmation</h2>
-                            <a href="#" class="btn__link" data-scrolly="fromLeftDelay"
+                            <a
+                                href="https://github.com/CarolineForget/Minescape.git"
+                                target="_blank"
+                                rel="noopener"
+                                class="btn__link"
+                                data-scrolly="fromLeftDelay"
                                 ><button class="btn">
                                     Voir sur GitHub
                                     <div class="content__link"></div>
@@ -341,8 +353,8 @@
                         ></a>
                     </div>
                     <div class="next" data-scrolly="fromLeft">
-                        <img src="assets/images/placeholder/projet.jpg" alt="placeholder" />
-                        <a href="#" class="btn__link"
+                        <img src="assets/images/projets/concertoVenua/thumbnail.jpg" alt="ConcertoVenua" />
+                        <a href="single-concertoVenua.html" class="btn__link" aria-label="Voir ConcertoVenua"
                             ><button class="btn">
                                 <div class="btn__more">
                                     <svg class="icon icon--md">
@@ -369,7 +381,11 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="https://www.linkedin.com/in/caroline-forget-dev/" target="_blank"
+                                <a
+                                    href="https://www.linkedin.com/in/caroline-forget-dev/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Voir LinkedIn"
                                     ><svg class="icon icon--lg">
                                         <use xlink:href="#icon-linkedin"></use>
                                     </svg>
@@ -377,7 +393,11 @@
                                 ></a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCBZM9cag9KDxpCL_yEdvEVA" target="_blank"
+                                <a
+                                    href="https://www.youtube.com/channel/UCBZM9cag9KDxpCL_yEdvEVA"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Voir YouTube"
                                     ><svg class="icon icon--lg">
                                         <use xlink:href="#icon-youtube"></use>
                                     </svg>
@@ -385,7 +405,11 @@
                                 ></a>
                             </li>
                             <li>
-                                <a href="https://sketchfab.com/Unicone" target="_blank"
+                                <a
+                                    href="https://sketchfab.com/Unicone"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Voir SketchFab"
                                     ><svg class="icon icon--lg">
                                         <use xlink:href="#icon-sketchfab"></use>
                                     </svg>
@@ -393,7 +417,11 @@
                                 ></a>
                             </li>
                             <li>
-                                <a href="https://github.com/CarolineForget" target="_blank"
+                                <a
+                                    href="https://github.com/CarolineForget"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Voir GitHub"
                                     ><svg class="icon icon--lg">
                                         <use xlink:href="#icon-github"></use>
                                     </svg>
