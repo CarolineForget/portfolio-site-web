@@ -34,12 +34,11 @@ export default class Form {
    */
   onSubmit(evt) {
     //Empêche l'envoie du formulaire par défaut.
-    evt.preventDefault();
+    evt.preventDefault(); //TEST //Vérifie si tous les champs sont bien remplis pour envoyer le formulaire.
 
-    /* this.xmlRequest(); //TEST */
-
-    //Vérifie si tous les champs sont bien remplis pour envoyer le formulaire.
+    /* this.xmlRequest(); */
     if (this.validate()) {
+      this.xmlRequest();
       this.showConfirmation();
     } else {
       console.error("Échec de l'envoie du formulaire.");
@@ -103,9 +102,9 @@ export default class Form {
   }
 
   /**/
-  /*   xmlRequest() {
+  xmlRequest() {
     let xhr = new XMLHttpRequest(); //créer un nouvel object xml
-    xhr.open('POST', '../../assets/message.php', true); //envoie la requête de post au fichier message.php
+    xhr.open('POST', '../message.php', true); //envoie la requête de post au fichier message.php
     xhr.onload = () => {
       //once ajax loaded (200 et 4 signifie qu'il n'y a pas d'erreur)
       if (xhr.readyState == 4 && xhr.status == 200) {
@@ -114,6 +113,8 @@ export default class Form {
       }
     };
 
-    xhr.send();
-  } */
+    let formData = new FormData(this.element); //creating new FormData obj. This obj is used to send form data
+
+    xhr.send(formData); //sending form data
+  }
 }
