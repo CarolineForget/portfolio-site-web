@@ -2,12 +2,16 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta
+            name="description"
+            content="L’auberge Forget est un commerce d’un style architectural Fantasy qui accueille en son
+            sein autant les voyageurs épuisés que ses fidèles clients."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Caroline Forget</title>
 
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="shortcut icon" href="assets/icons/favicon.ico" />
-
         <script src="scripts/main.js" defer></script>
     </head>
 
@@ -23,7 +27,7 @@
                         </div>
 
                         <div class="button">
-                            <button class="header__toggle js-toggle">
+                            <button class="header__toggle js-toggle" aria-label="Afficher ou cacher le menu">
                                 <span></span>
                                 <span></span>
                             </button>
@@ -79,7 +83,12 @@
                         <h3>Modélisation 3D | Projet Étudiant</h3>
                         <h1>L'auberge Forget</h1>
                         <div class="container--button">
-                            <a href="https://skfb.ly/6WZ8B" target="_blank" class="btn__link"
+                            <a
+                                href="https://skfb.ly/6WZ8B"
+                                target="_blank"
+                                rel="noopener"
+                                class="btn__link"
+                                aria-label="Voir sur SketchFab"
                                 ><button class="btn">
                                     Voir sur SketchFab
                                     <div class="content__link"></div>
@@ -112,7 +121,7 @@
                                     <li>Réalisé par : <span class="link bold">Caroline Forget</span></li>
                                     <li>
                                         Textures de :
-                                        <a href="https://textures.com/" target="_blank">textures.com</a>
+                                        <a href="https://textures.com/" target="_blank" rel="noopener">textures.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -241,7 +250,12 @@
 
             <section class="sct_button" data-scrolly="fromBottom">
                 <div class="wrapper">
-                    <a href="https://skfb.ly/6WZ8B" target="_blank" class="btn__link"
+                    <a
+                        href="https://skfb.ly/6WZ8B"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn__link"
+                        aria-label="Voir sur SketchFab"
                         ><button class="btn btn__final">
                             Voir sur SketchFab
                             <div class="content__link"></div>
@@ -253,9 +267,9 @@
             <section class="see--other">
                 <div class="wrapper">
                     <div class="prev" data-scrolly="fromRight">
-                        <img src="assets/images/placeholder/projet.jpg" alt="placeholder" />
-                        <a href="#" class="btn__link"
-                            ><button class="btn">
+                        <img src="assets/images/projets/television/thumbnail.jpg" alt="La télévision" />
+                        <a href="single-television.html" class="btn__link" aria-label="Voir La télévision"
+                            ><button class="btn" aria-label="Voir La télévision">
                                 <div class="btn__more">
                                     <svg class="icon icon--md">
                                         <use xlink:href="#icon-arrow-previous"></use>
@@ -265,9 +279,9 @@
                         ></a>
                     </div>
                     <div class="next" data-scrolly="fromLeft">
-                        <img src="assets/images/placeholder/projet.jpg" alt="placeholder" />
-                        <a href="#" class="btn__link"
-                            ><button class="btn">
+                        <img src="assets/images/projets/minescape/thumbnail.jpg" alt="Minescape" />
+                        <a href="single-minescape.html" class="btn__link" aria-label="Voir Minescape"
+                            ><button class="btn" aria-label="Voir Minescape">
                                 <div class="btn__more">
                                     <svg class="icon icon--md">
                                         <use xlink:href="#icon-arrow-next"></use>
@@ -293,7 +307,11 @@
                     <div class="social">
                         <ul>
                             <li>
-                                <a href="https://www.linkedin.com/in/caroline-forget-dev/" target="_blank"
+                                <a
+                                    href="https://www.linkedin.com/in/caroline-forget-dev/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Voir LinkedIn"
                                     ><svg class="icon icon--lg">
                                         <use xlink:href="#icon-linkedin"></use>
                                     </svg>
@@ -301,7 +319,11 @@
                                 ></a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/channel/UCBZM9cag9KDxpCL_yEdvEVA" target="_blank"
+                                <a
+                                    href="https://www.youtube.com/channel/UCBZM9cag9KDxpCL_yEdvEVA"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Voir YouTube"
                                     ><svg class="icon icon--lg">
                                         <use xlink:href="#icon-youtube"></use>
                                     </svg>
@@ -309,7 +331,11 @@
                                 ></a>
                             </li>
                             <li>
-                                <a href="https://sketchfab.com/Unicone" target="_blank"
+                                <a
+                                    href="https://sketchfab.com/Unicone"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Voir SketchFab"
                                     ><svg class="icon icon--lg">
                                         <use xlink:href="#icon-sketchfab"></use>
                                     </svg>
@@ -317,7 +343,11 @@
                                 ></a>
                             </li>
                             <li>
-                                <a href="https://github.com/CarolineForget" target="_blank"
+                                <a
+                                    href="https://github.com/CarolineForget"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Voir GitHub"
                                     ><svg class="icon icon--lg">
                                         <use xlink:href="#icon-github"></use>
                                     </svg>
