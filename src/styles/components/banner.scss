@@ -42,14 +42,13 @@
 }
 
 .banner_secondary {
-    font-size: var(--font-size-animate-sm);
-
     .content {
         height: 100px;
     }
 
     p {
         animation: animate 30s linear infinite alternate;
+        font-size: var(--font-size-animate-sm);
     }
 
     @media screen and (min-width: $breakpoint-md) {
