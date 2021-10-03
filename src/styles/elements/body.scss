@@ -13,7 +13,9 @@ body {
 
     cursor: url(../assets/icons/dot.svg), auto;
 
-    /*     @media screen and (min-width: $breakpoint-md) {
-        font-size: var(--font-size-content-desktop);
-    } */
+    @media screen and (min-width: $breakpoint-md) {
+        p {
+            font-size: var(--font-size-content-desktop);
+        }
+    }
 }

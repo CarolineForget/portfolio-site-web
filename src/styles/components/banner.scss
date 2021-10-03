@@ -60,7 +60,9 @@
 }
 
 .banner_primary {
-    font-size: var(--font-size-animate-xl);
+    p {
+        font-size: var(--font-size-animate-xl);
+    }
 }
 
 /*
