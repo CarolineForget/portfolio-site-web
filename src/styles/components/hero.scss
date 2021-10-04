@@ -78,3 +78,44 @@
         }
     }
 }
+
+/* ---------------- */
+
+.hero__single .before__single {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    .title {
+        background: var(--color-bg-primary-dark);
+
+        @media screen and (min-width: $breakpoint-sm) {
+            min-width: 38%;
+            position: absolute;
+            left: 0;
+            bottom: 40vh;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+
+        position: relative;
+
+        .video {
+            position: absolute;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        .video {
+            height: 540px;
+            width: 960px;
+        }
+    }
+}

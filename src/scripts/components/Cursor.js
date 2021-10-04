@@ -14,6 +14,11 @@ export default class Cursor {
     if (this.html.querySelector('.swiper-container')) {
       this.hoverCursorCarousel();
     }
+
+    /*     if (this.html.querySelector('.js-video')) {
+      console.log('a une video');
+      this.hoverVideo();
+    } */
   }
 
   moveCursor() {
@@ -51,4 +56,23 @@ export default class Cursor {
       this.element.classList.remove('hover__cursor-carousel');
     });
   }
+
+  /*   hoverVideo() {
+    const videoArray = this.html.querySelectorAll('.js-video');
+    console.log(videoArray);
+
+    for (let i = 0; i < videoArray.length; i++) {
+      const video = videoArray[i];
+      console.log(video);
+
+      video.addEventListener('mouseover', (e) => {
+        this.element.classList.add('hover__cursor');
+        console.log('mouseover');
+      });
+
+      video.addEventListener('mouseout', (e) => {
+        this.element.classList.remove('hover__cursor');
+      });
+    }
+  } */
 }
