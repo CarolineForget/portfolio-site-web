@@ -1,0 +1,56 @@
+/* ==========================================================================
+   ANIMATION / COMPONENTS
+   ========================================================================== */
+
+.scroll-animation {
+    display: none;
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: block;
+
+        position: fixed;
+        bottom: 50%;
+        right: 2%;
+        z-index: 10;
+
+        transform: scaleY(100%);
+
+        .content {
+            display: block;
+            height: 80px;
+            width: 2px;
+            background-color: var(--color-icons);
+        }
+
+        .content-middle {
+            display: block;
+            height: 25px;
+            width: 8px;
+            background-color: var(--color-icons);
+            position: absolute;
+            right: 2px;
+
+            animation: middle 1.5s linear infinite;
+            opacity: 0.5;
+        }
+
+        transition: transform 0.4s $ease-out-expo;
+
+        .header-is-hidden.is-scrolling-down & {
+            transform: scaleY(0);
+        }
+
+        .header-is-hidden.is-scrolling-up & {
+            transform: scaleY(0);
+        }
+    }
+}
+
+@keyframes middle {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(150%);
+    }
+}
