@@ -4,34 +4,48 @@
 
 .scroll-animation {
     display: none;
+    padding: 30px;
+    opacity: 0.8;
 
-    @media screen and (min-width: $breakpoint-md) {
+    @media screen and (min-width: $breakpoint-sm) {
         display: block;
 
         position: fixed;
-        bottom: 50%;
-        right: 2%;
+        bottom: 42%;
+        right: 3%;
         z-index: 10;
 
         transform: scaleY(100%);
 
         .content {
             display: block;
-            height: 80px;
+            height: 175px;
             width: 2px;
             background-color: var(--color-icons);
         }
 
         .content-middle {
             display: block;
-            height: 25px;
+            height: 45px;
             width: 8px;
             background-color: var(--color-icons);
             position: absolute;
-            right: 2px;
+            top: 30px;
+            right: 30px;
 
-            animation: middle 1.5s linear infinite;
+            animation: middle 1.75s linear infinite;
             opacity: 0.5;
+        }
+
+        .text {
+            position: relative;
+            top: 7%;
+            left: 15px;
+
+            p {
+                color: var(--color-icons);
+                margin: 0;
+            }
         }
 
         transition: transform 0.4s $ease-out-expo;
@@ -44,13 +58,20 @@
             transform: scaleY(0);
         }
     }
+
+    &:hover {
+        .content,
+        .content-middle {
+            background-color: var(--color-button-dark);
+        }
+    }
 }
 
 @keyframes middle {
     0% {
-        transform: translateY(0);
+        transform: translateY(0) scaleY(1);
     }
     100% {
-        transform: translateY(150%);
+        transform: translateY(150%) scaleY(0.5);
     }
 }

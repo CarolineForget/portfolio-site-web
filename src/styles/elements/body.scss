@@ -4,6 +4,10 @@
    Les éléments de la page vont hérités des propriétés inscrite dans body
    ========================================================================== */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-primary);
     font-size: var(--font-size-content-mobile);
