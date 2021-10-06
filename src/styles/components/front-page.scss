@@ -26,7 +26,6 @@
 
         h1 {
             margin: 0 0 var(--spacing-xs);
-            color: var(--color-link-primary);
 
             @media screen and (min-width: $breakpoint-md) {
                 font-size: var(--font-size-h2-desktop);

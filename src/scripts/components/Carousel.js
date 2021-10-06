@@ -41,6 +41,7 @@ export default class Carousel {
               slidesPerView: 2,
             },
           },
+          loop: false,
         },
       };
     }
