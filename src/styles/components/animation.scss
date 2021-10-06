@@ -5,7 +5,6 @@
 .scroll-animation {
     display: none;
     padding: 30px;
-    opacity: 0.8;
 
     @media screen and (min-width: $breakpoint-sm) {
         display: block;
@@ -15,7 +14,8 @@
         right: 3%;
         z-index: 10;
 
-        transform: scaleY(100%);
+        transform: scaleY(100%) translateY(0);
+        opacity: 0.8;
 
         .content {
             display: block;
@@ -48,14 +48,16 @@
             }
         }
 
-        transition: transform 0.4s $ease-out-expo;
+        transition: all 0.6s $ease-out-expo;
 
         .header-is-hidden.is-scrolling-down & {
-            transform: scaleY(0);
+            transform: scaleY(0) translateY(150%);
+            opacity: 0;
         }
 
         .header-is-hidden.is-scrolling-up & {
-            transform: scaleY(0);
+            transform: scaleY(0) translateY(150%);
+            opacity: 0;
         }
     }
 

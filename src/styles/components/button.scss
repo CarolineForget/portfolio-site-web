@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .btn {
-    /*     cursor: pointer; */
     cursor: none;
 
     text-transform: uppercase;
@@ -14,7 +13,8 @@
 
     background-color: var(--color-button-primary);
 
-    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.4s ease;
 
     position: relative;
 
@@ -23,6 +23,8 @@
             transform: scaleX(-1) translateX(0);
             opacity: 1;
         }
+
+        box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }
 

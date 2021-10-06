@@ -15,10 +15,9 @@ export default class Cursor {
       this.hoverCursorCarousel();
     }
 
-    /*     if (this.html.querySelector('.js-video')) {
-      console.log('a une video');
-      this.hoverVideo();
-    } */
+    if (this.html.querySelector('form')) {
+      this.hoverForm();
+    }
   }
 
   moveCursor() {
@@ -57,22 +56,20 @@ export default class Cursor {
     });
   }
 
-  /*   hoverVideo() {
-    const videoArray = this.html.querySelectorAll('.js-video');
-    console.log(videoArray);
+  hoverForm() {
+    const inputArray = this.html.querySelectorAll('.input__element');
+    console.log(inputArray);
 
-    for (let i = 0; i < videoArray.length; i++) {
-      const video = videoArray[i];
-      console.log(video);
+    for (let i = 0; i < inputArray.length; i++) {
+      const input = inputArray[i];
 
-      video.addEventListener('mouseover', (e) => {
+      input.addEventListener('mouseover', (e) => {
         this.element.classList.add('hover__cursor');
-        console.log('mouseover');
       });
 
-      video.addEventListener('mouseout', (e) => {
+      input.addEventListener('mouseout', (e) => {
         this.element.classList.remove('hover__cursor');
       });
     }
-  } */
+  }
 }
