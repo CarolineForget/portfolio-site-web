@@ -55,3 +55,9 @@
 .video__media {
     @include cover();
 }
+
+.demo-reel {
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
