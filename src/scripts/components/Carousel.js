@@ -17,6 +17,7 @@ export default class Carousel {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      loop: true,
     };
 
     this.init();
