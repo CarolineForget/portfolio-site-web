@@ -58,6 +58,8 @@
 
 .demo-reel {
     pointer-events: none;
-    position: absolute;
-    right: 0;
+    @media screen and (min-width: $breakpoint-sm) {
+        position: absolute;
+        right: 0;
+    }
 }

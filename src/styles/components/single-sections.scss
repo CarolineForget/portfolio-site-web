@@ -103,6 +103,18 @@
     }
 }
 
+.summary_detailed {
+    margin-top: 200px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        margin-top: 200px;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        margin-top: 400px;
+    }
+}
+
 /* 
    HERO
    ========================================================================== */
@@ -125,6 +137,10 @@
         }
     }
 }
+
+/* .summary_detailed {
+    margin-top: -5%;
+} */
 
 /* 
    SINGLE-IMAGE

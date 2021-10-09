@@ -125,6 +125,12 @@
             .icon {
                 fill: var(--color-icons);
             }
+
+            .info {
+                color: var(--color-text-primary);
+                font-weight: 400;
+                text-decoration: none;
+            }
         }
     }
 }

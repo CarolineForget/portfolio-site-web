@@ -6,7 +6,7 @@
     display: none;
     padding: 30px;
 
-    @media screen and (min-width: $breakpoint-sm) {
+    @media screen and (min-width: $breakpoint-md) {
         display: block;
 
         position: fixed;
@@ -14,7 +14,7 @@
         right: 3%;
         z-index: 10;
 
-        transform: scaleY(100%) translateY(0);
+        transform: scaleY(1) translateY(0);
         opacity: 0.8;
 
         .content {

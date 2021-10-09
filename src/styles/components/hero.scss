@@ -81,20 +81,35 @@
 
 /* ---------------- */
 
+.hero__single {
+    height: auto;
+    margin-top: 200px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        margin-top: 200px;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        margin-top: 400px;
+    }
+}
+
 .hero__single .before__single {
-    position: absolute;
+    /*     position: absolute;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 3; */
+
+    height: auto;
 
     .title {
         background: var(--color-bg-primary-dark);
 
         @media screen and (min-width: $breakpoint-sm) {
-            min-width: 38%;
+            /*         min-width: 38%;
             position: absolute;
             left: 0;
-            bottom: 40vh;
+            bottom: 40vh; */
         }
     }
 
