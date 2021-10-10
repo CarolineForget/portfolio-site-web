@@ -19,7 +19,7 @@
             }
         }
 
-        @media screen and (min-width: $breakpoint-md) {
+        @media screen and (min-width: $breakpoint-sm) {
             width: 40%;
             padding: var(--spacing-sm);
         }
@@ -56,7 +56,7 @@
             margin-top: var(--spacing-sm);
         }
 
-        @media screen and (min-width: $breakpoint-md) {
+        @media screen and (min-width: $breakpoint-sm) {
             width: 57%;
         }
     }
@@ -80,7 +80,7 @@
         }
     }
 
-    @media screen and (min-width: $breakpoint-md) {
+    @media screen and (min-width: $breakpoint-sm) {
         .text {
             display: flex;
             justify-content: space-between;
@@ -111,7 +111,7 @@
     }
 
     @media screen and (min-width: $breakpoint-md) {
-        margin-top: 400px;
+        margin-top: 350px;
     }
 }
 

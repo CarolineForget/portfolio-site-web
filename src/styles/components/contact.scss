@@ -4,7 +4,11 @@
 
 .sct-contact {
     @media screen and (min-width: $breakpoint-sm) {
-        padding-top: var(--spacing-lg);
+        margin-top: var(--spacing-lg);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        margin-top: var(--spacing-ml);
     }
 
     .wrapper {

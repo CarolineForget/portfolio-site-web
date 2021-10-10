@@ -11,6 +11,8 @@
     position: relative;
     height: auto;
 
+    margin-top: var(--spacing-md);
+
     .wrapper {
         overflow: hidden;
     }
@@ -77,6 +79,10 @@
             width: 55%;
         }
     }
+
+    @media screen and (min-width: $breakpoint-md) {
+        margin-top: var(--spacing-ml);
+    }
 }
 
 /* ---------------- */
@@ -110,6 +116,10 @@
             position: absolute;
             left: 0;
             bottom: 40vh; */
+
+            min-width: 38%;
+            position: relative;
+            z-index: 2;
         }
     }
 
@@ -123,7 +133,7 @@
         .video {
             position: absolute;
             right: 0;
-            z-index: -1;
+            /* z-index: -1; */
         }
     }
 
