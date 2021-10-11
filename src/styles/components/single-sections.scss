@@ -34,10 +34,27 @@
     .title__button {
         position: relative;
 
-        .btn {
+        padding-bottom: var(--spacing-sm);
+
+        .more {
             position: absolute;
-            right: 5%;
             bottom: -20px;
+
+            width: 95%;
+
+            .flex {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                width: 85%;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                width: 90%;
+            }
         }
     }
 

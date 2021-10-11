@@ -10,7 +10,7 @@
         display: block;
 
         position: fixed;
-        bottom: 42%;
+        bottom: 38%;
         right: 3%;
         z-index: 10;
 
@@ -19,7 +19,7 @@
 
         .content {
             display: block;
-            height: 175px;
+            height: 100%;
             width: 2px;
             background-color: var(--color-icons);
         }
@@ -42,13 +42,14 @@
             top: 7%;
             left: 15px;
 
-            p {
+            margin: 0;
+
+            span {
                 color: var(--color-icons);
-                margin: 0;
             }
         }
 
-        transition: all 0.6s $ease-out-expo;
+        transition: all 1s $ease-out-expo;
 
         .header-is-hidden.is-scrolling-down & {
             transform: scaleY(0) translateY(150%);
@@ -74,6 +75,6 @@
         transform: translateY(0) scaleY(1);
     }
     100% {
-        transform: translateY(150%) scaleY(0.5);
+        transform: translateY(200%) scaleY(0.5);
     }
 }

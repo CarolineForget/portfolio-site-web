@@ -99,19 +99,19 @@
             </header>
 
             <a href="#next-viewport">
-                <span class="scroll-animation">
-                    <span class="content">
+                <section class="scroll-animation">
+                    <div class="content">
                         <span class="content-middle"></span>
-                        <span class="text">
-                            <p class="comment">S</p>
-                            <p class="comment">C</p>
-                            <p class="comment">R</p>
-                            <p class="comment">O</p>
-                            <p class="comment">L</p>
-                            <p class="comment">L</p>
-                        </span>
-                    </span>
-                </span></a
+                        <p class="text">
+                            <span class="comment">S</span>
+                            <span class="comment">C</span>
+                            <span class="comment">R</span>
+                            <span class="comment">O</span>
+                            <span class="comment">L</span>
+                            <span class="comment">L</span>
+                        </p>
+                    </div>
+                </section></a
             >
 
             <section class="hero hero__single">
@@ -130,11 +130,9 @@
                         <h3>Platformer 2D | Projet Étudiant</h3>
                         <h1>Minescape</h1>
                         <div class="container--button">
-                            <a href="assets/sites/minescape/index.html" target="_blank" class="btn__link"
-                                ><button class="btn">
-                                    Jouer
-                                    <span class="content__link"></span>
-                                </button>
+                            <a href="assets/sites/minescape/index.html" target="_blank" class="btn__link btn">
+                                Jouer
+                                <span class="content__link"></span>
                             </a>
                         </div>
                     </div>
@@ -336,17 +334,20 @@
                     <div class="text">
                         <div class="title title__button" data-scrolly="fromLeft">
                             <h2>Programmation</h2>
-                            <a
-                                href="https://github.com/CarolineForget/Minescape"
-                                target="_blank"
-                                rel="noopener"
-                                class="btn__link"
-                                data-scrolly="fromLeftDelay"
-                                ><button class="btn">
-                                    Voir sur GitHub
-                                    <span class="content__link"></span>
-                                </button>
-                            </a>
+                            <div class="more" data-scrolly="fromLeftDelay">
+                                <div class="flex">
+                                    <a
+                                        href="https://github.com/CarolineForget/Minescape"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn__link btn"
+                                    >
+                                        Voir sur GitHub
+
+                                        <span class="content__link"></span
+                                    ></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="explications" data-scrolly="fromLeftDelay">
                             <p>
@@ -378,11 +379,9 @@
 
             <section class="sct_button" data-scrolly="fromBottom">
                 <div class="wrapper">
-                    <a href="assets/sites/minescape/index.html" target="_blank" class="btn__link"
-                        ><button class="btn btn__final">
-                            Jouer
-                            <span class="content__link"></span>
-                        </button>
+                    <a href="assets/sites/minescape/index.html" target="_blank" class="btn__link btn btn__final">
+                        Jouer
+                        <span class="content__link"></span>
                     </a>
                 </div>
             </section>
@@ -391,26 +390,32 @@
                 <div class="wrapper">
                     <div class="prev" data-scrolly="fromRight">
                         <img src="assets/images/projets/aubergeForget/thumbnail.jpg" alt="Auberge Forget" />
-                        <a href="single-auberge-forget.html" class="btn__link" aria-label="Voir l'auberge Forget"
-                            ><button class="btn" aria-label="Voir l'auberge Forget">
-                                <div class="btn__more">
-                                    <svg class="icon icon--md">
-                                        <use xlink:href="#icon-arrow-previous"></use>
-                                    </svg>
-                                </div>
-                                <span class="content__link"></span></button
+                        <a
+                            href="single-auberge-forget.html"
+                            class="btn__link btn btn__other"
+                            aria-label="Voir l'auberge Forget"
+                        >
+                            <div class="btn__more">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-arrow-previous"></use>
+                                </svg>
+                            </div>
+                            <span class="content__link"></span
                         ></a>
                     </div>
                     <div class="next" data-scrolly="fromLeft">
                         <img src="assets/images/projets/concertoVenua/thumbnail.jpg" alt="ConcertoVenua" />
-                        <a href="single-concertoVenua.html" class="btn__link" aria-label="Voir ConcertoVenua"
-                            ><button class="btn" aria-label="Voir ConcertoVenua">
-                                <div class="btn__more">
-                                    <svg class="icon icon--md">
-                                        <use xlink:href="#icon-arrow-next"></use>
-                                    </svg>
-                                </div>
-                                <span class="content__link"></span></button
+                        <a
+                            href="single-concertoVenua.html"
+                            class="btn__link btn btn__other"
+                            aria-label="Voir ConcertoVenua"
+                        >
+                            <div class="btn__more">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-arrow-next"></use>
+                                </svg>
+                            </div>
+                            <span class="content__link"></span
                         ></a>
                     </div>
                 </div>

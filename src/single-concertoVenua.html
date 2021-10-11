@@ -99,19 +99,19 @@
             </header>
 
             <a href="#next-viewport">
-                <span class="scroll-animation">
-                    <span class="content">
+                <section class="scroll-animation">
+                    <div class="content">
                         <span class="content-middle"></span>
-                        <span class="text">
-                            <p class="comment">S</p>
-                            <p class="comment">C</p>
-                            <p class="comment">R</p>
-                            <p class="comment">O</p>
-                            <p class="comment">L</p>
-                            <p class="comment">L</p>
-                        </span>
-                    </span>
-                </span></a
+                        <p class="text">
+                            <span class="comment">S</span>
+                            <span class="comment">C</span>
+                            <span class="comment">R</span>
+                            <span class="comment">O</span>
+                            <span class="comment">L</span>
+                            <span class="comment">L</span>
+                        </p>
+                    </div>
+                </section></a
             >
 
             <section class="hero hero__single">
@@ -130,11 +130,9 @@
                         <h3>Site web événementiel | Projet Étudiant</h3>
                         <h1>Concerto Venua</h1>
                         <div class="container--button">
-                            <a href="assets/sites/concertoVenua/index.html" target="_blank" class="btn__link"
-                                ><button class="btn">
-                                    Voir le site web
-                                    <span class="content__link"></span>
-                                </button>
+                            <a href="assets/sites/concertoVenua/index.html" target="_blank" class="btn__link btn">
+                                Voir le site web
+                                <span class="content__link"></span>
                             </a>
                         </div>
                     </div>
@@ -181,17 +179,20 @@
                     <div class="text">
                         <div class="title title__button" data-scrolly="fromLeft">
                             <h2>Wireframes</h2>
-                            <a
-                                href="https://www.figma.com/file/rdMFYA9w2dBJNeExJNgfOW/?node-id=1006%3A126"
-                                target="_blank"
-                                rel="noopener"
-                                class="btn__link"
-                                data-scrolly="fromLeftDelay"
-                                ><button class="btn">
-                                    Voir sur Figma
-                                    <span class="content__link"></span>
-                                </button>
-                            </a>
+                            <div class="more" data-scrolly="fromLeftDelay">
+                                <div class="flex">
+                                    <a
+                                        href="https://www.figma.com/file/rdMFYA9w2dBJNeExJNgfOW/?node-id=1006%3A126"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn__link btn btn"
+                                    >
+                                        Voir sur Figma
+
+                                        <span class="content__link"></span
+                                    ></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="explications" data-scrolly="fromLeftDelay">
                             <p>
@@ -295,17 +296,20 @@
                     <div class="text">
                         <div class="title title__button" data-scrolly="fromLeft">
                             <h2>Intégration web</h2>
-                            <a
-                                href="https://github.com/tim-h21-cw4/cw4-tp03-site-evenementiel-CarolineForget"
-                                target="_blank"
-                                rel="noopener"
-                                class="btn__link"
-                                data-scrolly="fromLeftDelay"
-                                ><button class="btn">
-                                    Voir le GitHub
-                                    <span class="content__link"></span>
-                                </button>
-                            </a>
+                            <div class="more" data-scrolly="fromLeftDelay">
+                                <div class="flex">
+                                    <a
+                                        href="https://github.com/tim-h21-cw4/cw4-tp03-site-evenementiel-CarolineForget"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn__link btn"
+                                    >
+                                        Voir sur GitHub
+
+                                        <span class="content__link"></span
+                                    ></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="explications" data-scrolly="fromLeftDelay">
                             <p>
@@ -364,11 +368,9 @@
 
             <section class="sct_button" data-scrolly="fromBottom">
                 <div class="wrapper">
-                    <a href="assets/sites/concertoVenua/index.html" target="_blank" class="btn__link"
-                        ><button class="btn btn__final">
-                            Voir le site
-                            <span class="content__link"></span>
-                        </button>
+                    <a href="assets/sites/concertoVenua/index.html" target="_blank" class="btn__link btn btn__final">
+                        Voir le site
+                        <span class="content__link"></span>
                     </a>
                 </div>
             </section>
@@ -377,26 +379,28 @@
                 <div class="wrapper">
                     <div class="prev" data-scrolly="fromRight">
                         <img src="assets/images/projets/minescape/thumbnail.jpg" alt="Minescape" />
-                        <a href="single-minescape.html" class="btn__link" aria-label="Voir Minescape"
-                            ><button class="btn" aria-label="Voir Minescape">
-                                <div class="btn__more">
-                                    <svg class="icon icon--md">
-                                        <use xlink:href="#icon-arrow-previous"></use>
-                                    </svg>
-                                </div>
-                                <span class="content__link"></span></button
+                        <a href="single-minescape.html" class="btn__link btn btn__other" aria-label="Voir Minescape">
+                            <div class="btn__more">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-arrow-previous"></use>
+                                </svg>
+                            </div>
+                            <span class="content__link"></span
                         ></a>
                     </div>
                     <div class="next" data-scrolly="fromLeft">
                         <img src="assets/images/projets/recettesEnPot/thumbnail.jpg" alt="Recettes en pot" />
-                        <a href="single-recettes-en-pot.html" class="btn__link" aria-label="Voir Recettes en pot"
-                            ><button class="btn" aria-label="Voir Recettes en pot">
-                                <div class="btn__more">
-                                    <svg class="icon icon--md">
-                                        <use xlink:href="#icon-arrow-next"></use>
-                                    </svg>
-                                </div>
-                                <span class="content__link"></span></button
+                        <a
+                            href="single-recettes-en-pot.html"
+                            class="btn__link btn btn__other"
+                            aria-label="Voir Recettes en pot"
+                        >
+                            <div class="btn__more">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-arrow-next"></use>
+                                </svg>
+                            </div>
+                            <span class="content__link"></span
                         ></a>
                     </div>
                 </div>

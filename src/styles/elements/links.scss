@@ -21,3 +21,17 @@ a {
         color: var(--color-button-dark);
     }
 }
+
+.btn__link {
+    &:hover {
+        color: var(--color-black);
+    }
+
+    &:active {
+        color: var(--color-black);
+    }
+
+    &:focus {
+        color: var(--color-black);
+    }
+}
