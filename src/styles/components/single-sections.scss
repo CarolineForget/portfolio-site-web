@@ -155,10 +155,6 @@
     }
 }
 
-/* .summary_detailed {
-    margin-top: -5%;
-} */
-
 /* 
    SINGLE-IMAGE
    ========================================================================== */
@@ -228,20 +224,12 @@
 
     .swiper__single {
         margin-top: var(--spacing-sm);
-
-        /*         @media screen and (min-width: $breakpoint-sm) {
-            margin: 0;
-        } */
     }
 
     .extra {
         background: var(--color-bg-primary-dark);
         padding: var(--spacing-s) var(--spacing-s) var(--spacing-sm);
         margin-top: var(--spacing-sm);
-
-        /*         @media screen and (min-width: $breakpoint-sm) {
-            padding-bottom: 0;
-        } */
 
         @media screen and (min-width: $breakpoint-md) {
             padding: var(--spacing-md);

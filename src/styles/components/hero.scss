@@ -4,7 +4,6 @@
 
 .hero {
     height: 100vh;
-    /* overflow-y: hidden; */
 }
 
 .hero_about {
@@ -101,22 +100,12 @@
 }
 
 .hero__single .before__single {
-    /*     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3; */
-
     height: auto;
 
     .title {
         background: var(--color-bg-primary-dark);
 
         @media screen and (min-width: $breakpoint-sm) {
-            /*         min-width: 38%;
-            position: absolute;
-            left: 0;
-            bottom: 40vh; */
-
             min-width: 38%;
             position: relative;
             z-index: 2;
@@ -133,7 +122,6 @@
         .video {
             position: absolute;
             right: 0;
-            /* z-index: -1; */
         }
     }
 

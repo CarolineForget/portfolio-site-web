@@ -21,8 +21,6 @@
     position: relative;
 
     &:hover {
-        /* color: inherit; */
-
         .content__link {
             transform: scaleX(-1) translateX(0);
             opacity: 1;
@@ -30,10 +28,6 @@
 
         box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.15);
     }
-
-    /*    &:focus {
-        color: inherit;
-    } */
 }
 
 .content__link {

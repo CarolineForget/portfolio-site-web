@@ -18,7 +18,6 @@
 .swiper-button-prev {
     height: 40px;
     width: 40px;
-    /* cursor: none !important; */
 }
 
 /*
@@ -28,8 +27,6 @@
 .swiper__about {
     margin-top: var(--spacing-lg);
     height: 375px;
-
-    /* overflow-y: visible; */
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -41,8 +38,14 @@
         }
     }
 
-    h3 {
+    h2 {
         padding: var(--spacing-s);
+        font-weight: 400;
+        font-size: var(--font-size-h3-mobile);
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-h3-desktop);
+        }
     }
 
     .slide-1 {
@@ -78,13 +81,7 @@
  =========================================================================== */
 
 .swiper__single {
-    /*     position: relative;
-    top: var(--spacing-l);
-
-    height: 240px; */
     height: 50vh;
-
-    /*     overflow-y: visible; */
 
     .swiper-slide {
         text-align: center;
@@ -93,30 +90,25 @@
             width: 100%;
             height: 80%;
             object-fit: contain;
-            /*             display: inline-block; */
 
             @media screen and (min-width: $breakpoint-sm) {
                 width: 75%;
                 height: 100%;
-
-                /*                 position: relative;
-                top: 100px; */
             }
         }
-    }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        position: absolute;
-        top: 95%;
-        /*         z-index: 1; */
+        .swiper-button-next,
+        .swiper-button-prev {
+            position: absolute;
+            top: 95%;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                top: 50%;
+            }
+        }
 
         @media screen and (min-width: $breakpoint-sm) {
-            top: 50%;
+            height: 75vh;
         }
-    }
-
-    @media screen and (min-width: $breakpoint-sm) {
-        height: 75vh;
     }
 }
