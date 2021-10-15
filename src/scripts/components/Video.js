@@ -103,6 +103,8 @@ export default class Video {
         },
       },
     });
+
+    console.log(this.player);
   }
 
   /**
