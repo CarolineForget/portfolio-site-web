@@ -6,6 +6,10 @@
     height: 100vh;
 }
 
+/* 
+   hero page about
+   ========================================================================== */
+
 .hero_about {
     position: relative;
     height: auto;
@@ -84,7 +88,9 @@
     }
 }
 
-/* ---------------- */
+/* 
+   hero pour les singles de projet
+   ========================================================================== */
 
 .hero__single {
     height: auto;
@@ -95,13 +101,16 @@
     }
 }
 
-/* ---------------- */
+/* 
+   hero pour les pages d'erreur
+   ========================================================================== */
+
 .hero__error {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    h1 {
+    .animated {
         height: 150px;
     }
 }

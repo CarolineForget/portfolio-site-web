@@ -49,29 +49,13 @@
 
         fill: var(--color-icons);
 
-        /*         height: 150%;
-        width: 150%; */
-
         .is-video-ready & {
             opacity: 1;
         }
-
-        /*         @media screen and (min-width: $breakpoint-md) {
-            transform: scale(1.5) translate(-100%, -50%);
-            height: 100%;
-            width: 100%;
-
-            .is-video-ready & {
-                opacity: 0.5;
-            }
-        } */
     }
 
     &:hover .icon {
         transform: scale(0.5) translate(-50%, -50%);
         fill: var(--color-button-dark);
-        /* opacity: 1; */
-        /* height: 60%;
-        width: 60%; */
     }
 }
