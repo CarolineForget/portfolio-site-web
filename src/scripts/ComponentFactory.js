@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Scrolly from './components/Scrolly';
 import Video from './components/Video';
 import Form from './components/Form';
-import Modal from './components/Modal';
 import Type from './components/Type';
 
 import Grid from './components/Grid';
@@ -18,8 +17,7 @@ export default class ComponentFactory {
       Scrolly,
       Video,
       Form,
-      Modal,
-      Type, //
+      Type,
       Grid,
       Cursor,
     };

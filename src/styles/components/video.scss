@@ -26,3 +26,13 @@
         right: 0;
     }
 }
+
+.video__about {
+    margin-top: var(--spacing-lg);
+
+    .poster {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+}

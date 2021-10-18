@@ -1,3 +1,9 @@
+/**
+ * Code provenant de
+ * codrops/ImageGridMotionEffect sur GitHub
+ * https://github.com/codrops/ImageGridMotionEffect
+ */
+
 import { gsap } from 'gsap';
 import { map, lerp, getMousePos, calcWinsize, getRandomNumber } from '../utils/Mouse';
 

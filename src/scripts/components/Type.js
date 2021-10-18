@@ -16,7 +16,6 @@ export default class Type {
       backSpeed: 100,
       loop: true,
       loopCount: Infinity,
-      /*       stringsElement: null, */
     };
 
     this.init();
@@ -26,8 +25,6 @@ export default class Type {
    * Méthode d'initialisation
    */
   init() {
-    /*     console.log('Type component'); */
-
     new Typed(this.element, this.defaultOptions);
   }
 }

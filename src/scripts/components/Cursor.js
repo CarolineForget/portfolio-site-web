@@ -1,4 +1,9 @@
+/** Composante Cursor de Timtools */
 export default class Cursor {
+  /**
+   * Méthode constructeur
+   * @param {HTMLElement} element - Élément HTML sur lequel la composante est instanciée
+   */
   constructor(element) {
     this.element = element;
     this.html = document.documentElement;
@@ -7,10 +12,14 @@ export default class Cursor {
     this.init();
   }
 
+  /**
+   * Méthode d'initialisation
+   */
   init() {
     this.moveCursor();
     this.hoverCursorLink();
 
+    // Vérifie ce que contient la page HTML
     if (this.html.querySelector('.swiper-container')) {
       this.hoverCursorCarousel();
     }
@@ -20,12 +29,18 @@ export default class Cursor {
     }
   }
 
+  /**
+   * Méthode moveCursor - Bouge le curseur personnalisé en fonction de la position de la souris
+   */
   moveCursor() {
     this.html.addEventListener('mousemove', (e) => {
       this.element.setAttribute('style', 'top: ' + (e.pageY - 20) + 'px; left: ' + (e.pageX - 20) + 'px;');
     });
   }
 
+  /**
+   * Méthode hoverCursorLink - Contrôle l'effet d'hover du curseur sur les liens
+   */
   hoverCursorLink() {
     for (let i = 0; i < this.arrayLink.length; i++) {
       const button = this.arrayLink[i];
@@ -40,6 +55,9 @@ export default class Cursor {
     }
   }
 
+  /**
+   * Méthode hoverCursorCarousel - Contrôle l'effet d'hover du curseur sur les flèches de navigation du carousel
+   */
   hoverCursorCarousel() {
     this.html.querySelector('.swiper-button-prev').addEventListener('mouseover', (e) => {
       this.element.classList.add('hover__cursor-carousel');
@@ -56,9 +74,11 @@ export default class Cursor {
     });
   }
 
+  /**
+   * Méthode hoverForm - Contrôle l'effet d'hover du curseur sur les champs d'un formulaire
+   */
   hoverForm() {
     const inputArray = this.html.querySelectorAll('.input__element');
-    console.log(inputArray);
 
     for (let i = 0; i < inputArray.length; i++) {
       const input = inputArray[i];

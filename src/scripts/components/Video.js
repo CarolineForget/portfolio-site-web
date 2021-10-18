@@ -86,7 +86,10 @@ export default class Video {
           this.playerReady = true;
 
           this.player.playVideo();
-          this.player.mute();
+
+          if (!this.poster) {
+            this.player.mute();
+          }
 
           const observer = new IntersectionObserver(this.watch.bind(this), {
             rootMargin: '0px 0px 0px 0px',
@@ -103,8 +106,6 @@ export default class Video {
         },
       },
     });
-
-    console.log(this.player);
   }
 
   /**
