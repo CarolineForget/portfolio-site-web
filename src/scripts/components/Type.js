@@ -25,6 +25,17 @@ export default class Type {
    * Méthode d'initialisation
    */
   init() {
-    new Typed(this.element, this.defaultOptions);
+    let options = this.defaultOptions;
+
+    if (this.element.dataset.type == '404') {
+      options = {
+        ...this.defaultOptions,
+        ...{
+          strings: ['La vilaine 404.', 'La fameuse 404.', "L'horrible 404."],
+        },
+      };
+    }
+
+    new Typed(this.element, options);
   }
 }

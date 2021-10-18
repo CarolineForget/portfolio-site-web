@@ -1,4 +1,5 @@
 import ComponentFactory from './ComponentFactory';
+import NavigatorValidator from './NavigatorValidator';
 import Icons from './utils/Icons';
 
 class Main {
@@ -12,6 +13,7 @@ class Main {
     Icons.load();
 
     new ComponentFactory();
+    new NavigatorValidator();
   }
 }
 new Main();

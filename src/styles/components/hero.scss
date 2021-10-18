@@ -88,13 +88,20 @@
 
 .hero__single {
     height: auto;
-    margin-top: 200px;
-
-    @media screen and (min-width: $breakpoint-sm) {
-        margin-top: 200px;
-    }
+    margin-top: var(--spacing-xl);
 
     @media screen and (min-width: $breakpoint-md) {
         margin-top: 400px;
+    }
+}
+
+/* ---------------- */
+.hero__error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        height: 150px;
     }
 }
