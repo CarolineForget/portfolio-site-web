@@ -20,6 +20,7 @@
 
         @media screen and (min-width: $breakpoint-sm) {
             padding: var(--spacing-md);
+            min-width: 40%;
         }
 
         h1 {

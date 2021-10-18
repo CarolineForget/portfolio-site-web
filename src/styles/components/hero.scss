@@ -98,37 +98,3 @@
         margin-top: 400px;
     }
 }
-
-.hero__single .before__single {
-    height: auto;
-
-    .title {
-        background: var(--color-bg-primary-dark);
-
-        @media screen and (min-width: $breakpoint-sm) {
-            min-width: 38%;
-            position: relative;
-            z-index: 2;
-        }
-    }
-
-    @media screen and (min-width: $breakpoint-sm) {
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: center;
-
-        position: relative;
-
-        .video {
-            position: absolute;
-            right: 0;
-        }
-    }
-
-    @media screen and (min-width: $breakpoint-lg) {
-        .video {
-            height: 540px;
-            width: 960px;
-        }
-    }
-}

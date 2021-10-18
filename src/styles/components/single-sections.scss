@@ -136,8 +136,12 @@
    HERO
    ========================================================================== */
 
-.before__single {
+.hero__single .before__single {
+    height: auto;
+
     .title {
+        background: var(--color-bg-primary-dark);
+
         h1 {
             color: var(--color-text-primary);
             font-family: var(--font-secondary);
@@ -151,6 +155,32 @@
             @media screen and (min-width: $breakpoint-md) {
                 font-size: var(--font-size-h4-desktop);
             }
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            min-width: 40%;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+
+        position: relative;
+
+        .video {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        .video {
+            height: 540px;
+            width: 960px;
         }
     }
 }
