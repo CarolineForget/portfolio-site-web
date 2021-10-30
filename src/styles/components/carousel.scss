@@ -85,6 +85,7 @@
 
     .swiper-slide {
         text-align: center;
+        cursor: pointer;
 
         img {
             width: 100%;
@@ -96,15 +97,15 @@
                 height: 95%;
             }
         }
+    }
 
-        .swiper-button-next,
-        .swiper-button-prev {
-            position: absolute;
-            top: 95%;
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 95%;
 
-            @media screen and (min-width: $breakpoint-sm) {
-                top: 50%;
-            }
+        @media screen and (min-width: $breakpoint-sm) {
+            top: 50%;
         }
     }
 }

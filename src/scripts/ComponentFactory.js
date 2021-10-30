@@ -4,7 +4,7 @@ import Scrolly from './components/Scrolly';
 import Video from './components/Video';
 import Form from './components/Form';
 import Type from './components/Type';
-
+import Modal from './components/Modal';
 import Grid from './components/Grid';
 import Cursor from './components/Cursor';
 
@@ -20,6 +20,7 @@ export default class ComponentFactory {
       Type,
       Grid,
       Cursor,
+      Modal,
     };
     this.init();
   }

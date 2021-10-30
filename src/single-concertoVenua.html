@@ -252,31 +252,56 @@
                         >
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/concertoVenua/carousel/mockup01.png"
+                                >
                                     <img
                                         src="assets/images/projets/concertoVenua/carousel/mockup01.png"
                                         alt="Interfaces d'accueil"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/concertoVenua/carousel/mockup02.png"
+                                >
                                     <img
                                         src="assets/images/projets/concertoVenua/carousel/mockup02.png"
                                         alt="Interfaces pour la programmation"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/concertoVenua/carousel/mockup03.png"
+                                >
                                     <img
                                         src="assets/images/projets/concertoVenua/carousel/mockup03.png"
                                         alt="Interfaces pour les artistes invités"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/concertoVenua/carousel/mockup04.png"
+                                >
                                     <img
                                         src="assets/images/projets/concertoVenua/carousel/mockup04.png"
                                         alt="Interfaces à propos d'un artiste"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/concertoVenua/carousel/mockup05.png"
+                                >
                                     <img
                                         src="assets/images/projets/concertoVenua/carousel/mockup05.png"
                                         alt="Exemple d'interfaces mobiles"
@@ -322,18 +347,36 @@
                         </div>
                     </div>
                     <div class="columns">
-                        <div class="column_item" data-scrolly="fromBottom">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottom"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/concertoVenua/card01.jpg"
+                        >
                             <img src="assets/images/projets/concertoVenua/card01.jpg" alt="Exemple de structure HTML" />
                             <p class="comment">Exemple de structure HTML pour la snackbar</p>
                         </div>
-                        <div class="column_item" data-scrolly="fromBottomMedium">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottomMedium"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/concertoVenua/card02.jpg"
+                        >
                             <img
                                 src="assets/images/projets/concertoVenua/card02.jpg"
                                 alt="Exemple d'utilisation de SCSS"
                             />
                             <p class="comment">Exemple d'utilisation de SCSS pour la snackbar</p>
                         </div>
-                        <div class="column_item" data-scrolly="fromBottomLong">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottomLong"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/concertoVenua/card03.jpg"
+                        >
                             <img
                                 src="assets/images/projets/concertoVenua/card03.jpg"
                                 alt="Exemple de composante JavaScript"
@@ -473,6 +516,21 @@
                 </div>
             </footer>
         </div>
+
         <div class="cursor" data-component="Cursor"></div>
+
+        <template id="tpl-modal-simple">
+            <div class="modal">
+                <div class="modal__scrim"></div>
+                <div class="modal__box">
+                    <img src="{{src}}" alt="Indisponible" />
+                    <button class="modal__close js-close">
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </template>
     </body>
 </html>

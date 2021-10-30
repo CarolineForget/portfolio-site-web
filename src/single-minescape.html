@@ -230,15 +230,33 @@
                         </div>
                     </div>
                     <div class="columns">
-                        <div class="column_item" data-scrolly="fromBottom">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottom"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/minescape/column01.jpg"
+                        >
                             <img src="assets/images/projets/minescape/column01.jpg" alt="Plan du niveau 1" />
                             <p class="comment">Niveau 1</p>
                         </div>
-                        <div class="column_item" data-scrolly="fromBottomMedium">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottomMedium"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/minescape/column02.jpg"
+                        >
                             <img src="assets/images/projets/minescape/column02.jpg" alt="Plan du niveau 2" />
                             <p class="comment">Niveau 2</p>
                         </div>
-                        <div class="column_item" data-scrolly="fromBottomLong">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottomLong"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/minescape/column03.jpg"
+                        >
                             <img src="assets/images/projets/minescape/column03.jpg" alt="Plan du niveau 3" />
                             <p class="comment">Niveau 3</p>
                         </div>
@@ -290,31 +308,61 @@
                         >
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-description="Interface d'accueil"
+                                    data-modal-bg="assets/images/projets/minescape/carousel/mockup01.png"
+                                >
                                     <img
                                         src="assets/images/projets/minescape/carousel/mockup01.png"
                                         alt="Interface d'accueil"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-description="Interface d'accueil"
+                                    data-modal-bg="assets/images/projets/minescape/carousel/mockup02.png"
+                                >
                                     <img
                                         src="assets/images/projets/minescape/carousel/mockup02.png"
                                         alt="Interface d'instructions"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-description="Interface d'accueil"
+                                    data-modal-bg="assets/images/projets/minescape/carousel/mockup03.png"
+                                >
                                     <img
                                         src="assets/images/projets/minescape/carousel/mockup03.png"
                                         alt="Interface de jeu"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-description="Interface d'accueil"
+                                    data-modal-bg="assets/images/projets/minescape/carousel/mockup04.png"
+                                >
                                     <img
                                         src="assets/images/projets/minescape/carousel/mockup04.png"
                                         alt="Interface d'astuces"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-description="Interface d'accueil"
+                                    data-modal-bg="assets/images/projets/minescape/carousel/mockup05.png"
+                                >
                                     <img
                                         src="assets/images/projets/minescape/carousel/mockup05.png"
                                         alt="Interface de transition"
@@ -358,15 +406,33 @@
                         </div>
                     </div>
                     <div class="columns">
-                        <div class="column_item" data-scrolly="fromBottom">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottom"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/minescape/prog01.jpg"
+                        >
                             <img src="assets/images/projets/minescape/prog01.jpg" alt="Script pour gérer les scènes" />
                             <p class="comment">Script pour gérer les scènes</p>
                         </div>
-                        <div class="column_item" data-scrolly="fromBottomMedium">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottomMedium"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/minescape/prog02.jpg"
+                        >
                             <img src="assets/images/projets/minescape/prog02.jpg" alt="Scripts pour bouger le joueur" />
                             <p class="comment">Script pour les mouvements</p>
                         </div>
-                        <div class="column_item" data-scrolly="fromBottomLong">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottomLong"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/minescape/prog03.jpg"
+                        >
                             <img
                                 src="assets/images/projets/minescape/prog03.jpg"
                                 alt="Scripts pour bouger le joueur (suite)"
@@ -488,6 +554,21 @@
                 </div>
             </footer>
         </div>
+
         <div class="cursor" data-component="Cursor"></div>
+
+        <template id="tpl-modal-simple">
+            <div class="modal">
+                <div class="modal__scrim"></div>
+                <div class="modal__box">
+                    <img src="{{src}}" alt="Indisponible" />
+                    <button class="modal__close js-close">
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </template>
     </body>
 </html>

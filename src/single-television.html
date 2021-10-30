@@ -262,22 +262,52 @@
                         >
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/television/carousel/vue01.jpg"
+                                >
                                     <img src="assets/images/projets/television/carousel/vue01.jpg" alt="Caméra 1" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/television/carousel/vue02.jpg"
+                                >
                                     <img src="assets/images/projets/television/carousel/vue02.jpg" alt="Caméra 2" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/television/carousel/vue03.jpg"
+                                >
                                     <img src="assets/images/projets/television/carousel/vue03.jpg" alt="Caméra 3" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/television/carousel/vue04.jpg"
+                                >
                                     <img src="assets/images/projets/television/carousel/vue04.jpg" alt="Caméra 4" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/television/carousel/vue05.jpg"
+                                >
                                     <img src="assets/images/projets/television/carousel/vue05.jpg" alt="Caméra 5" />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/television/carousel/vue06.jpg"
+                                >
                                     <img src="assets/images/projets/television/carousel/vue06.jpg" alt="Caméra 6" />
                                 </div>
                             </div>
@@ -429,6 +459,21 @@
                 </div>
             </footer>
         </div>
+
         <div class="cursor" data-component="Cursor"></div>
+
+        <template id="tpl-modal-simple">
+            <div class="modal">
+                <div class="modal__scrim"></div>
+                <div class="modal__box">
+                    <img src="{{src}}" alt="Indisponible" />
+                    <button class="modal__close js-close">
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </template>
     </body>
 </html>

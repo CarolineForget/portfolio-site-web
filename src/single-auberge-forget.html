@@ -95,6 +95,7 @@
                     </div>
                 </div>
             </header>
+
             <a href="#next-viewport">
                 <section class="scroll-animation">
                     <div class="content">
@@ -197,31 +198,56 @@
                         >
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/aubergeForget/carousel/card01.jpg"
+                                >
                                     <img
                                         src="assets/images/projets/aubergeForget/carousel/card01.jpg"
                                         alt="Vue isométrique"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/aubergeForget/carousel/card02.jpg"
+                                >
                                     <img
                                         src="assets/images/projets/aubergeForget/carousel/card02.jpg"
                                         alt="Vue de face"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/aubergeForget/carousel/card03.jpg"
+                                >
                                     <img
                                         src="assets/images/projets/aubergeForget/carousel/card03.jpg"
                                         alt="Vue de gauche"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/aubergeForget/carousel/card04.jpg"
+                                >
                                     <img
                                         src="assets/images/projets/aubergeForget/carousel/card04.jpg"
                                         alt="Vue de derrière"
                                     />
                                 </div>
-                                <div class="swiper-slide">
+                                <div
+                                    class="swiper-slide"
+                                    data-component="Modal"
+                                    data-modal-id="tpl-modal-simple"
+                                    data-modal-bg="assets/images/projets/aubergeForget/carousel/card05.jpg"
+                                >
                                     <img
                                         src="assets/images/projets/aubergeForget/carousel/card05.jpg"
                                         alt="Vue de droite"
@@ -252,15 +278,33 @@
                         </div>
                     </div>
                     <div class="columns">
-                        <div class="column_item" data-scrolly="fromBottom">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottom"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/aubergeForget/card01.jpg"
+                        >
                             <img src="assets/images/projets/aubergeForget/card01.jpg" alt="Modélisation des volumes" />
                             <p class="comment">Modélisation des volumes</p>
                         </div>
-                        <div class="column_item" data-scrolly="fromBottomMedium">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottomMedium"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/aubergeForget/card02.jpg"
+                        >
                             <img src="assets/images/projets/aubergeForget/card02.jpg" alt="Modélisation des détails" />
                             <p class="comment">Modélisation des détails</p>
                         </div>
-                        <div class="column_item" data-scrolly="fromBottomLong">
+                        <div
+                            class="column_item"
+                            data-scrolly="fromBottomLong"
+                            data-component="Modal"
+                            data-modal-id="tpl-modal-simple"
+                            data-modal-bg="assets/images/projets/aubergeForget/card03.jpg"
+                        >
                             <img
                                 src="assets/images/projets/aubergeForget/card03.jpg"
                                 alt="Modélisation des détails (suite)"
@@ -406,6 +450,21 @@
                 </div>
             </footer>
         </div>
+
         <div class="cursor" data-component="Cursor"></div>
+
+        <template id="tpl-modal-simple">
+            <div class="modal">
+                <div class="modal__scrim"></div>
+                <div class="modal__box">
+                    <img src="{{src}}" alt="Indisponible" />
+                    <button class="modal__close js-close">
+                        <svg class="icon icon--lg">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </template>
     </body>
 </html>
