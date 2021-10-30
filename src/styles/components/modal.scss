@@ -63,10 +63,11 @@
     --bar-width: 40px;
 
     .icon {
-        fill: var(--color-icons);
-        stroke: rgba(0, 0, 0, 0.2);
+        fill: var(--color-bg-primary);
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 100%;
+        padding: 5px;
         transform: scale(1);
-        opacity: 1;
 
         transition: all 0.2s ease-in;
     }
@@ -74,8 +75,7 @@
     &:hover {
         .icon {
             fill: var(--color-button-primary);
-            transform: scale(0.8);
-            opacity: 0.5;
+            transform: scale(0.85);
         }
     }
 }
