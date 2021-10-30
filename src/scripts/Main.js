@@ -13,7 +13,6 @@ class Main {
     Icons.load();
 
     new ComponentFactory();
-    new NavigatorValidator();
   }
 }
 new Main();

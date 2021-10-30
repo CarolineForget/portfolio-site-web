@@ -1,4 +1,8 @@
-/* const imagesLoaded = require('imagesloaded'); */
+/**
+ * Code provenant de
+ * codrops/ImageGridMotionEffect sur GitHub
+ * https://github.com/codrops/ImageGridMotionEffect
+ */
 
 // Map number x from range [a, b] to [c, d]
 const map = (x, a, b, c, d) => ((x - a) * (d - c)) / (b - a) + c;
@@ -19,12 +23,5 @@ const getMousePos = (e) => {
     y: e.clientY,
   };
 };
-
-/* // Preload images
-const preloadImages = (selector) => {
-  return new Promise((resolve, reject) => {
-    imagesLoaded(document.querySelectorAll(selector), resolve);
-  });
-}; */
 
 export { map, lerp, calcWinsize, getRandomNumber, getMousePos };

@@ -18,7 +18,7 @@ export default class NavigatorValidator {
     const { detect } = require('detect-browser');
     const browser = detect();
 
-    if (window.location.href !== 'http://localhost:3000/error.html') {
+    if (window.location.href !== 'https://cforget.com/error.html') {
       switch (browser && browser.name) {
         case 'chrome':
         case 'firefox':
@@ -29,8 +29,12 @@ export default class NavigatorValidator {
           console.log('supported');
           break;
 
+        case 'safari':
+          console.log('supported');
+          break;
+
         default:
-          window.location.href = 'http://localhost:3000/error.html';
+          window.location.href = 'https://cforget.com/error.html';
           console.log('not supported');
       }
     }

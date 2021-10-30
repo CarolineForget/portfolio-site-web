@@ -41,10 +41,10 @@
     h2 {
         padding: var(--spacing-s);
         font-weight: 400;
-        font-size: var(--font-size-h3-mobile);
+        font-size: var(--font-size-h4-desktop);
 
         @media screen and (min-width: $breakpoint-md) {
-            font-size: var(--font-size-h3-desktop);
+            font-size: var(--font-size-h2-mobile);
         }
     }
 
