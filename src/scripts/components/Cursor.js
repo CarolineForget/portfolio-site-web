@@ -59,19 +59,30 @@ export default class Cursor {
    * Méthode hoverCursorCarousel - Contrôle l'effet d'hover du curseur sur les flèches de navigation du carousel
    */
   hoverCursorCarousel() {
-    this.html.querySelector('.swiper-button-prev').addEventListener('mouseover', (e) => {
-      this.element.classList.add('hover__cursor-carousel');
-    });
-    this.html.querySelector('.swiper-button-prev').addEventListener('mouseout', (e) => {
-      this.element.classList.remove('hover__cursor-carousel');
-    });
+    const btnPrevArray = this.html.querySelectorAll('.swiper-button-prev');
+    const btnNextArray = this.html.querySelectorAll('.swiper-button-next');
 
-    this.html.querySelector('.swiper-button-next').addEventListener('mouseover', (e) => {
-      this.element.classList.add('hover__cursor-carousel');
-    });
-    this.html.querySelector('.swiper-button-next').addEventListener('mouseout', (e) => {
-      this.element.classList.remove('hover__cursor-carousel');
-    });
+    for (let i = 0; i < btnPrevArray.length; i++) {
+      const btn = btnPrevArray[i];
+
+      btn.addEventListener('mouseover', (e) => {
+        this.element.classList.add('hover__cursor-carousel');
+      });
+      btn.addEventListener('mouseout', (e) => {
+        this.element.classList.remove('hover__cursor-carousel');
+      });
+    }
+
+    for (let i = 0; i < btnNextArray.length; i++) {
+      const btn = btnNextArray[i];
+
+      btn.addEventListener('mouseover', (e) => {
+        this.element.classList.add('hover__cursor-carousel');
+      });
+      btn.addEventListener('mouseout', (e) => {
+        this.element.classList.remove('hover__cursor-carousel');
+      });
+    }
   }
 
   /**
