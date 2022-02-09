@@ -148,15 +148,15 @@
                         <div class="explications">
                             <p data-scrolly="fromLeftDelay">
                                 Dans Minescape, vous incarnez un être d’origine inconnue aux fin fonds d’une mine
-                                dangereuse. Votre but? S’enfuir en détruisant tous les cristaux! Les défis de plateforme
-                                et des ennemis sont au rendez-vous.
+                                dangereuse. Votre but? S’enfuir en détruisant tous les cristaux rouges! Les défis de
+                                plateforme et des ennemis sont au rendez-vous.
                             </p>
                             <p data-scrolly="fromLeftDelay">
                                 C’est un projet scolaire développé en <span class="bold">hiver 2020</span> avec le
                                 logiciel <span class="bold">Unity</span> et programmé en
                                 <span class="bold">C#</span> dans VS Code. Il est aussi compatible avec
-                                <span class="bold">WebGL</span>. Plusieurs fonctionnalités sont utilisées, comme les
-                                particules et la cinemachine.
+                                <span class="bold">WebGL</span>. Plusieurs fonctionnalités de Unity sont utilisées,
+                                comme les particules et la cinemachine.
                             </p>
                             <div class="content" data-scrolly="fromTopDelay"></div>
                             <div class="credits" data-scrolly="fromTopDelay">
@@ -226,7 +226,9 @@
                                 <span class="bold">scènes</span> de jeu; chacune introduisant de nouvelles
                                 fonctionnalités pour augmenter la difficulté. J’ai aussi créé divers
                                 <span class="bold">layers</span> pour catégoriser les différents types de sol et de murs
-                                du jeu.
+                                du jeu, par exemple, ceux pour les sauts muraux et ceux qui ne le sont pas. Tous les
+                                éléments interactifs possèdent des colliders. Pour les tilemaps, ce sont des tilemaps
+                                colliders.
                             </p>
                         </div>
                     </div>
@@ -239,7 +241,7 @@
                             data-modal-bg="assets/images/projets/minescape/column01.jpg"
                         >
                             <img src="assets/images/projets/minescape/column01.jpg" alt="Plan du niveau 1" />
-                            <p class="comment">Niveau 1</p>
+                            <p class="comment">Niveau 1 - Introduction du gameplay de base</p>
                         </div>
                         <div
                             class="column_item"
@@ -249,7 +251,7 @@
                             data-modal-bg="assets/images/projets/minescape/column02.jpg"
                         >
                             <img src="assets/images/projets/minescape/column02.jpg" alt="Plan du niveau 2" />
-                            <p class="comment">Niveau 2</p>
+                            <p class="comment">Niveau 2 - Introduction des ennemis et des obstacles dangereux</p>
                         </div>
                         <div
                             class="column_item"
@@ -259,7 +261,7 @@
                             data-modal-bg="assets/images/projets/minescape/column03.jpg"
                         >
                             <img src="assets/images/projets/minescape/column03.jpg" alt="Plan du niveau 3" />
-                            <p class="comment">Niveau 3</p>
+                            <p class="comment">Niveau 3 - Introduction des sauts muraux et de l'exploration</p>
                         </div>
                     </div>
                 </div>
@@ -276,7 +278,8 @@
                                 Pour l’<span class="bold">animation</span> du personnage et des ennemis, j’ai créé des
                                 <span class="bold">Animator</span> pour chacun pour pouvoir facilement contrôler et
                                 activer leurs animations respectives en créant des
-                                <span class="bold">conditions booléennes et trigger.</span>
+                                <span class="bold">conditions booléennes et trigger</span> avec l'Animator, qui sont
+                                ensuite appelées dans les scripts de mouvement.
                             </p>
                         </div>
                     </div>
@@ -298,7 +301,8 @@
                             <p>
                                 J’ai créé des interfaces <span class="bold">responsive</span> avec des
                                 <span class="bold">canvas</span> pour l’accueil du jeu, les contrôles, l’aide et les
-                                indices, le score et le nombre de vies du joueur.
+                                indices adaptés au niveau courant, le score et le nombre de vies du joueur. Durant le
+                                jeu, un chronomètre est présent pour montrer le temps restant au joueur.
                             </p>
                         </div>
                     </div>
@@ -403,7 +407,11 @@
                             <p>
                                 En utilisant la librairie de Unity, j’ai programmé en
                                 <span class="bold">C# la physique</span> (collider, saut, lancer de pierre, etc.),
-                                <span class="bold">les animations, les effets sonores, les mouvements</span>, etc.
+                                <span class="bold">les animations, les effets sonores, les mouvements</span>, etc. J'ai
+                                aussi programmé un <span class="bold">IA simple d'ennemi</span> se déplaçant d'un
+                                collider à l'autre, tout comme j'ai créé un <span class="bold">GameManager</span> pour
+                                gérer le jeu, les niveaux et l'enregistrement du pointage et du temps dans des variables
+                                statiques et publiques.
                             </p>
                         </div>
                     </div>
@@ -472,12 +480,8 @@
                         ></a>
                     </div>
                     <div class="next" data-scrolly="fromLeft">
-                        <img src="assets/images/projets/concertoVenua/thumbnail.jpg" alt="ConcertoVenua" />
-                        <a
-                            href="single-concertoVenua.html"
-                            class="btn__link btn btn__other"
-                            aria-label="Voir ConcertoVenua"
-                        >
+                        <img src="assets/images/projets/rexMontis/thumbnail.jpg" alt="Rex Montis" />
+                        <a href="single-rex-montis.html" class="btn__link btn btn__other" aria-label="Voir Rex Montis">
                             <div class="btn__more">
                                 <svg class="icon icon--md">
                                     <use xlink:href="#icon-arrow-next"></use>

@@ -204,15 +204,29 @@
             <section class="single--image">
                 <div class="wrapper">
                     <div class="text">
-                        <div class="title" data-scrolly="fromLeft">
+                        <div class="title title__button" data-scrolly="fromLeft">
                             <h2>Modélisation</h2>
+                            <div class="more" data-scrolly="fromLeftDelay">
+                                <div class="flex">
+                                    <a
+                                        href="https://sketchfab.com/Unicone/collections/rustic"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="btn__link btn btn"
+                                    >
+                                        Voir sur SketchFab
+
+                                        <span class="content__link"></span
+                                    ></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="explications" data-scrolly="fromLeftDelay">
                             <p>
                                 J’ai modélisé mon personnage pour le deuxième niveau à l’aide de
                                 <span class="bold">MakeHuman</span>, pour ensuite faire ses animations avec Mixamo. J’ai
-                                aussi modélisé d’autres objets, le camion garford, les ennemis, etc., à l’aide de
-                                <span class="bold">Blender</span>.
+                                aussi modélisé d’autres assets, en calquant les volumes sur des croquis, comme le camion
+                                garford, les ennemis, etc., à l’aide de <span class="bold">Blender</span>.
                             </p>
                         </div>
                     </div>
@@ -228,13 +242,63 @@
                 <div class="wrapper">
                     <div class="text">
                         <div class="title" data-scrolly="fromLeft">
+                            <h2>Textures</h2>
+                        </div>
+                        <div class="explications" data-scrolly="fromLeftDelay">
+                            <p>
+                                Pour les textures des assets, j'ai expérimenté avec le
+                                <span class="bold">UV Mapping </span>en utilisant des images de texture libres de droit
+                                pour créer une UV Map sur laquelle je <span class="bold">dépliais les faces</span> des
+                                modèles pour appliquer et positionner les textures.
+                            </p>
+                        </div>
+                    </div>
+                    <img
+                        src="assets/images/projets/energivore/single03.jpg"
+                        alt="Modèles 3D"
+                        data-scrolly="fromBottom"
+                    />
+                </div>
+            </section>
+
+            <section class="single--image">
+                <div class="wrapper">
+                    <div class="text">
+                        <div class="title" data-scrolly="fromLeft">
+                            <h2>Animations</h2>
+                        </div>
+                        <div class="explications" data-scrolly="fromLeftDelay">
+                            <p>
+                                Pour l'avatar du joueur, j'ai créé son <span class="bold">armature</span> depuis
+                                <span span class="bold">Adobe Mixamo</span> avec lequel j'ai exporté des animations
+                                préfaites. Ensuite, je les ai intégrés en un seul personnage avec le logiciel
+                                <span class="bold">Blender</span> pour <span class="bold">éditer les actions</span>,
+                                puis j'ai créé un <span class="bold">Animator avec Unity</span>
+                                pour déclarer des conditions à celles-ci.
+                            </p>
+                        </div>
+                    </div>
+                    <img
+                        src="assets/images/projets/television/mixamo.jpg"
+                        alt="Interface Unity"
+                        data-scrolly="fromBottom"
+                    />
+                </div>
+            </section>
+
+            <section class="single--image">
+                <div class="wrapper">
+                    <div class="text">
+                        <div class="title" data-scrolly="fromLeft">
                             <h2>Intégration</h2>
                         </div>
                         <div class="explications" data-scrolly="fromLeftDelay">
                             <p>
                                 Pour créer les niveaux, j’ai intégré les <span class="bold">assets 3D</span> (village,
-                                voiture, personnages, etc.) et les animations, créé une ambiance avec les
-                                <span class="bold">lumières</span>, établi le <span class="bold">son</span>, etc.
+                                voiture, personnages, etc.), en important leurs textures, et les animations, j'ai créé
+                                une ambiance avec les <span class="bold">lumières et le son</span>, celui-ci avec une
+                                <span class="bold">valeur spatiale 3D</span>
+                                pour le rendre plus fort plus le joueur est proche, etc.
                             </p>
                         </div>
                     </div>
@@ -257,7 +321,8 @@
                                 Pour naviguer au travers des niveaux, j’ai créé quelques
                                 <span class="bold">interfaces de transition</span>. Aussi, j’ai donné au joueur la
                                 disponibilité d’avoir un <span class="bold">menu</span> pour ses contrôles en tout
-                                temps.
+                                temps. De plus, j'ai développé un panneau avec des diapositives pour donner des astuces
+                                au joueur selon sa progression. Le design est fait avec Adobe Illustrator.
                             </p>
                         </div>
                     </div>
@@ -356,7 +421,8 @@
                         <div class="explications" data-scrolly="fromLeftDelay">
                             <p>
                                 J’ai programmé les animations, les mouvements du joueur, les ennemis, le progrès dans
-                                les niveaux et plus encore en <span class="bold">C# avec les librairies de Unity</span>.
+                                les niveaux avec des événements et actions spécifiques, et plus encore en
+                                <span class="bold">C# avec les librairies de Unity</span>.
                             </p>
                         </div>
                     </div>
@@ -417,7 +483,7 @@
                     </a>
                 </div>
             </section>
-
+            <!-- 
             <section class="see--other">
                 <div class="wrapper">
                     <div class="prev" data-scrolly="fromRight">
@@ -451,7 +517,7 @@
                         ></a>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <div class="banner banner_primary">
                 <div class="content"></div>
