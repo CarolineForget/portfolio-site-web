@@ -153,7 +153,8 @@
                             <p data-scrolly="fromLeftDelay">
                                 Rex Montis est un jeu multijoueur 3D, inspiré par Gang Beast et Overcook, dans lequel
                                 les joueurs ont pour but de pousser leurs adversaires hors du niveau pour sortir
-                                vainqueur.
+                                vainqueur en gagnant le plus de points possibles. C'est chacun pour soi dans ce jeu avec
+                                plein de rebondissements!
                             </p>
                             <p data-scrolly="fromLeftDelay">
                                 C’est un projet <span class="bold">scolaire</span> réalisé
@@ -190,6 +191,30 @@
             <section class="single--image">
                 <div class="wrapper">
                     <div class="text">
+                        <div class="title" data-scrolly="fromLeft">
+                            <h2>Idéation</h2>
+                        </div>
+                        <div class="explications" data-scrolly="fromLeftDelay">
+                            <p>
+                                Avant de débuter la conception, nous avons formé des petites équipes aléatoirement pour
+                                trouver des idées et des concepts, puis nous nous sommes répartis les postes à combler.
+                                C'est ainsi que j'ai obtenu le <span class="bold">rôle de lead programmeuse</span> et
+                                que j'ai travaillé principalement sur les <span class="bold">mécaniques de jeu</span> de
+                                Rex Montis, l'incarnation du roi de la montagne.
+                            </p>
+                        </div>
+                    </div>
+                    <img
+                        src="assets/images/projets/rexMontis/image04.jpg"
+                        alt="Exemple du nouveau Input System de Unity"
+                        data-scrolly="fromBottom"
+                    />
+                </div>
+            </section>
+
+            <section class="single--image">
+                <div class="wrapper">
+                    <div class="text">
                         <div class="title title__button" data-scrolly="fromLeft">
                             <h2>Mouvements</h2>
                             <div class="more" data-scrolly="fromLeftDelay">
@@ -211,8 +236,8 @@
                             <p>
                                 J'ai contribué à la programmation des mouvements des joueurs. Puisque nous n’utilisions
                                 pas de composante CharacterController, j’ai dû utiliser la méthode
-                                <span class="bold">AddForce</span> pour déplacer le joueur. Sa
-                                <span class="bold">rotation</span>, fait avec des <span class="bold">Quaternion</span>,
+                                <span class="bold">AddForce()</span> pour déplacer le joueur. Sa
+                                <span class="bold">rotation</span>, fait avec des <span class="bold">quaternions</span>,
                                 fut le plus grand défi, puisqu’elle devait aussi influencer
                                 <span class="bold">l’orientation des pouvoirs</span>
                                 du joueur.
@@ -239,10 +264,10 @@
                                 <span class="bold">pousser des ennemis/objets</span>, tout comme les
                                 <span class="bold">attirer</span>, puis les <span class="bold">lancer</span>. Ainsi,
                                 j’ai travaillé avec la physique des <span class="bold">Rigidbody</span> et la méthode
-                                <span class="bold">Lerp</span> pour pouvoir influencer les mouvements d’un joueur en
+                                <span class="bold">Lerp()</span> pour pouvoir influencer les mouvements d’un joueur en
                                 fonction des commandes d’un autre. Cela demandait donc de la communication d’un script à
-                                un autre en <span class="bold">référençant les GameObjects</span> des joueurs grâce à
-                                des <span class="bold">Colliders</span>.
+                                un autre en <span class="bold">référençant les game objects</span> des joueurs grâce à
+                                des <span class="bold">colliders</span>.
                             </p>
                         </div>
                     </div>
@@ -271,7 +296,7 @@
                         >
                             <img src="assets/images/projets/rexMontis/card02.jpg" alt="Exemple de référencement" />
                             <p class="comment">
-                                Le joueur qui entre dans une zone d’action a un script qui enregistre le gameObject
+                                Le joueur qui entre dans une zone d’action a un script qui enregistre le game object
                                 ennemi dans une variable pour le référencement.
                             </p>
                         </div>
