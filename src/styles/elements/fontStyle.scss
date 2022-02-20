@@ -13,3 +13,11 @@
 .comment {
     font-size: var(--font-size-comment);
 }
+
+.highlight {
+    background: linear-gradient(
+        180deg,
+        var(--color-link-light) 65%,
+        rgba(196, 196, 196, 0) 35%
+    );
+}
