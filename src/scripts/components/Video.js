@@ -15,6 +15,10 @@ export default class Video {
     this.playerReady = false;
     this.showControls = this.element.dataset.showControls == 'true' ? 1 : 0;
     this.isLooping = this.element.dataset.isLooping == 'true' ? 1 : 0;
+    this.muteBtn = this.element.querySelector('.button--mute');
+    this.unmuteBtn = this.element.querySelector('.button--unmute');
+    this.playBtn = this.element.querySelector('.button--play');
+    this.pauseBtn = this.element.querySelector('.button--pause');
 
     Video.instances.push(this);
 
@@ -91,6 +95,24 @@ export default class Video {
             this.player.mute();
           }
 
+          //
+          if (this.muteBtn) {
+            this.muteBtn.addEventListener('click', this.unmutePlayer.bind(this));
+          }
+
+          if (this.unmuteBtn) {
+            this.unmuteBtn.addEventListener('click', this.mutePlayer.bind(this));
+          }
+
+          if (this.pauseBtn) {
+            this.pauseBtn.addEventListener('click', this.pauseVideo.bind(this));
+          }
+
+          if (this.playBtn) {
+            this.playBtn.addEventListener('click', this.playVideo.bind(this));
+          }
+          //
+
           const observer = new IntersectionObserver(this.watch.bind(this), {
             rootMargin: '0px 0px 0px 0px',
           });
@@ -107,6 +129,33 @@ export default class Video {
       },
     });
   }
+
+  //
+  unmutePlayer(evt) {
+    this.player.unMute();
+    this.player.setVolume(75);
+    this.unmuteBtn.classList.toggle('switch');
+    this.muteBtn.classList.toggle('switch');
+  }
+
+  mutePlayer(evt) {
+    this.player.mute();
+    this.unmuteBtn.classList.toggle('switch');
+    this.muteBtn.classList.toggle('switch');
+  }
+
+  playVideo(evt) {
+    this.player.playVideo();
+    this.pauseBtn.classList.toggle('switch');
+    this.playBtn.classList.toggle('switch');
+  }
+
+  pauseVideo(evt) {
+    this.player.pauseVideo();
+    this.pauseBtn.classList.toggle('switch');
+    this.playBtn.classList.toggle('switch');
+  }
+  //
 
   /**
    * Méthode watch - Vérifie si des players sortent de la vue de l'utilisateur
