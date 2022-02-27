@@ -133,7 +133,7 @@ export default class Video {
   //
   unmutePlayer(evt) {
     this.player.unMute();
-    this.player.setVolume(75);
+    this.player.setVolume(50);
     this.unmuteBtn.classList.toggle('switch');
     this.muteBtn.classList.toggle('switch');
   }
