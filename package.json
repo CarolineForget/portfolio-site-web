@@ -1,11 +1,9 @@
 {
-  "name": "timtools",
-  "version": "1.0.0",
+  "name": "package2.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Stack de développement frontend",
-  "author": {
-    "name": "Matt et JF"
-  },
+  "author": "Matt et JF",
   "scripts": {
     "start": "gulp",
     "build": "gulp build"
@@ -17,9 +15,9 @@
     "typed.js": "^2.0.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/register": "^7.12.10",
+    "@babel/core": "^7.22.11",
+    "@babel/preset-env": "^7.22.14",
+    "@babel/register": "^7.22.5",
     "autoprefixer": "^9.6.1",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
@@ -57,5 +55,16 @@
     ]
   },
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolineForget/portfolio-site-web.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "bugs": {
+    "url": "https://github.com/CarolineForget/portfolio-site-web/issues"
+  },
+  "homepage": "https://github.com/CarolineForget/portfolio-site-web#readme"
 }

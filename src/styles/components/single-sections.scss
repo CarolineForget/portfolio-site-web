@@ -229,6 +229,33 @@
     }
 }
 
+.single--columns__double {
+    .columns {
+        margin-top: var(--spacing-sm);
+
+        @media screen and (min-width: $breakpoint-sm) {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-s);
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            margin-top: var(--spacing-l);
+        }
+    }
+
+    .column_item {
+        cursor: pointer;
+
+        p {
+            margin: 0;
+        }
+
+        margin-bottom: var(--spacing-sm);
+    }
+}
+
 /* 
    SINGLE-CAROUSEL
    ========================================================================== */

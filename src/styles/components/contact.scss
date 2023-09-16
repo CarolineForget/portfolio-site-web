@@ -138,3 +138,62 @@
         }
     }
 }
+
+.sct-contact_footer {
+    position: relative;
+    margin-top: var(--spacing-lg);
+
+    .content {
+        display: block;
+        height: 65px;
+        width: 100vw;
+
+        position: absolute;
+        z-index: -1;
+        top: -25%;
+
+        background-color: var(--color-bg-primary-dark);
+
+        @media screen and (min-width: $breakpoint-md) {
+            top: -16px;
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin: 0;
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: 3.75rem;
+        }
+    }
+
+    .contact-info ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            padding: 0 var(--spacing-s);
+        }
+
+        .icon {
+            fill: var(--color-icons);
+            margin-right: var(--spacing-xs);
+        }
+
+        .info {
+            color: var(--color-text-primary);
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+}

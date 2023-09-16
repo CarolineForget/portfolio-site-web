@@ -52,22 +52,23 @@ header {
 }
 
 .logo__header {
-    font-family: var(--font-tertiary);
-    font-weight: bold;
+    font-family: var(--font-secondary);
 
     position: relative;
     z-index: 10;
 
     p {
+        font-weight: bold;
+
         @media screen and (min-width: $breakpoint-md) {
             margin: var(--spacing-s) 0 0;
         }
     }
 
-    .link {
+    /*     .link {
         font-style: italic;
         font-weight: normal;
-    }
+    } */
 }
 
 .header__toggle {
@@ -98,25 +99,22 @@ header {
         transition: 0.3s all;
 
         &:nth-child(1) {
-            top: calc(
-                50% - var(--bar-height) / 2 - var(--bar-height) -
-                    var(--bar-spacer)
-            );
+            top: calc(50% - var(--bar-height) / 2 - var(--bar-height) - var(--bar-spacer));
         }
+
         &:nth-child(3) {
-            top: calc(
-                50% - var(--bar-height) / 2 + var(--bar-height) +
-                    var(--bar-spacer)
-            );
+            top: calc(50% - var(--bar-height) / 2 + var(--bar-height) + var(--bar-spacer));
         }
     }
 
     &.active {
         span {
             top: calc(50% - var(--bar-height) / 2);
+
             &:nth-child(1) {
                 transform: rotate(45deg);
             }
+
             &:nth-child(2) {
                 transform: rotate(-45deg);
             }
@@ -251,6 +249,11 @@ header {
             position: absolute;
             top: 0;
         }
+    }
+
+    svg {
+        margin-right: 5px;
+        margin-top: -5px;
     }
 
     &:hover {

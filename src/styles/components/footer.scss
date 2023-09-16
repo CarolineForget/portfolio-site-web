@@ -11,22 +11,116 @@
 
         padding: var(--spacing-md) 0;
 
-        @media screen and (min-width: $breakpoint-md) {
-            flex-direction: row-reverse;
-            justify-content: space-between;
+        .content {
+            height: 4px;
+            width: 100%;
         }
     }
 
     .content {
         display: block;
-        height: 4px;
+        height: 0.5px;
         width: 100vw;
 
         background: var(--color-bg-primary-dark);
+
+    }
+
+    .content__gradient {
+        height: 20px;
+        background: linear-gradient(180deg, rgba(229, 229, 229, 0.00) 0%, rgba(229, 229, 229, 0.50) 100%);
     }
 
     .copyright {
         font-size: var(--font-size-comment);
+    }
+}
+
+.footer__top {
+
+    a {
+        color: var(--color-text-primary);
+        font-weight: normal;
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-text-primary);
+        }
+
+        &:active {
+            color: inherit;
+        }
+
+        &:focus {
+            color: inherit;
+        }
+    }
+
+    .logo__footer {
+
+        text-align: center;
+
+
+        p {
+            font-weight: bold;
+            font-family: var(--font-secondary);
+            font-size: var(--font-size-h2-desktop);
+
+            margin: 0;
+            /*             @media screen and (min-width: $breakpoint-md) {
+                margin: var(--spacing-s) 0 0;
+            } */
+        }
+    }
+
+    .footer__contact {
+        text-align: center;
+
+        h2 {
+            font-size: var(--font-size-h4-desktop);
+            font-weight: bold;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 var(--spacing-s) 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-size: var(--font-size-content-mobile);
+
+                margin: 0;
+                padding: 0 0 0 var(--spacing-s);
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            text-align: right;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer__bottom {
+    @media screen and (min-width: $breakpoint-md) {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
     }
 }
 

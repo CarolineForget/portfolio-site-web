@@ -10,7 +10,7 @@ export default class Type {
     this.element = element;
 
     this.defaultOptions = {
-      strings: ['autonome.', 'organisée.', 'polyvalente.', 'débrouillarde.', 'passionnée.', 'Caroline.'],
+      strings: ['autonome.', 'persévérante.', 'polyvalente.', 'curieuse.', 'proactive.', 'Caroline.'],
       typeSpeed: 100,
       backDelay: 700,
       backSpeed: 100,
