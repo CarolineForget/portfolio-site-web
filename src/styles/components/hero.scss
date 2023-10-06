@@ -99,6 +99,10 @@
     @media screen and (min-width: $breakpoint-md) {
         margin-top: 400px;
     }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+        margin: 20% 0;
+    }
 }
 
 /* 

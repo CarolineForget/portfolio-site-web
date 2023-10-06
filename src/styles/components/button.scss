@@ -64,8 +64,21 @@
 
 .sct_button {
     margin: var(--spacing-lg) 0;
+
     .wrapper {
         text-align: center;
+    }
+}
+
+.sct_button--single {
+    .wrapper {
+        a {
+            display: block;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 

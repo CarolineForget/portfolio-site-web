@@ -182,6 +182,13 @@
             width: 960px;
         }
     }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+        .video {
+            height: 810px;
+            width: 1440px;
+        }
+    }
 }
 
 /* 

@@ -43,12 +43,12 @@
 
 <body>
     <div class="site-container" data-component="Scrolly">
-        <header data-component="Header" data-scroll-limit="0.1" data-auto-hide="true">
+        <header data-component="Header" data-scroll-limit="0.05" data-auto-hide="true">
             <div class="wrapper">
                 <div class="toggle__bar">
                     <div class="logo__header">
                         <a href="index.html">
-                            <p>&#60;<span class="link">cf</span>&#47;&#62;</p>
+                            <p>CF.</p>
                         </a>
                     </div>
 
@@ -59,6 +59,7 @@
                         </button>
                     </div>
                 </div>
+
                 <div class="nav">
                     <nav class="nav-primary">
                         <ul>
@@ -81,7 +82,7 @@
                                 <div class="content"></div>
                             </li>
                             <li>
-                                <a href="assets/download/CurriculumVitae-CarolineForget.pdf" target="_blank"
+                                <a href="assets/download/Forget_Caroline_CV.pdf" target="_blank"
                                     class="nav-primary__item">
                                     <div class="content__hover"></div>
                                     <svg class="icon icon--sm">
@@ -145,31 +146,20 @@
                                 class="bold highlight">hiver 2023</span>. En
                             équipe, nous avions pour mission de créer un <span class="bold highlight">niveau tutoriel
                                 inspiré du jeu Doom Eternal</span> à
-                            l'aide d'<span class="bold highlight">Unreal Engine 5.0</span>.
+                            l'aide d'<span class="bold highlight">Unreal Engine 5.0</span>. Ainsi, Project Bloom est un
+                            first-person shooter (FPS) dans lequel le joueur incarne un militaire intergalactique qui
+                            doit
+                            éliminer des mutations abyssales dans une station spatiale abandonnée.
                         </p>
                         <p data-scrolly="fromLeftDelay">
-                            Au cours de ce projet, j'ai principalement travaillé sur les mécaniques de jouabilité du
-                            <span class="bold highlight">character controller</span>. J'ai aussi développé un <span
-                                class="bold highlight">AI</span> ennemi et contribué à l'<span
-                                class="bold highlight">intégration
-                                d'interfaces</span>.
+                            Au cours de ce projet, j'ai pu développé mes compétences de programmation en Blueprint en
+                            travaillant principalement sur les mécaniques du personnage-joueur. J'ai aussi développé une
+                            <span class="bold highlight">intelligence artificielle</span> d'ennemi aérien, et contribué
+                            à
+                            l'<span class="bold highlight">intégration
+                                d'interfaces</span> et d'options de jouabilité.
                         </p>
                         <div class="content" data-scrolly="fromTopDelay"></div>
-                        <div class="credits" data-scrolly="fromTopDelay">
-                            <ul>
-                                <li class="comment">
-                                    Rôles : <span class="link bold">Programmeure gameplay</span> et <span
-                                        class="link bold">Intégratrice</span>
-                                </li>
-                                <li class="comment">
-                                    Équipe : <span class="link bold">Vincent Nadeau</span>, <span
-                                        class="link bold">Camille Boudreault</span>, <span class="link bold">Sasha
-                                        Fortier</span>, <span class="link bold">Audrey Langlois</span>,
-                                    <span class="link bold">Raphaëlle Raymond</span>, <span class="link bold">Nicolas
-                                        Lévesque</span> et <span class="link bold">Alex Savoie Laflamme</span>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -183,7 +173,11 @@
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Explication grappin + accélération/décélération.
+                            Dans le but d'augmenter la vitesse de déplacement et la rapidité du jeu, j'ai développé un
+                            système de grappin ayant différents états pour permettre de déplacer le joueur ou tirer un
+                            objet en fonction du type d'acteur ciblé. De plus, afin de garder une mobilité rapide, j'ai
+                            développé un système d'accélération et de déccélération de la vélocité du joueur
+                            en fonction de la distance parcourue avec son grappin.
                         </p>
                     </div>
                 </div>
@@ -208,17 +202,20 @@
             <div class="wrapper">
                 <div class="text">
                     <div class="title" data-scrolly="fromLeft">
-                        <h2>Système de Ledge grab</h2>
+                        <h2>Système de prise de rebord</h2>
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            But + fonctionnement
+                            Afin de garder le momentum du mouvement du joueur, j'ai développé un système de prise de
+                            rebord. Ce système détecte d'abord si le joueur se trouve au rebord d'une plateforme ou d'un
+                            mur, pour ensuite propulser le joueur au-dessus de l'obstacle.
                         </p>
                     </div>
                 </div>
                 <!-- TODO : CREATE GIF OF LEDGE GRAB WITH LINETRACE -->
                 <img src="assets/images/projets/aubergeForget/textures.jpg" alt="Utilisation d'une UV Map"
                     data-scrolly="fromBottom" />
+                <p class="comment">Détection de rebord et propulsion du joueur</p>
             </div>
         </section>
 
@@ -230,8 +227,13 @@
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Projection, magnétisme, spawn d'items
+                            Pour permettre au joueur de se soigner ou d'obtenir des munitions, j'ai développé le système
+                            d'exécution d'ennemis. Il y a deux types d'exécution : celui de munition lié à un délai
+                            d'utilisation et celui de soin utilisable uniquement contre les ennemis faibles en vie.
                         </p>
+                        <p> Lorsque l'habilité est exécutée contre un ennemi à portée d'exécution, le joueur est attiré
+                            vers celui-ci avant de le tuer. Lors de la mort de l'ennemi, des ressources sont instanciées
+                            en fonction du type d'exécution utilisé.</p>
                     </div>
                 </div>
                 <!-- TODO : CREATE GIF OF GLORY KILL -->
@@ -248,7 +250,12 @@
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Behaviour tree, flying/dodging, distance attack
+                            Afin d'ajouter de la variété de contenu, j'ai développé le behaviour tree d'un ennemi
+                            aérien. Lorsque le joueur est détecté, l'ennemi flotte directement vers le personnage, tout
+                            en se téléportant de droite à gauche selon un délai régulier pour augmenter la difficulté de
+                            l'affrontement. Lorsque le joueur se situe dans la portée d'attaque de l'ennemi, celui
+                            dernier
+                            propulse un projectile vers la position du joueur.
                         </p>
                     </div>
                 </div>
@@ -262,11 +269,16 @@
             <div class="wrapper">
                 <div class="text">
                     <div class="title" data-scrolly="fromLeft">
-                        <h2>Interfaces</h2>
+                        <h2>Affordances et accessibilité</h2>
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Système de QTE, Accessibilité + options
+                            Afin d'ajouter des affordances, j'ai développé un système de prompt affichant un widget
+                            facilement modifiable par instance pour inciter le joueur à faire une action spécifique.
+                            Aussi, j'ai contribué au développement d'options pour l'accessibilité. Par exemple, je me
+                            suis assurée d'intégrer un modificateur pour l'intensité des mouvements de caméra afin
+                            d'éviter les sensations de mal de transport des joueurs et des membres de l'équipe plus
+                            sensibles à certains effets d'occlusion.
                         </p>
                     </div>
                 </div>
@@ -275,122 +287,181 @@
                     <div class="column_item" data-scrolly="fromBottomMedium" data-component="Modal"
                         data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/aubergeForget/card02.jpg">
                         <img src="assets/images/projets/aubergeForget/card02.jpg" alt="Modélisation des détails" />
-                        <p class="comment">Modélisation des détails</p>
+                        <p class="comment">Exemple de prompt</p>
                     </div>
                     <div class="column_item" data-scrolly="fromBottomLong" data-component="Modal"
                         data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/aubergeForget/card03.jpg">
                         <img src="assets/images/projets/aubergeForget/card03.jpg"
                             alt="Modélisation des détails (suite)" />
-                        <p class="comment">Modélisation des détails (suite)</p>
+                        <p class="comment">Menu options (Camera shake)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="single--image">
+            <div class="wrapper">
+                <div class="text">
+                    <div class="title" data-scrolly="fromLeft">
+                        <h2>Crédits</h2>
+                    </div>
+                    <div class="explications" data-scrolly="fromLeftDelay">
+                        <div class="content" data-scrolly="fromTopDelay"></div>
+                        <div data-scrolly="fromTopDelay">
+                            <ul style="list-style-type: none; padding: 0">
+                                <li>
+                                    Scrum Master :
+                                    <a href="https://www.linkedin.com/in/vincent-nadeau-570b8a1b6/" target="_blank"
+                                        rel="noopener">Vincent
+                                        Nadeau</a>
+                                </li>
+                                <li>
+                                    CCC :
+                                    <a href="https://audreylanglois.ca/" target="_blank" rel="noopener">
+                                        Audrey Langlois</a>, <span class="link bold">Caroline Forget</span>, <a
+                                        href="https://www.linkedin.com/in/vincent-nadeau-570b8a1b6/" target="_blank"
+                                        rel="noopener">Vincent
+                                        Nadeau</a>
+                                </li>
+                                <li>
+                                    IA : <a href="https://www.artstation.com/sharkskies" target="_blank" rel="noopener">
+                                        Camille Boudreault</a>, <span class="link bold">Caroline Forget</span> et
+                                    <a href="https://www.linkedin.com/in/vincent-nadeau-570b8a1b6/" target="_blank"
+                                        rel="noopener">
+                                        Vincent Nadeau</a>
+                                </li>
+                                <li>
+                                    Design de niveau :
+                                    <a href="https://www.artstation.com/sharkskies" target="_blank" rel="noopener">
+                                        Camille Boudreault</a> et
+                                    <a href="https://sashafortier.com/" target="_blank" rel="noopener">
+                                        Sasha Fortier</a>
+                                </li>
+                                <li>
+                                    Rigging et animations :
+                                    <a href="https://vimeo.com/raphaelleraymond" target="_blank" rel="noopener">
+                                        Raphaëlle Raymond</a>
+
+                                </li>
+                                <li>
+                                    Modélisation 3D : <a href="https://www.artstation.com/nicolaslevesque"
+                                        target="_blank" rel="noopener">
+                                        Nicolas Lévesque</a> et
+                                    <a href="https://www.artstation.com/alexsl" target="_blank" rel="noopener">
+                                        Alex Savoie-Laflamme</a>
+                                </li>
+                                <li>
+                                    SFX :
+                                    <a href="https://audreylanglois.ca/" target="_blank" rel="noopener">
+                                        Audrey Langlois</a>
+                                </li>
+                                <li>
+                                    VFX :
+                                    <a href="https://www.artstation.com/sharkskies" target="_blank" rel="noopener">
+                                        Camille Boudreault</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content" data-scrolly="fromTopDelay"></div>
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <section class="sct_button" data-scrolly="fromBottom">
+        <!-- TODO : UPDATE LINK TO NEXT PROJECTS SINGLES-->
+        <section class="sct_button sct_button--single" data-scrolly="fromBottom">
             <div class="wrapper">
+
+                <a href="https://dj4immortal.itch.io/project-bloom" target="_blank" rel="noopener"
+                    class="btn__link btn btn__final" aria-label="Voir sur SketchFab">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-arrow-previous"></use>
+                    </svg>
+                    <span class="content__link"></span>
+                </a>
                 <a href="https://dj4immortal.itch.io/project-bloom" target="_blank" rel="noopener"
                     class="btn__link btn btn__final" aria-label="Voir sur SketchFab">
                     Jouer
                     <span class="content__link"></span>
                 </a>
-            </div>
-        </section>
-
-        <!-- TODO : UPDATE LINK AND SRC IMAGE -->
-        <section class="see--other">
-            <div class="wrapper">
-                <div class="prev" data-scrolly="fromRight">
-                    <img src="assets/images/projets/kimo/thumbnail.jpg" alt="placeholder" />
-                    <a href="single-kimo.html" class="btn__link btn btn__other" aria-label="Voir Kimo">
-                        <div class="btn__more">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-arrow-previous"></use>
-                            </svg>
-                        </div>
-                        <span class="content__link"></span>
-                    </a>
-                </div>
-                <div class="next" data-scrolly="fromLeft">
-                    <img src="assets/images/projets/concertoVenua/thumbnail.jpg" alt="placeholder" />
-                    <a href="single-concertoVenua.html" class="btn__link btn btn__other"
-                        aria-label="Voir ConcertoVenua">
-                        <div class="btn__more">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-arrow-next"></use>
-                            </svg>
-                        </div>
-                        <span class="content__link"></span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="sct-contact_footer">
-            <div class="content"></div>
-            <div class="wrapper">
-                <h2>Contactez-moi!</h2>
-                <div class="contact-info">
-                    <ul>
-                        <li>
-                            <svg class="icon icon--sm">
-                                <use xlink:href="#icon-envelope"></use>
-                            </svg>
-                            <p><a href="mailto:info@cforget.com" class="info">info@cforget.com</a></p>
-                        </li>
-                        <li>
-                            <svg class="icon icon--sm">
-                                <use xlink:href="#icon-telephone"></use>
-                            </svg>
-                            <p><a href="tel:5147948932" class="info">(514) 794-8932</a></p>
-                        </li>
-                    </ul>
-                </div>
-
+                <a href="https://dj4immortal.itch.io/project-bloom" target="_blank" rel="noopener"
+                    class="btn__link btn btn__final" aria-label="Voir sur SketchFab">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-arrow-next"></use>
+                    </svg>
+                    <span class="content__link"></span>
+                </a>
             </div>
         </section>
 
         <footer class="footer-primary">
+            <div class="content content__gradient"></div>
             <div class="content"></div>
+
             <div class="wrapper">
-                <div class="social">
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/caroline-forget-dev/" target="_blank" rel="noopener"
-                                aria-label="Voir LinkedIn"><svg class="icon icon--lg">
-                                    <use xlink:href="#icon-linkedin"></use>
-                                </svg>
-                                <div class="content__link"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCBZM9cag9KDxpCL_yEdvEVA" target="_blank"
-                                rel="noopener" aria-label="Voir YouTube"><svg class="icon icon--lg">
-                                    <use xlink:href="#icon-youtube"></use>
-                                </svg>
-                                <div class="content__link"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://sketchfab.com/Unicone" target="_blank" rel="noopener"
-                                aria-label="Voir SketchFab"><svg class="icon icon--lg">
-                                    <use xlink:href="#icon-sketchfab"></use>
-                                </svg>
-                                <div class="content__link"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/CarolineForget" target="_blank" rel="noopener"
-                                aria-label="Voir GitHub"><svg class="icon icon--lg">
-                                    <use xlink:href="#icon-github"></use>
-                                </svg>
-                                <div class="content__link"></div>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer__top">
+                    <div class="logo__footer">
+                        <a href="index.html">
+                            <p>CF.</p>
+                            <p class="title">Programmeuse gameplay & Intégratrice</p>
+                        </a>
+                    </div>
+                    <div class="footer__contact">
+                        <h2>Me contacter</h2>
+                        <ul>
+                            <li>
+                                <p><a href="mailto:info@cforget.com" class="info">info@cforget.com</a></p>
+                            </li>
+                            <li>
+                                <p>&#8226;</p>
+                            </li>
+                            <li>
+                                <p><a href="tel:5147948932" class="info">(514) 794-8932</a></p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <p class="copyright">Caroline Forget © Tous droits réservés.</p>
+                <div class="content"></div>
+                <div class="footer__bottom">
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/caroline-forget-dev/" target="_blank"
+                                    rel="noopener" aria-label="Voir LinkedIn"><svg class="icon icon--lg">
+                                        <use xlink:href="#icon-linkedin"></use>
+                                    </svg>
+                                    <div class="content__link"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCBZM9cag9KDxpCL_yEdvEVA" target="_blank"
+                                    rel="noopener" aria-label="Voir YouTube"><svg class="icon icon--lg">
+                                        <use xlink:href="#icon-youtube"></use>
+                                    </svg>
+                                    <div class="content__link"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://sketchfab.com/Unicone" target="_blank" rel="noopener"
+                                    aria-label="Voir SketchFab"><svg class="icon icon--lg">
+                                        <use xlink:href="#icon-sketchfab"></use>
+                                    </svg>
+                                    <div class="content__link"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/CarolineForget" target="_blank" rel="noopener"
+                                    aria-label="Voir GitHub"><svg class="icon icon--lg">
+                                        <use xlink:href="#icon-github"></use>
+                                    </svg>
+                                    <div class="content__link"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="copyright">Copyright © 2023 Caroline Forget</p>
+                </div>
             </div>
         </footer>
     </div>
