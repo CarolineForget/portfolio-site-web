@@ -21,11 +21,6 @@
 
 .demo-reel {
     pointer-events: none;
-
-    @media screen and (min-width: $breakpoint-sm) {
-        position: absolute;
-        right: 0;
-    }
 }
 
 .video__about {
