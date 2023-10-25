@@ -120,76 +120,37 @@
 }
 
 .summary_detailed {
-    margin-top: 200px;
+    margin-top: var(--spacing-lg);
 
-    @media screen and (min-width: $breakpoint-sm) {
-        margin-top: 200px;
+    .content {
+        display: block;
+        height: 2px;
+        background-color: var(--color-bg-secondary);
     }
 
-    @media screen and (min-width: $breakpoint-md) {
-        margin-top: 350px;
-    }
-}
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
 
-/* 
-   HERO
-   ========================================================================== */
-
-.hero__single .before__single {
-    height: auto;
-
-    .title {
-        background: var(--color-bg-primary-dark);
-
-        h1 {
-            color: var(--color-text-primary);
-            font-family: var(--font-secondary);
-            font-weight: 600;
-        }
-
-        h3 {
-            font-size: var(--font-size-h4-mobile);
-            margin-top: 0;
-
-            @media screen and (min-width: $breakpoint-md) {
-                font-size: var(--font-size-h4-desktop);
-            }
-        }
-
-        @media screen and (min-width: $breakpoint-sm) {
-            min-width: 40%;
-            position: relative;
-            z-index: 2;
+        li {
+            display: flex;
         }
     }
 
-    @media screen and (min-width: $breakpoint-sm) {
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: center;
-
-        position: relative;
-
-        .video {
-            position: absolute;
-            right: 0;
-        }
+    .title span {
+        font-family: var(--font-secondary);
+        font-weight: 400;
     }
 
-    @media screen and (min-width: $breakpoint-lg) {
-        .video {
-            height: 540px;
-            width: 960px;
-        }
-    }
+    .title p {
+        margin: 0;
+        padding: var(--spacing-s) 0 0 var(--spacing-s);
 
-    @media screen and (min-width: $breakpoint-xxl) {
-        .video {
-            height: 810px;
-            width: 1440px;
-        }
+        font-size: var(--font-size-comment);
     }
 }
+
 
 /* 
    SINGLE-IMAGE

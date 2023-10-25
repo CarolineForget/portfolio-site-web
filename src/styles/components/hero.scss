@@ -92,7 +92,7 @@
    hero pour les singles de projet
    ========================================================================== */
 
-.hero__single {
+/* .hero__single {
     height: auto;
     margin-top: var(--spacing-xl);
 
@@ -102,6 +102,106 @@
 
     @media screen and (min-width: $breakpoint-xxl) {
         margin: 20% 0;
+    }
+} */
+
+.hero_single {
+    position: relative;
+    z-index: 3;
+
+    background-color: var(--color-bg-primary-dark);
+    border-bottom: 2px solid var(--color-black);
+
+    .video {
+        border-left: var(--color-black) solid 2px;
+    }
+
+    .headline {
+        display: flex;
+        flex-direction: column-reverse;
+
+        padding-top: var(--spacing-l);
+
+        @media screen and (min-width: $breakpoint-lg) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: last baseline;
+
+            padding-top: 25vh;
+        }
+    }
+
+    .title {
+        text-align: center;
+
+        padding: var(--spacing-sm) 0 0 var(--spacing-s);
+
+        h1 {
+            margin: 0 0 var(--spacing-xs);
+            font-family: var(--font-secondary);
+            font-weight: 600;
+            font-size: 2.15rem;
+
+            @media screen and (min-width: $breakpoint-lg) {
+                font-size: 4rem;
+            }
+        }
+
+        h2 {
+            font-size: var(--font-size-h4-mobile);
+            font-weight: 400;
+            opacity: 0.8;
+
+            margin: var(--spacing-s) 0 var(--spacing-sm) 0;
+
+            @media screen and (min-width: $breakpoint-lg) {
+                font-size: 1.4rem;
+
+                margin: var(--spacing-s) 0 var(--spacing-md) 0;
+            }
+
+            @media screen and (min-width: $breakpoint-xxl) {
+                margin: var(--spacing-s) 0 var(--spacing-lg) 0;
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            text-align: left;
+            align-self: center;
+            padding: var(--spacing-l);
+
+            width: 50%;
+        }
+
+        @media screen and (min-width: $breakpoint-xxl) {
+            padding: var(--spacing-lg);
+        }
+
+    }
+
+    .content {
+        display: block;
+        height: 2px;
+
+        background-color: var(--color-black);
+
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+
+        .video {
+            width: 65%;
+            padding-bottom: 31.25%;
+
+            align-self: end;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+        .video {
+            width: 80%;
+            padding-bottom: 34%;
+        }
     }
 }
 
