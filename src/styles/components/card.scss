@@ -3,64 +3,34 @@
    ========================================================================== */
 
 .card__project {
-    margin: var(--spacing-sm) 0;
-
-    overflow-x: hidden;
-
-    @media screen and (min-width: $breakpoint-sm) {
-        margin-top: -100px;
-    }
+    margin-top: var(--spacing-md);
 
     @media screen and (min-width: $breakpoint-md) {
-        margin-top: -9%;
+        width: 50%;
     }
 
     .wrapper {
-        height: 100vh;
-        width: 100vw;
+        border: var(--color-black) solid 2px;
+        border-right: none;
 
-        @media screen and (min-width: $breakpoint-sm) {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-            align-items: center;
-        }
+
     }
 
-    .img {
-        height: 40%;
+    img {
+        display: block;
+    }
+
+    video {
         width: 100%;
-
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        position: relative;
-        z-index: -1;
-
-        @media screen and (min-width: $breakpoint-sm) {
-            height: 60%;
-            width: 60%;
-        }
-
-        @media screen and (min-width: $breakpoint-md) {
-            height: 65%;
-            width: 65%;
-        }
+        display: block;
     }
 
-    .info {
-        @media screen and (min-width: $breakpoint-sm) {
-            width: 40%;
-        }
 
-        @media screen and (min-width: $breakpoint-md) {
-            width: 35%;
-        }
-    }
+
 
     .title {
         background: var(--color-bg-primary-dark);
-        padding: var(--spacing-sm) var(--spacing-s);
+        padding: var(--spacing-s) var(--spacing-s) var(--spacing-sm);
 
         position: relative;
 
@@ -74,19 +44,15 @@
             font-weight: 400;
             font-size: var(--font-size-h4-mobile);
 
-            @media screen and (min-width: $breakpoint-l) {
-                font-size: var(--font-size-h4-desktop);
+        }
+
+        h2 {
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: var(--font-size-h2-mobile);
             }
         }
 
-        @media screen and (min-width: $breakpoint-sm) {
-            width: 120%;
-            padding: var(--spacing-sm);
-        }
 
-        @media screen and (min-width: $breakpoint-md) {
-            width: 140%;
-        }
     }
 
     .more {
@@ -120,10 +86,12 @@
 
             .icon {
                 fill: var(--color-icons);
+                height: 1.5em;
+                width: 1.5em;
 
                 @media screen and (min-width: $breakpoint-md) {
-                    height: 1.75em;
-                    width: 1.75em;
+                    height: 2em;
+                    width: 2em;
                 }
             }
         }
@@ -132,17 +100,14 @@
             position: relative;
             right: var(--spacing-sm);
 
-            @media screen and (min-width: $breakpoint-md) {
-                right: 85px;
-            }
         }
     }
 
     .summary {
         padding: var(--spacing-sm) var(--spacing-s);
 
-        @media screen and (min-width: $breakpoint-md) {
-            padding: var(--spacing-sm);
+        p {
+            margin: 0;
         }
 
         .content {
@@ -178,62 +143,4 @@
 
 .card__first {
     margin: var(--spacing-sm) 0 0;
-}
-
-/* 
-   card avec image a gauche
-   ========================================================================== */
-
-.card__even {
-    .wrapper {
-        @media screen and (min-width: $breakpoint-sm) {
-            flex-direction: row;
-        }
-    }
-
-    .title {
-        @media screen and (min-width: $breakpoint-sm) {
-            width: 120%;
-
-            position: relative;
-            left: -20%;
-        }
-
-        @media screen and (min-width: $breakpoint-md) {
-            width: 140%;
-
-            position: relative;
-            left: -40%;
-        }
-    }
-
-    .flex {
-        ul {
-            @media screen and (min-width: $breakpoint-sm) {
-                li:first-child {
-                    margin-left: var(--spacing-md);
-                }
-            }
-
-            @media screen and (min-width: $breakpoint-md) {
-                li:first-child {
-                    margin-left: var(--spacing-xl);
-                }
-            }
-        }
-
-        a {
-            @media screen and (min-width: $breakpoint-md) {
-                right: var(--spacing-l);
-            }
-        }
-    }
-
-    .grid__item {
-        p {
-            right: auto;
-            left: var(--spacing-s);
-            bottom: -10px;
-        }
-    }
 }

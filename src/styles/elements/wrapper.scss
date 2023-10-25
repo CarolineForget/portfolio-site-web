@@ -12,6 +12,23 @@
     }
 }
 
+.wrapper__project {
+    width: 100%;
+    margin: var(--spacing-l) auto 0;
+
+    &:last-child {
+        margin-bottom: var(--spacing-l);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+
+        width: calc(100% - var(--spacing-md));
+    }
+}
+
 // Utilisation du css Layout Grid pour faire le wrapper
 .grid-wrapper {
     display: grid;
