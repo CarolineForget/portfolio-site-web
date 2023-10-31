@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description"
-        content="Avec Cone Rush, évitez un maximun de cônes oranges envahissant les routes d’une ville que nous connaissons probablement tous si bien dans ce jeu amusant et accrocheur. " />
+        content="Intégration et programmation d'un micro jeu 3D réalisé en équipe de deux durant une game jam d'une durée d'une heure organisée entre amis. " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cone Rush | Caroline Forget</title>
 
@@ -115,35 +115,50 @@
             </section>
         </a>
 
-        <section class="hero hero__single">
-            <div class="before before__single wrapper">
-                <!-- TODO : CREATE A VIDEO BEFORE AND AFTER -->
+        <div class="hero_single wrapper">
+            <div class="headline">
+                <div class="title">
+                    <h1>Cone Rush
+                    </h1>
+                    <h2>Game jam | Projet d'équipe</h2>
+                    <a href="assets/sites/coneRush/index.html" target="_blank" rel="noopener" class="btn__link btn"
+                        aria-label="Jouer">
+                        Jouer
+                        <span class="content__link"></span>
+                    </a>
+                </div>
                 <div class="video" data-component="Video" data-video-id="JvwZTQkBu3A" data-show-controls="true"
-                    data-auto-play="true" data-is-looping="true">
+                    data-auto-play="false" data-is-looping="true">
                     <div class="video__media js-video"></div>
                 </div>
-                <div class="title">
-                    <h3>Game jam | Projet personnel</h3>
-                    <h1>Cone Rush</h1>
-                    <div class="container--button">
-                        <a href="assets/sites/coneRush/index.html" target="_blank" rel="noopener" class="btn__link btn"
-                            aria-label="Jouer">
-                            Jouer
-                            <span class="content__link"></span>
-                        </a>
-                    </div>
-                </div>
             </div>
-        </section>
+        </div>
 
         <section id="next-viewport" class="summary_detailed">
             <div class="wrapper">
                 <div class="text">
                     <div class="title" data-scrolly="fromLeft">
                         <h2>Résumé</h2>
+                        <div class="content"></div>
+                        <ul>
+                            <li>
+                                <p><span>Rôles : </span>Intégration et programmation</p>
+                            </li>
+                            <li>
+                                <p><span>Moteur de jeu : </span>Unity</p>
+                            </li>
+                            <li>
+                                <p><span>Date : </span>Hiver 2022</p>
+                            </li>
+                            <li>
+                                <p><span>Sons et musique : </span><a href="https://elements.envato.com/" target="_blank"
+                                        rel="noopener">Envato
+                                        Elements</a>
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                     <div class="explications">
-                        <!-- TODO : UPDATE PROJECT DESCRIPTION -->
                         <p data-scrolly="fromLeftDelay">
                             Avec Cone Rush, évitez un maximum de cônes oranges envahissant les routes d’une ville
                             que nous connaissons probablement tous dans ce jeu amusant et accrocheur.
@@ -163,51 +178,6 @@
                             artistique et <span class="bold highlight">des jeux en course automatique</span>, comme
                             Subway Surfer et Temple Run, pour la mécanique.
                         </p>
-                        <div class="content" data-scrolly="fromTopDelay"></div>
-                        <div class="credits" data-scrolly="fromTopDelay">
-                            <ul>
-                                <li class="comment">
-                                    Intégration et programmation :
-                                    <span class="link bold">Caroline Forget</span>
-                                </li>
-                                <li class="comment">
-                                    Modélisation et design :
-                                    <a href="https://williamdb.ca/" target="_blank" rel="noopener">William
-                                        Despatie-Bonneville</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="single--columns single--columns__double">
-            <div class="wrapper">
-                <div class="text">
-                    <div class="title" data-scrolly="fromLeft">
-                        <h2>Génération procédurale</h2>
-                    </div>
-                    <div class="explications" data-scrolly="fromLeftDelay">
-                        <p>
-                            Biome system et transition. Coins, obstacles, power ups. Désir d'explorer cet aspect de
-                            programmation.
-                        </p>
-                    </div>
-                </div>
-                <div class="columns">
-                    <!-- TODO : CREATE GIFS OF ENGINE PROCEDURAL GENERATION -->
-                    <div class="column_item" data-scrolly="fromBottomMedium" data-component="Modal"
-                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/aubergeForget/card02.jpg">
-                        <img src="assets/images/projets/aubergeForget/card02.jpg" alt="Modélisation des détails" />
-                        <p class="comment">Grappin comme méthode de déplacement</p>
-                    </div>
-                    <!-- TODO : GIF OF FINAL RESULT -->
-                    <div class="column_item" data-scrolly="fromBottomLong" data-component="Modal"
-                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/aubergeForget/card03.jpg">
-                        <img src="assets/images/projets/aubergeForget/card03.jpg"
-                            alt="Modélisation des détails (suite)" />
-                        <p class="comment">Grappin pour attirer des objets vers le joueur</p>
                     </div>
                 </div>
             </div>
@@ -216,120 +186,180 @@
         <section class="single--image">
             <div class="wrapper">
                 <div class="text">
-                    <div class="title" data-scrolly="fromLeft">
-                        <h2>Système de pouvoirs</h2>
+                    <div class="title title__button" data-scrolly="fromLeft">
+                        <h2>Mouvements</h2>
+                        <div class="more" data-scrolly="fromLeftDelay">
+                            <div class="flex">
+                                <a href="https://github.com/CarolineForget/mini-game-jam-1" target="_blank"
+                                    rel="noopener" class="btn__link btn">
+                                    Voir sur GitHub
+
+                                    <span class="content__link"></span></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Description pouvoirs
+                            Comme nous étions très limités dans le temps, j’ai recyclé un script de mouvement que
+                            j’avais précédemment écrit. J’ai
+                            <span class="bold highlight">bloqué les mouvements sur l’axe des Z</span> pour empêcher
+                            le joueur de s’y déplacer et j’ai ajouté de la
+                            <span class="bold highlight">vélocité avec la méthode SmoothDamp()</span> pour simuler
+                            un effet d’accélération avec les déplacements de l’avatar.
                         </p>
                     </div>
                 </div>
-                <!-- TODO : Image of system interaction -->
                 <img src="assets/images/projets/coneRush/image01.jpg" alt="Exemple de code pour les mouvements"
                     data-scrolly="fromBottom" />
             </div>
         </section>
 
-        <section class="single--columns single--columns__double">
+        <section class="single--columns">
             <div class="wrapper">
                 <div class="text">
                     <div class="title" data-scrolly="fromLeft">
-                        <h2>Système économique</h2>
+                        <h2>Obstacles</h2>
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Système de pointage. Système de boutique.
+                            Les obstacles sont
+                            <span class="bold highlight">générés après un délai aléatoire</span> dans trois allées
+                            différentes, puis détruits lorsqu’ils sont évités. Plus le temps s’écoule,
+                            <span class="bold highlight">plus le délai s'accélère pour augmenter graduellement la
+                                difficulté</span>
+                            de la partie. Chaque obstacle a des
+                            <span class="bold highlight">colliders</span> détruisant d’autres obstacles trop près
+                            d’eux pour que le joueur puisse toujours les esquiver.
                         </p>
                     </div>
                 </div>
                 <div class="columns">
-                    <!-- TODO : SYSTEM INTERACTION -->
-                    <div class="column_item" data-scrolly="fromBottomMedium" data-component="Modal"
-                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/aubergeForget/card02.jpg">
-                        <img src="assets/images/projets/aubergeForget/card02.jpg" alt="Modélisation des détails" />
-                        <p class="comment">Grappin comme méthode de déplacement</p>
+                    <div class="column_item" data-scrolly="fromBottom" data-component="Modal"
+                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/coneRush/card01.jpg">
+                        <img src="assets/images/projets/coneRush/card01.jpg" alt="Réduction du délai d’apparition" />
+                        <p class="comment">Réduction du délai d’apparition</p>
                     </div>
-                    <!-- TODO : GIF OF BOUTIQUE ITEM UNLOCK -->
+                    <div class="column_item" data-scrolly="fromBottomMedium" data-component="Modal"
+                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/coneRush/card02.jpg">
+                        <img src="assets/images/projets/coneRush/card02.jpg" alt="Prefab des obstacles" />
+                        <p class="comment">Prefab des obstacles</p>
+                    </div>
                     <div class="column_item" data-scrolly="fromBottomLong" data-component="Modal"
-                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/aubergeForget/card03.jpg">
-                        <img src="assets/images/projets/aubergeForget/card03.jpg"
-                            alt="Modélisation des détails (suite)" />
-                        <p class="comment">Grappin pour attirer des objets vers le joueur</p>
+                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/coneRush/card03.jpg">
+                        <img src="assets/images/projets/coneRush/card03.jpg" alt="Instanciation des obstacles" />
+                        <p class="comment">Instanciation des obstacles</p>
                     </div>
                 </div>
             </div>
         </section>
 
-
         <section class="single--image">
             <div class="wrapper">
                 <div class="text">
                     <div class="title" data-scrolly="fromLeft">
-                        <h2>Cinématique</h2>
+                        <h2>Intégration 3D</h2>
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Modif de caméra. Countdown system.
+                            J’ai ensuite intégré, dans la scène, les modèles 3D faits par mon coéquipier. Pour
+                            animer les <span class="bold highlight">bâtiments</span>, j’ai utilisé la
+                            <span class="bold highlight">méthode Translate()</span> pour ensuite les téléporter vers
+                            une position antérieure lorsqu’ils ne sont plus dans la vue de la caméra. Pour la
+                            <span class="bold highlight">route</span>, j’ai programmé
+                            <span class="bold highlight">l’animation de l'offset du matériel</span>
+                            appliqué.
                         </p>
                     </div>
                 </div>
-                <!-- TODO : GIF OF DEATH ON OBSTACLE -->
                 <img src="assets/images/projets/coneRush/image02.jpg" alt="Code pour les animations"
                     data-scrolly="fromBottom" />
             </div>
         </section>
 
+        <section class="single--image">
+            <div class="wrapper">
+                <div class="text">
+                    <div class="title" data-scrolly="fromLeft">
+                        <h2>Ambiance lumineuse</h2>
+                    </div>
+                    <div class="explications" data-scrolly="fromLeftDelay">
+                        <p>
+                            Pour l’ambiance lumineuse, j’ai décidé de créer une
+                            <span class="bold highlight">ambiance de soirée</span> avec le « Lighting » de la scène,
+                            puisque les <span class="bold highlight">phares</span> de la voiture,
+                            <span class="bold highlight">fait avec des « spot lights »</span>, permettaient de
+                            <span class="bold highlight">mieux diriger l’attention du joueur au centre</span>, ainsi
+                            aux obstacles. Pour cacher l’apparition des cônes, j’ai ajouté du
+                            <span class="bold highlight">brouillard</span>, ce qui donne l’impression qu’ils
+                            apparaissent graduellement dans la vue de la caméra.
+                        </p>
+                    </div>
+                </div>
+                <img src="assets/images/projets/coneRush/image03.jpg" alt="Modification du lighting"
+                    data-scrolly="fromBottom" />
+            </div>
+        </section>
 
         <section class="single--image">
             <div class="wrapper">
                 <div class="text">
                     <div class="title" data-scrolly="fromLeft">
-                        <h2>Conclusion</h2>
+                        <h2>Ambiance sonore</h2>
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Ce que j'ai appris
+                            J’ai intégré et programmé les événements sonores du jeu à l’aide de diverses méthodes
+                            liées à la <span class="bold highlight">composante audiosource</span>, comme
+                            PlayOneShot() et Stop(). Nous avons décidé d’ajouté un bruit de klaxon lorsque le joueur
+                            appuie sur la barre espace.
+                        </p>
+                    </div>
+                </div>
+                <img src="assets/images/projets/coneRush/image04.jpg" alt="Programmation des sons"
+                    data-scrolly="fromBottom" />
+            </div>
+        </section>
+
+        <section class="single--image">
+            <div class="wrapper">
+                <div class="text">
+                    <div class="title" data-scrolly="fromLeft">
+                        <h2>Plan futur</h2>
+                    </div>
+                    <div class="explications" data-scrolly="fromLeftDelay">
+                        <p>
+                            Faire un jeu en une heure était un très beau défi que je désire faire à nouveau. Une
+                            idée m’est venu à l’esprit, après cette game jam, de créer plusieurs micro-jeux dans un
+                            seul et même répertoire, comme pour le sites web de jeux en ligne que je jouais quand
+                            j’étais petite.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="sct_button" data-scrolly="fromBottom">
+        <section class="sct_button sct_button--single" data-scrolly="fromBottom">
             <div class="wrapper">
+
+                <a href="single-minescape.html" rel="noopener" class="btn__link btn btn__final"
+                    aria-label="Voir Minescape">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-arrow-previous"></use>
+                    </svg>
+                    <span class="content__link"></span>
+                </a>
                 <a href="assets/sites/coneRush/index.html" target="_blank" rel="noopener"
                     class="btn__link btn btn__final" aria-label="Jouer">
                     Jouer
                     <span class="content__link"></span>
                 </a>
-            </div>
-        </section>
-
-        <section class="see--other">
-            <div class="wrapper">
-                <div class="prev" data-scrolly="fromRight">
-                    <img src="assets/images/projets/minescape/thumbnail.jpg" alt="placeholder" />
-                    <a href="single-minescape.html" class="btn__link btn btn__other" aria-label="Voir Minescape">
-                        <div class="btn__more">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-arrow-previous"></use>
-                            </svg>
-                        </div>
-                        <span class="content__link"></span>
-                    </a>
-                </div>
-                <div class="next" data-scrolly="fromLeft">
-                    <img src="assets/images/projets/rexMontis/thumbnail.jpg" alt="placeholder" />
-                    <a href="single-rex-montis.html" class="btn__link btn btn__other" aria-label="Voir Rex Montis">
-                        <div class="btn__more">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-arrow-next"></use>
-                            </svg>
-                        </div>
-                        <span class="content__link"></span>
-                    </a>
-                </div>
+                <a href="single-rex-montis.html" rel="noopener" class="btn__link btn btn__final"
+                    aria-label="Voir Rex Montis">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-arrow-next"></use>
+                    </svg>
+                    <span class="content__link"></span>
+                </a>
             </div>
         </section>
 
@@ -342,7 +372,7 @@
                     <div class="logo__footer">
                         <a href="index.html">
                             <p>CF.</p>
-                            <p class="title">Programmeuse gameplay & Intégratrice</p>
+                            <p class="title">Designer technique | Programmeuse gameplay</p>
                         </a>
                     </div>
                     <div class="footer__contact">

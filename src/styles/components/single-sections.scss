@@ -25,6 +25,10 @@
         }
     }
 
+    video {
+        width: 100%;
+    }
+
     img {
         height: 100%;
         width: 100%;
@@ -165,6 +169,14 @@
             margin-top: var(--spacing-l);
         }
     }
+
+    video {
+        margin-top: var(--spacing-sm);
+
+        @media screen and (min-width: $breakpoint-md) {
+            margin-top: var(--spacing-l);
+        }
+    }
 }
 
 /* 
@@ -187,7 +199,9 @@
     }
 
     .column_item {
-        cursor: pointer;
+        img {
+            cursor: pointer;
+        }
 
         p {
             margin: 0;
@@ -214,7 +228,9 @@
     }
 
     .column_item {
-        cursor: pointer;
+        img {
+            cursor: pointer;
+        }
 
         p {
             margin: 0;

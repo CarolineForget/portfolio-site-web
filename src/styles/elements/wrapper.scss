@@ -14,11 +14,7 @@
 
 .wrapper__project {
     width: 100%;
-    margin: var(--spacing-l) auto 0;
-
-    &:last-child {
-        margin-bottom: var(--spacing-l);
-    }
+    margin: var(--spacing-l) auto;
 
     @media screen and (min-width: $breakpoint-md) {
         display: flex;

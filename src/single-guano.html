@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="description"
-        content="Bachelière en création de jeux vidéo à l'UQAT, je suis évidemment passionnée de jeux vidéo, en particulier les RPGs et les roguelites. Aussi, je rêve de développer, avec une équipe soudée, des jeux vidéo qui auront un impact marquant dans l'industrie." />
+        content="Développement d'une preuve technique au sein d'une équipe. J'ai développé les IAs et leurs réactions envers les actions du joueur." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>À propos | Caroline Forget</title>
+    <title>Guano | Caroline Forget</title>
 
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="shortcut icon" href="assets/icons/favicon.ico" />
@@ -39,8 +39,6 @@
             a.appendChild(r);
         })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" async></script>
     <script src="scripts/main.js" defer></script>
 </head>
 
@@ -77,9 +75,7 @@
                             </li>
                             <li>
                                 <a href="page-about.html" class="nav-primary__item">
-                                    <div class="content__select">
-                                        <div class="content__hover"></div>
-                                    </div>
+                                    <div class="content__hover"></div>
                                     À propos
                                 </a>
                             </li>
@@ -118,78 +114,139 @@
             </section>
         </a>
 
-        <section class="hero hero_about" data-component="Grid" data-opacity="1">
-            <div class="wrapper">
-                <img src="assets/images/profile/profilePicture.jpg" alt="Photo de Caroline Forget" class="grid__item" />
-
-                <div class="text">
-                    <div class="content"></div>
-                    <h1>
-                        Je suis <br />
-                        <span data-component="Type"></span>
+        <div class="hero_single wrapper">
+            <div class="headline">
+                <div class="title">
+                    <h1>Guano
                     </h1>
+                    <h2>Preuve technique | Projet d'équipe</h2>
+                </div>
+                <div class="video" data-component="Video" data-video-id="2ErkAw-Y28M" data-show-controls="true"
+                    data-auto-play="false" data-is-looping="true">
+                    <div class="video__media js-video"></div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="summary">
-                        <p>
-                            <span class="bold highlight">Bachelière en création de jeux vidéo à l'UQAT</span>, je
-                            suis évidemment passionnée de jeux
-                            vidéo, en particulier les RPGs et les roguelites. Aussi,
-                            je rêve de
-                            développer, avec une équipe soudée, des jeux vidéo qui auront un impact marquant dans
-                            l'industrie.
+        <section id="next-viewport" class="summary_detailed">
+            <div class="wrapper">
+                <div class="text">
+                    <div class="title" data-scrolly="fromTopDelay">
+                        <h2>Résumé</h2>
+                        <div class="content"></div>
+                        <ul>
+                            <li>
+
+                                <p><span>Rôle : </span>Programmeuse AI</p>
+                            </li>
+                            <li>
+
+                                <p><span>Moteur de jeu : </span>Unreal 5</p>
+                            </li>
+                            <li>
+
+                                <p><span>Date : </span>Automne 2023</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="explications">
+                        <p data-scrolly="fromLeftDelay">
+                            Guano est une preuve technique dans laquelle le joueur incarne un goéland ayant pour but
+                            d'acquérir un maximum de malbouffe en énervant les habitants d'une île.
                         </p>
-                        <p>
-                            Par mes expériences scolaires et
-                            professionnelles, j'ai acquis une gamme de compétences en <span
-                                class="bold highlight">programmation gameplay,
-                                intégration logicielle et design technique</span>. De plus, étant <span
-                                class="bold highlight">curieuse</span> et
-                            <span class="bold highlight">persévérante</span>, j'adore
-                            apprendre, trouver des solutions ; et je cherche toujours à <span class="bold highlight">me
-                                surpasser</span>. Aucun obstacle ne m'arrête!
+                        <p data-scrolly="fromLeftDelay">
+                            Au sein de l'équipe, j'ai eu la charge de développer l'intelligence artificielle des humains
+                            et des bâteaux-camions populant le jeu. Entre autres, j'ai utilisé les arbres de
+                            comportement et la composante Spline pour créer un système de comportement facilement
+                            éditable par les designers de niveau.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div id="next-viewport" class="carousel">
+        <section class="single--image">
             <div class="wrapper">
-                <div class="swiper-container swiper__about" data-component="Carousel" data-carousel="split">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide swiper-slide-1">
-                            <h2 class="slide-1">Compétences</h2>
-                            <ul>
-                                <li>Programmation gameplay</li>
-                                <li>Intégration</li>
-                                <li>Design technique</li>
-                                <li>Assurance qualité</li>
-                                <li>Modélisation 3D</li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide swiper-slide-2">
-                            <h2 class="slide-2">Logiciels</h2>
-                            <ul>
-                                <li>Unreal Engine (Blueprint)</li>
-                                <li>Unity (C#)</li>
-                                <li>Perforce / Github</li>
-                                <li>Notion / Miro / Trello / Figma</li>
-                                <li>Blender / Substance Painter</li>
-                            </ul>
-                        </div>
+                <div class="text">
+                    <div class="title" data-scrolly="fromLeft">
+                        <h2>Système de déplacement</h2>
                     </div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="explications" data-scrolly="fromLeftDelay">
+                        <p>
+
+
+                            Path component - suit spline + paramètres accessibles au level designer (points d'arrêts /
+                            linéaires ou non) - multiples splines for path deviation (and dodge obstacle)
+
+                            Autant humains que bâteau-camions
+                        </p>
+                    </div>
+                </div>
+                <video data-scrolly="fromBottom" src="assets/videos/PD_Grapple_02.mp4" muted loop autoplay></video>
+                <p class="comment">Créateur de personnage</p>
+            </div>
+        </section>
+
+        <section class="single--columns">
+            <div class="wrapper">
+                <div class="text">
+                    <div class="title" data-scrolly="fromLeft">
+                        <h2>Réactions</h2>
+                    </div>
+                    <div class="explications" data-scrolly="fromLeftDelay">
+                        <p>
+                            Interfaces pour réactions personnalisées
+
+                            Éléments de personnalisation (chapeau, écouteurs)
+
+                            Réactions (échapper nourriture / fuite à l'opposé)
+                        </p>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column_item" data-scrolly="fromBottom" data-component="Modal"
+                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/rexMontis/card01.jpg">
+                        <img src="assets/images/projets/rexMontis/card01.jpg"
+                            alt="Hiérarchie du GameObject pour le joueur" />
+                        <p class="comment">
+                            Classe Swordsman
+                        </p>
+                    </div>
+                    <div class="column_item" data-scrolly="fromBottomMedium" data-component="Modal"
+                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/rexMontis/card02.jpg">
+                        <img src="assets/images/projets/rexMontis/card02.jpg" alt="Exemple de référencement" />
+                        <p class="comment">
+                            Classe Mage
+                        </p>
+                    </div>
+                    <div class="column_item" data-scrolly="fromBottomLong" data-component="Modal"
+                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/rexMontis/card03.jpg">
+                        <img src="assets/images/projets/rexMontis/card03.jpg" alt="Exemple de référencement (suite)" />
+                        <p class="comment">
+                            Classe Guardian
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <section class="sct_button" data-scrolly="fromBottom">
+        <section class="sct_button sct_button--single" data-scrolly="fromBottom">
             <div class="wrapper">
-                <a href="assets/download/Forget_Caroline_CV.pdf" target="_blank"
-                    class="btn__link btn btn__final">Consulter mon CV <span class="content__link"></span></a>
+
+                <a href="single-project-bloom.html" rel="noopener" class="btn__link btn btn__final"
+                    aria-label="Voir Project Bloom">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-arrow-previous"></use>
+                    </svg>
+                    <span class="content__link"></span>
+                </a>
+                <a href="single-character-creator.html" rel="noopener" class="btn__link btn btn__final"
+                    aria-label="Voir Créateur de personnage">
+                    <svg class="icon icon--md">
+                        <use xlink:href="#icon-arrow-next"></use>
+                    </svg>
+                    <span class="content__link"></span>
+                </a>
             </div>
         </section>
 
@@ -202,7 +259,7 @@
                     <div class="logo__footer">
                         <a href="index.html">
                             <p>CF.</p>
-                            <p class="title">Programmeuse gameplay & Intégratrice</p>
+                            <p class="title">Designer technique | Programmeuse gameplay</p>
                         </a>
                     </div>
                     <div class="footer__contact">
@@ -262,9 +319,23 @@
                 </div>
             </div>
         </footer>
-
-        <div class="cursor" data-component="Cursor"></div>
     </div>
+
+    <div class="cursor" data-component="Cursor"></div>
+
+    <template id="tpl-modal-simple">
+        <div class="modal">
+            <div class="modal__scrim"></div>
+            <div class="modal__box">
+                <img src="{{src}}" alt="Indisponible" />
+                <button class="modal__close js-close">
+                    <svg class="icon icon--lg">
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </template>
 </body>
 
 </html>
