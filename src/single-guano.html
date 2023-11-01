@@ -121,7 +121,7 @@
                     </h1>
                     <h2>Preuve technique | Projet d'équipe</h2>
                 </div>
-                <div class="video" data-component="Video" data-video-id="2ErkAw-Y28M" data-show-controls="true"
+                <div class="video" data-component="Video" data-video-id="cCi3kCLd3t4" data-show-controls="true"
                     data-auto-play="false" data-is-looping="true">
                     <div class="video__media js-video"></div>
                 </div>
@@ -155,9 +155,12 @@
                             d'acquérir un maximum de malbouffe en énervant les habitants d'une île.
                         </p>
                         <p data-scrolly="fromLeftDelay">
-                            Au sein de l'équipe, j'ai eu la charge de développer l'intelligence artificielle des humains
-                            et des bâteaux-camions populant le jeu. Entre autres, j'ai utilisé les arbres de
-                            comportement et la composante Spline pour créer un système de comportement facilement
+                            Au sein de l'équipe, j'ai eu la charge de développer l'<span
+                                class="highlight bold">intelligence artificielle</span> des humains
+                            et des bâteau-camions populant le jeu. Entre autres, j'ai utilisé les <span
+                                class="highlight bold">arbres de
+                                comportement</span> et la composante <span class="highlight bold">Spline</span> pour
+                            créer un système de comportement facilement
                             éditable par les designers de niveau.
                         </p>
                     </div>
@@ -173,21 +176,26 @@
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-
-
-                            Path component - suit spline + paramètres accessibles au level designer (points d'arrêts /
-                            linéaires ou non) - multiples splines for path deviation (and dodge obstacle)
-
-                            Autant humains que bâteau-camions
+                            J'ai développé un système de déplacement flexible pour les humains et les bâteau-camions à
+                            l'aide des composantes Spline. Ce système possède aussi des <span
+                                class="highlight bold">paramètres éditables</span> permettant
+                            d'assigner, pour chaque acteur, des <span class="highlight bold">points d'arrêt</span>, un
+                            <span class="highlight bold">modèle de déplacement</span> (linéaire,
+                            circulaire ou statique) et les <span class="highlight bold">chemins</span> que l'acteur peut
+                            suivre. Ce dernier peut changer de
+                            chemin selon des points précis déterminés par le designer. Dans son état de base, l'acteur
+                            peut soit suivre le chemin assigné ou demeurer statique.
                         </p>
                     </div>
                 </div>
-                <video data-scrolly="fromBottom" src="assets/videos/PD_Grapple_02.mp4" muted loop autoplay></video>
-                <p class="comment">Créateur de personnage</p>
+                <video src="assets/videos/projects/guano/G_Video_01.mp4" muted loop autoplay></video>
+                <p class="comment">
+                    Exemples de comportements de déplacement
+                </p>
             </div>
         </section>
 
-        <section class="single--columns">
+        <section class="single--columns single--columns__double">
             <div class="wrapper">
                 <div class="text">
                     <div class="title" data-scrolly="fromLeft">
@@ -195,35 +203,37 @@
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Interfaces pour réactions personnalisées
-
-                            Éléments de personnalisation (chapeau, écouteurs)
-
-                            Réactions (échapper nourriture / fuite à l'opposé)
+                            L'état actif des acteurs changent lorsqu'ils peuvent réagir à une action du joueur selon des
+                            événements liés à des <span class="highlight bold">interfaces blueprint</span>. Aussi,
+                            lorsque l'<span class="highlight bold">état actif est modifié</span>, la
+                            branche de
+                            comportement active est interrompue afin d'exécuter la réaction. Ainsi, les humains peuvent,
+                            par exemple, <span class="highlight bold">fuire</span> vers la direction opposée du joueur
+                            et <span class="highlight bold">échapper leur
+                                nourriture</span>.
+                        </p>
+                        <p>
+                            Aussi, afin de varier le rythme de jouabilité, j'ai créé un simple <span
+                                class="highlight bold">système de
+                                personnalisation</span> permettant à certains acteurs de porter des accessoires qui
+                            <span class="highlight bold">bloquent des
+                                abilités</span> spécifiques du joueur.
                         </p>
                     </div>
                 </div>
                 <div class="columns">
                     <div class="column_item" data-scrolly="fromBottom" data-component="Modal"
                         data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/rexMontis/card01.jpg">
-                        <img src="assets/images/projets/rexMontis/card01.jpg"
-                            alt="Hiérarchie du GameObject pour le joueur" />
+                        <video src="assets/videos/projects/guano/G_Video_02.mp4" muted loop autoplay></video>
                         <p class="comment">
-                            Classe Swordsman
+                            Exemple de réaction de fuite
                         </p>
                     </div>
                     <div class="column_item" data-scrolly="fromBottomMedium" data-component="Modal"
                         data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/rexMontis/card02.jpg">
-                        <img src="assets/images/projets/rexMontis/card02.jpg" alt="Exemple de référencement" />
+                        <video src="assets/videos/projects/guano/G_Video_03.mp4" muted loop autoplay></video>
                         <p class="comment">
-                            Classe Mage
-                        </p>
-                    </div>
-                    <div class="column_item" data-scrolly="fromBottomLong" data-component="Modal"
-                        data-modal-id="tpl-modal-simple" data-modal-bg="assets/images/projets/rexMontis/card03.jpg">
-                        <img src="assets/images/projets/rexMontis/card03.jpg" alt="Exemple de référencement (suite)" />
-                        <p class="comment">
-                            Classe Guardian
+                            Exemple de protection contre le cri
                         </p>
                     </div>
                 </div>
@@ -285,14 +295,6 @@
                                 <a href="https://www.linkedin.com/in/caroline-forget-dev/" target="_blank"
                                     rel="noopener" aria-label="Voir LinkedIn"><svg class="icon icon--lg">
                                         <use xlink:href="#icon-linkedin"></use>
-                                    </svg>
-                                    <div class="content__link"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCBZM9cag9KDxpCL_yEdvEVA" target="_blank"
-                                    rel="noopener" aria-label="Voir YouTube"><svg class="icon icon--lg">
-                                        <use xlink:href="#icon-youtube"></use>
                                     </svg>
                                     <div class="content__link"></div>
                                 </a>

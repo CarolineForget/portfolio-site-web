@@ -126,7 +126,7 @@
                         <span class="content__link"></span>
                     </a>
                 </div>
-                <div class="video" data-component="Video" data-video-id="2ErkAw-Y28M" data-show-controls="true"
+                <div class="video" data-component="Video" data-video-id="lBzzMsh_Q1Y" data-show-controls="true"
                     data-auto-play="false" data-is-looping="true">
                     <div class="video__media js-video"></div>
                 </div>
@@ -187,20 +187,24 @@
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
                             Dans le but d'augmenter la vitesse de déplacement et la rapidité du jeu, j'ai développé un
-                            système de grappin ayant différents états pour permettre de déplacer le joueur ou tirer un
-                            objet en fonction du type d'acteur ciblé. De plus, afin de garder une mobilité rapide, j'ai
-                            développé un système d'accélération et de déccélération de la vélocité du joueur
-                            en fonction de la distance parcourue avec son grappin.
+                            <span class="bold highlight">système de grappin</span> ayant différents états pour permettre
+                            de <span class="bold highlight">déplacer le joueur</span> ou <span
+                                class="bold highlight">tirer un
+                                objet</span> en fonction du type d'acteur ciblé. De plus, afin de garder la mobilité
+                            rapide, j'ai
+                            développé un système d'<span class="bold highlight">accélération et de déccélération</span>
+                            de la vélocité du joueur
+                            en fonction de la <span class="bold highlight">distance parcourue</span> avec son grappin.
                         </p>
                     </div>
                 </div>
                 <div class="columns">
                     <div class="column_item" data-scrolly="fromBottomMedium">
-                        <video src="assets/videos/PD_Grapple_02.mp4" muted loop autoplay></video>
+                        <video src="assets/videos/projects/projectBloom/BP_Video_03.mp4" muted loop autoplay></video>
                         <p class="comment">Grappin comme méthode de déplacement</p>
                     </div>
                     <div class="column_item" data-scrolly="fromBottomLong">
-                        <video src="assets/videos/PD_Grapple_01.mp4" muted loop autoplay></video>
+                        <video src="assets/videos/projects/projectBloom/PB_Video_02.mp4" muted loop autoplay></video>
                         <p class="comment">Grappin pour attirer des objets vers le joueur</p>
                     </div>
                 </div>
@@ -216,12 +220,14 @@
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
                             Afin de garder le momentum du mouvement du joueur, j'ai développé un système de prise de
-                            rebord. Ce système détecte d'abord si le joueur se trouve au rebord d'une plateforme ou d'un
-                            mur, pour ensuite propulser le joueur au-dessus de l'obstacle.
+                            rebord. Ce système <span class="bold highlight">détecte</span> d'abord si le joueur se
+                            trouve au <span class="bold highlight">rebord d'une plateforme</span> ou d'un
+                            mur, pour ensuite <span class="bold highlight">propulser le joueur</span> au-dessus de
+                            l'obstacle.
                         </p>
                     </div>
                 </div>
-                <video src="assets/videos/PD_LedgeJump.mp4" muted loop autoplay></video>
+                <video src="assets/videos/projects/projectBloom/PB_Video_01.mp4" muted loop autoplay></video>
                 <p class="comment">Détection de rebord et propulsion du joueur</p>
             </div>
         </section>
@@ -234,16 +240,20 @@
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Pour permettre au joueur de se soigner ou d'obtenir des munitions, j'ai développé le système
-                            d'exécution d'ennemis. Il y a deux types d'exécution : celui de munition lié à un délai
-                            d'utilisation et celui de soin utilisable uniquement contre les ennemis faibles en vie.
+                            Pour permettre au joueur de se <span class="bold highlight">soigner ou d'obtenir des
+                                munitions</span>, j'ai développé le système
+                            d'exécution des ennemis. Il y a deux types d'exécution : celui de munition lié à un <span
+                                class="bold highlight">délai
+                                d'utilisation</span> et celui de soin utilisable uniquement contre les ennemis <span
+                                class="bold highlight">faibles en vie</span>.
                         </p>
-                        <p> Lorsque l'habilité est exécutée contre un ennemi à portée d'exécution, le joueur est attiré
-                            vers celui-ci avant de le tuer. Lors de la mort de l'ennemi, des ressources sont instanciées
+                        <p> Lorsque l'abilité est exécutée contre un ennemi à portée, le joueur est déplacé
+                            vers celui-ci avant d'infliger des dégâts. Lors de la mort de l'ennemi, des ressources sont
+                            instanciées
                             en fonction du type d'exécution utilisé.</p>
                     </div>
                 </div>
-                <video src="assets/videos/PD_GK.mp4" muted loop autoplay></video>
+                <video src="assets/videos/projects/projectBloom/BP_Video_04.mp4" muted loop autoplay></video>
             </div>
         </section>
 
@@ -255,17 +265,22 @@
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Afin d'ajouter de la variété de contenu, j'ai développé le behaviour tree d'un ennemi
-                            aérien. Lorsque le joueur est détecté, l'ennemi flotte directement vers le personnage, tout
-                            en se téléportant de droite à gauche selon un délai régulier pour augmenter la difficulté de
-                            l'affrontement. Lorsque le joueur se situe dans la portée d'attaque de l'ennemi, celui
+                            Afin d'ajouter de la variété de contenu, j'ai développé le comportement d'un <span
+                                class="bold highlight">ennemi
+                                aérien</span>. Lorsque le joueur est détecté, l'ennemi <span
+                                class="bold highlight">flotte</span> directement vers le
+                            personnage, tout
+                            en se <span class="bold highlight">téléportant</span> de droite à gauche selon un délai
+                            régulier pour augmenter la difficulté de
+                            l'affrontement. Lorsque le joueur se situe dans la <span class="bold highlight">portée
+                                d'attaque</span> de l'ennemi, celui
                             dernier
-                            propulse un projectile vers la position du joueur.
+                            propulse un <span class="bold highlight">projectile</span> vers la position du joueur.
                         </p>
                     </div>
                 </div>
                 <img src="assets/images/projets/projetBloom/PD_BT.jpg" alt="Behavior tree" />
-                <p class="comment">Behavior tree</p>
+                <p class="comment">Arbre de comportement</p>
             </div>
         </section>
 
@@ -277,8 +292,9 @@
                     </div>
                     <div class="explications" data-scrolly="fromLeftDelay">
                         <p>
-                            Afin d'ajouter des affordances, j'ai développé un système de prompt affichant un widget
-                            facilement modifiable par instance pour inciter le joueur à faire une action spécifique.
+                            Afin d'ajouter des affordances, j'ai développé un <span class="bold highlight">système de
+                                prompt</span> affichant un <span class="bold highlight">widget
+                                éditable</span> pour inciter le joueur à faire une action spécifique.
                             Aussi, j'ai contribué au développement d'options pour l'accessibilité. Par exemple, je me
                             suis assurée d'intégrer un modificateur pour l'intensité des mouvements de caméra afin
                             d'éviter les sensations de mal de transport des joueurs et des membres de l'équipe plus
@@ -360,14 +376,6 @@
                                 <a href="https://www.linkedin.com/in/caroline-forget-dev/" target="_blank"
                                     rel="noopener" aria-label="Voir LinkedIn"><svg class="icon icon--lg">
                                         <use xlink:href="#icon-linkedin"></use>
-                                    </svg>
-                                    <div class="content__link"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.youtube.com/channel/UCBZM9cag9KDxpCL_yEdvEVA" target="_blank"
-                                    rel="noopener" aria-label="Voir YouTube"><svg class="icon icon--lg">
-                                        <use xlink:href="#icon-youtube"></use>
                                     </svg>
                                     <div class="content__link"></div>
                                 </a>
