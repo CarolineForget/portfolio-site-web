@@ -5,15 +5,17 @@
 .card__project {
     margin-top: var(--spacing-md);
 
+    position: relative;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+
     @media screen and (min-width: $breakpoint-md) {
         width: 50%;
     }
 
     .wrapper {
         border: var(--color-black) solid 2px;
-        border-right: none;
-
-
     }
 
     img {
@@ -25,15 +27,7 @@
         height: auto;
         display: block;
 
-        /*         object-fit: cover; */
     }
-
-    /*     video[poster] {
-        width: 100%;
-
-        object-fit: cover;
-    } */
-
 
 
 
@@ -78,7 +72,7 @@
 
         ul {
             list-style: none;
-            margin: 0;
+            margin: 0 0 0 var(--spacing-sm);
             padding: 0;
 
             display: flex;
@@ -152,4 +146,23 @@
 
 .card__first {
     margin: var(--spacing-sm) 0 0;
+}
+
+.card__link {
+    text-decoration: none;
+    color: var(--color-text-primary);
+
+    display: block;
+
+    &:hover {
+        color: var(--color-black);
+    }
+
+    &:active {
+        color: var(--color-black);
+    }
+
+    &:focus {
+        color: var(--color-black);
+    }
 }

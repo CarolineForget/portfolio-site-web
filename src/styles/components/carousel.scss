@@ -26,7 +26,7 @@
 
 .swiper__about {
     margin-top: var(--spacing-lg);
-    height: 375px;
+    height: 650px;
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -38,42 +38,42 @@
         }
     }
 
-    h2 {
-        padding: var(--spacing-s);
-        font-weight: 400;
-        font-size: var(--font-size-h4-desktop);
+    h3 {
+        border-top: 2px solid var(--color-black);
+        background-color: var(--color-bg-primary-dark);
+
+        padding: var(--spacing-xs);
+        margin: 0;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            padding: var(--spacing-xs) var(--spacing-s);
+        }
 
         @media screen and (min-width: $breakpoint-md) {
-            font-size: var(--font-size-h2-mobile);
+            padding: var(--spacing-xs) var(--spacing-sm);
         }
     }
 
-    .slide-1 {
-        background: var(--color-link-primary);
-        color: var(--color-white);
-    }
+    p {
+        border-left: 2px solid var(--color-bg-primary-dark);
+        border-bottom: 2px solid var(--color-bg-primary-dark);
+        padding: var(--spacing-xs);
 
-    .slide-2 {
-        background: var(--color-bg-primary-dark);
+        margin: 0 0 var(--spacing-s);
+
+        @media screen and (min-width: $breakpoint-sm) {
+            padding: var(--spacing-s);
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            padding: var(--spacing-sm);
+        }
     }
 
     @media screen and (min-width: $breakpoint-sm) {
-        .swiper-slide {
-            margin: 0 !important;
-            width: 50%;
-        }
+        pointer-events: none;
     }
 
-    @media screen and (min-width: $breakpoint-md) {
-        margin-top: 0;
-
-        .swiper-slide-1 {
-            width: 60% !important;
-        }
-        .swiper-slide-2 {
-            width: 40% !important;
-        }
-    }
 }
 
 /*
@@ -93,8 +93,7 @@
             object-fit: contain;
 
             @media screen and (min-width: $breakpoint-sm) {
-                width: 75%;
-                height: 95%;
+                height: auto;
             }
         }
     }
@@ -106,6 +105,7 @@
 
         @media screen and (min-width: $breakpoint-sm) {
             top: 50%;
+            left: -50%;
         }
     }
 }

@@ -26,7 +26,42 @@ body {
     overflow-x: hidden;
 }
 
+var {
+    font-style: normal;
+}
+
 .outside-viewport {
     position: absolute;
     transform: translateX(-100%);
+}
+
+.divider {
+    content: '';
+
+    display: block;
+    background-color: var(--color-black);
+    height: 2px;
+    width: 65%;
+
+    opacity: 0.25;
+
+    margin: var(--spacing-l) auto;
+
+
+    @media screen and (min-width: $breakpoint-sm) {
+        width: 25%;
+    }
+}
+
+.divider::after {
+    content: '';
+    display: block;
+    background-color: var(--color-black);
+
+    height: 10px;
+    width: 10px;
+
+    transform: rotate(-45deg) translateY(-4px) translateX(3px);
+
+    margin: 0 auto;
 }

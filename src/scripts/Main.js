@@ -1,6 +1,7 @@
 import ComponentFactory from './ComponentFactory';
 import NavigatorValidator from './NavigatorValidator';
 import Icons from './utils/Icons';
+import Cache from './utils/Cache';
 
 class Main {
   constructor() {

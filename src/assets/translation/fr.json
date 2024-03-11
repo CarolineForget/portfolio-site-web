@@ -1,0 +1,252 @@
+{
+    "nav": {
+        "content": {
+            "item_01": "Projets",
+            "item_02": "À propos",
+            "lang": "En"
+        }
+    },
+    "index": {
+        "content": {
+            "name": "Caroline Forget",
+            "role": "Designer technique | Programmeuse jouabilité",
+            "cta": "Voir mes projets"
+        }
+    },
+    "about": {
+        "hero": {
+            "title": "À propos",
+            "typescript": "Je suis",
+            "summary_01": "<span class=\"bold highlight\">Bachelière en création de jeux vidéo</span>, je suis évidemment passionnée de jeux vidéo, en particulier des RPGs et des jeux narratifs. J’ai débuté mon aventure dans l’industrie au cégep en plongeant dans des gamejams et en ayant décroché mon premier stage. Je rêve de <span class=\"bold highlight\">créer des expériences immersives et marquantes</span> pour les générations futures. Toutefois, ce qui me motive vraiment, c’est la perspective de <span class=\"bold highlight\">collaborer et au sein d’une équipe dynamique</span> et soudée.",
+            "summary_02": "Je suis toujours à la <span class=\"bold highlight\">recherche de nouveaux défis et d’occasions d’élargir mes compétences</span>. Par mes expériences scolaires et professionnelles, j’ai acquis une gamme de compétences en <span class=\"bold highlight\">design technique et en programmation de jouabilité</span>. J'aborde chaque projet avec dévouement et diligence, m'efforçant de livrer des expériences qui résonnent avec les joueurs."
+        },
+        "content": {
+            "subtitle_01": "Programmation",
+            "desc_01": "J’ai appris à programmer en <span class=\"bold highlight\">C# (Unity)</span> et en <span class=\"bold highlight\">Blueprint (Unreal Engine)</span>. Actuellement, 'approfondis mes compétences en <span class=\"bold highlight\">m'initiant au langage C++</span>, afin de renforcer mes capacités en tant que développeuse.",
+            "subtitle_02": "Autres compétences",
+            "desc_02": "Je me considère comme <span class=\"bold highlight\">bilingue (français/anglais)</span> et suis à l'aise pour travailler dans les deux langues. J'ai des connaissances en <span class=\"bold highlight\">modélisation 3D (Blender), en design de jeux et en design d'interface utilisateur (UI/UX)</span>.",
+            "subtitle_03": "Travail d'équipe",
+            "desc_03": "Ma <span class=\"bold highlight\">familiarité avec divers médias </span>dans le domaine me permet de naviguer aisément entre les départements. J'ai travaillé avec des outils tels que <span class=\"bold highlight\">Notion, Miro et Figma</span>, et je maîtrise l'utilisation de <span class=\"bold highlight\">Perforce et GitHub</span> pour la gestion de versions.",
+            "subtitle_04": "Passe-temps",
+            "desc_04": "Je suis une passionnée de <span class=\"bold highlight\">lecture et de musique</span>. De plus, j'adore explorer de nouveaux genres de jeux vidéo, toujours avide de découvrir de nouvelles expériences ludiques. Plus que tout, <span class=\"bold highlight\">j'aime apprendre et expérimenter</span> de nouvelles choses."
+        }
+    },
+    "contact": {
+        "content": {
+            "title": "Intéressé.e à travailler avec moi?",
+            "cta": "Contactez-moi !"
+        }
+    },
+    "projects": {
+        "content": {
+            "title": "Projets",
+            "cta": "Découvrir"
+        }
+    },
+    "footer": {
+        "content": {
+            "role_01": "Designer technique",
+            "role_02": "Programmeuse jouabilité"
+        }
+    },
+    "deepdown": {
+        "card": {
+            "summary": "Deep Down est un deckbuilder roguelike narratif sur la résilience émotionnelle développé par Devil Studios. J'ai porté le rôle de programmeuse junior."
+        },
+        "hero": {
+            "tags": "Professionnel | Jeu de cartes",
+            "cta": "Voir sur Steam"
+        },
+        "summary": {
+            "title": "Résumé",
+            "role": "<span>Rôle : </span>Programmeuse junior",
+            "engine": "<span>Moteur de jeu : </span>Unreal Engine",
+            "explications_01": "Deep Down est un deckbuilder roguelike narratif sur la résilience émotionnelle. Restaurez vos relations grâce à des dialogues basés sur des cartes, exprimez, transformez et même réprimez les émotions véhiculées par les cartes, et confrontez les souvenirs enfouis pour briser le cycle. Deep Down est aussi le premier IP de <a href=\"https://www.devil-studios.com/\" target=\"_blank\" rel=\"noopener\">Devil Studios</a>.",
+            "explications_02": "Ayant débuté en tant que stagiaire, j'ai entrepris le dévelopement d'une preuve de concept en collaborant étroitement avec un game designer, une artiste de concept et un animateur technique et scripteur Blueprint. Mes responsabilités se sont égalements étendues à l'établissement de l'architecture du projet basée sur le modèle MVC (Modèle-Vue-Contrôleur), en plus de la programmation des mécaniques de jeu au sein d'Unreal Engine 5, en utilisant à la fois C++ et Blueprint. Pour adapter le projet plus étroitement à nos besoins spécifiques, j'ai entrepris la tâche de refactoriser un template Unreal existant et j'ai également converti du code Blueprint en C++ pour optimiser la performance et l'intégration."
+        }
+    },
+    "guano": {
+        "card": {
+            "summary": "Développement d'une jeu publié sur Steam au sein d'une équipe. J'ai principalement développé les IAs et leurs réactions envers les actions du joueur."
+        },
+        "hero": {
+            "tags": "Étudiant | Jeu de navigation",
+            "cta": "Voir sur Steam"
+        },
+        "summary": {
+            "title": "Résumé",
+            "role": "<span>Rôle : </span> Programmeuse d'IA",
+            "engine": "<span>Moteur de jeu : </span>Unreal 5.2",
+            "date": "Automne 2023 - Hiver 2024",
+            "explications_01": "Guano est un <span class=\"bold highlight\">jeu de navigation</span> publié sur Steam réalisé par une <a href=\"https://guanothegame.com/credits.html\" target=\"_blank\" rel=\"noopener\">équipe de 27 étudiants</a>. Dans ce jeu, le joueur incarne in goéland devant dérober de la nourriture aux humains par tous les moyens, que ce soit en déféquant ou en criant, et accomplir des quêtes afin de reconquérir l'île.",
+            "explications_02": "Dans le cadre du projet, j'ai travaillé sur <span class=\"bold highlight\">l'intelligence artificielle</span> des personnages humains et sur le développement d'archétypes de quête, en collaboration avec <a href=\"https://audreylanglois.ca/\" target=\"_blank\" rel=\"noopener\">Audrey Langlois</a>. J'ai aussi contribué au <span class=\"bold highlight\">développement d'outils</span> destinés à faciliter la création et la gestion des quêtes, tels que des gestionnaires de quêtes et des editor utility widgets, améliorant ainsi l'efficacité du développement. J'ai également participé à <span class=\"bold highlight\">l'intégration et à la programmation de l'interface utilisateur (UI)</span>, travaillant de concert avec l'équipe pour s'assurer que l'UI soit à la fois intuitive et esthétiquement agréable."
+        },
+        "content_01": {
+            "title": "Archétypes d'humains (1/2)",
+            "explications_01": "J'ai mis en place une architecture d'intelligence artificielle hiérarchisée pour notre jeu, en créant un <span class=\"bold highlight\">parent qui regroupe les fonctionnalités</span> communes telles que la méthode de déplacement, l'optimisation et l'apparence. Cela a permis une base unifiée sur laquelle j'ai ensuite construit des <span class=\"bold highlight\">fonctionnalités spécifiques pour chaque type d'IA enfant</span>, chacune avec son propre <span class=\"bold highlight\">arbre de comportement</span>. Ainsi, les 3 principaux archétypes que j'ai développé sont : les citoyens, les militaires et les courseurs.",
+            "explications_02": "Pour les courseurs, j'ai implémenté un <span class=\"bold highlight\">système de rubberbanding qui ajuste la vitesse de l'IA en fonction de la distance</span> qui la sépare du joueur en relation à un spline. Ce qui assure une compétition équilibrée et dynamique. Pour les militaires, leur <span class=\"bold highlight\">comportement de tir</span> a été conçu pour inclure une portée spécifique ainsi que la <span class=\"bold highlight\">prédiction de la trajectoire</span> du joueur.",
+            "comment_01": "Courseur",
+            "comment_02": "Militaire"
+        },
+        "content_02": {
+            "title": "Archétypes d'humains (2/2)",
+            "explications_01": "Finalement, pour les citoyens, j'ai également développé <span class=\"bold highlight\">des réactions spécifiques aux diverses actions du joueur</span>, comme le groundpound et le cri, ainsi qu'aux interactions avec d'autres AIs. La nécessité d'assurer de la variété de comportements et de réactions ont été un bon défi. J'avais pour objectif de garantir des transitions fluides entre les états et les tâches pour éviter tout comportement indésirable. Face à des <span class=\"bold highlight\">ressources limitées en termes d'assets et de temps</span>, j'ai dû faire preuve d'ingéniosité pour varier et nuancer les comportements des IA. Cela incluait l'interaction des IA avec des humains à proximité, en leur permettant de discuter entre eux ou de se souvenir des actions précédentes du joueur à leur égard pour dynamiser les interactions.",
+            "comment_01": "Fuite lors d'un cri",
+            "comment_02": "Ragdoll lors d'un super cri ",
+            "comment_03": "Poursuite du joueur suite à une déféquation",
+            "comment_04": "Chute",
+            "comment_05": "Écrasement"
+        },
+        "content_03": {
+            "title": "Paramètres des IAs",
+            "explications_01": "Pour répondre aux exigences de flexibilité des designers, les comportements des intelligences artificielles sont <span class=\"bold highlight\">entièrement paramétrables</span>. Ainsi, les designers peuvent personnaliser la vitesse de déplacement, la vitesse de fuite, les points d'arrêt dans leur chemin, etc. Cette approche a grandement facilité l'adaptation des IA à différents scénarios de jeu et a amélioré l'intégration de ces éléments au level design. En soutien au level design et au level art, j'ai implémenté un <span class=\"bold highlight\">système de génération d'apparence aléatoire</span>, tout en offrant la possibilité de la personnaliser. Cela inclut la sélection d'archétypes de vêtements gérée par une base de données pour enrichir la diversité visuelle.",
+            "explications_02": "J'ai veillé à ce que tout soit <span class=\"bold highlight\">complètement documenté et régulièrement mis à jour</span> afin d'inclure toutes les modifications ou améliorations apportées, afin de maintenir une cohérence dans le développement et la mise à jour des fonctionnalités de l'IA.",
+            "comment_01": "Génération d'apparence",
+            "comment_02": "Exemple de documentation pour la modification de l'apparence"
+        },
+        "content_04": {
+            "title": "Optimisation des IAs",
+            "explications_01": "Le développement d'un jeu en monde ouvert m'a confronté à <span class=\"bold highlight\">un grand défi d'optimisation</span>, particulièrement en raison de la gestion d'un grand nombre d'intelligences artificielles (IA) et de la nécessité de construire dynamiquement le navmesh, sans oublier l'Animation Blend Space (ABP) qui était constamment opérationnel. Ces éléments étaient parmi les plus gourmands en termes de performance.",
+            "explications_02": "La première solution mise en œuvre pour répondre à cette problématique consistait à <span class=\"bold highlight\">détecter la proximité du joueur afin d'activer ou de désactiver certains composants ou comportements des IA</span>. Cette approche a été significativement améliorée grâce à l'intégration d'un plugin, fonctionnant sur le même principe de base mais apportant jusqu'à 3 vagues d'optimisation, offrant plus de flexibilité. Cette évolution a permis d'optimiser les ressources et d'améliorer la fluidité du jeu en monde ouvert.",
+            "comment_01": "Les IAs sont actifs quand le joueur est près.",
+            "comment_02": "Les IAs sont inactifs quand le joueur est éloigné."
+        },
+        "content_05": {
+            "title": "Path component",
+            "explications_01": "J'ai développé un <span class=\"bold highlight\">composant destiné à être intégré à un acteur ayant pour fonction de suivre un spline</span>, initialement conçu pour des intelligences artificielles (IA) telles que des boatrucks ou des personnages humains. Ce composant permet de <span class=\"bold highlight\">détecter avec précision l'emplacement d'un point spécifique ou d'un point au sol</span> en relation avec la distance parcourue le long du spline. Sa conception modulaire et sa facilité de réutilisation nous ont permis d'étendre aisément son application à d'autres acteurs nécessitant de suivre un spline, comme le mur de lave introduit dans la dernière phase du jeu.",
+            "explications_02": "Ce système offre également la <span class=\"bold highlight\">possibilité de gérer plusieurs splines</span>, offrant ainsi aux développeurs la flexibilité de faire alterner les acteurs entre différents parcours de manière aléatoire, en fonction des références aux acteurs de spline. Il supporte par ailleurs l'incorporation de <span class=\"bold highlight\">points d'arrêt</span>, enrichissant ainsi les possibilités de gameplay et la variété des interactions au sein de l'environnement de jeu.",
+            "comment_01": "Exemple de variations de déplacement"
+        },
+        "content_06": {
+            "title": "Editor utiliy widget",
+            "explications_01": "Puisque les intelligences artificielles du jeu n'utilisent pas tous un système de navigation mesh, des problèmes de splines mal placées survenaient. Ainsi, afin <span class=\"bold highlight\">d'aider l'intégration des splines pour le déplacement des IAs</span>, j'ai développé un editor utiliy widget permettant d'<span class=\"bold highlight\">ajuster la hauteur des points du spline</span> en fonction de l'acteur devant le suivre, comme les boatrucks ou les personnages humains. De plus, cet editor utiliy widget détecte <span class=\"bold highlight\">permet de simuler le déplacement d'un acteur</span> dans l'environnement afin de détecter les objets avec lesquels l'acteur peut entrer en contact.",
+            "comment_01": "Ajustement de la hauteur d'un spline",
+            "comment_02": "Simulation de déplacement pour détecter les points de contact"
+        },
+        "content_07": {
+            "title": "Spline pour bouées",
+            "explications_01": "J'ai conçu un outil permettant de <span class=\"bold highlight\">placer rapidement des bouées dans l'environnement de jeu</span>. Cet outil génère initialement un type de base pour chaque bouée, tout en offrant la possibilité de modifier chaque bouée de manière individuelle après son instanciation. Les <span class=\"bold highlight\">bouées sont instanciées soit en spécifiant une distance entre elles, soit selon les points du spline</span>, assurant ainsi que leur positionnement s'adapte parfaitement au contexte donné.",
+            "comment_01": "Spline de bouées éditable"
+        },
+        "content_08": {
+            "title": "Gestionnaires de quête",
+            "explications_01": "Le défi consistait à développer <span class=\"bold highlight\">différents gestionnaires fonctionnels au sein du système de quêtes</span> selon différents archétypes. Cela incluait le support pour gérer <span class=\"bold highlight\">plusieurs cibles (quête de cibles) ou plusieurs compétiteurs (quête de course)</span>. Cette approche modulaire et flexible a permis d'élargir significativement les possibilités de gameplay, offrant une diversité de missions et d'interactions dans le jeu."
+        }
+    },
+    "projectbloom": {
+        "card": {
+            "summary": "Développement, en équipe, d'un prototype de niveau tutoriel inspiré du jeu Doom Eternal durant lequel j'ai travaillé sur le CCC et l'IA des ennemis."
+        },
+        "hero": {
+            "tags": "Étudiant | FPS",
+            "cta": "Voir sur Itch.io"
+        },
+        "summary": {
+            "title": "Résumé",
+            "role": "<span>Rôles : </span>Programmeuse 3C, Programmeuse d'IA",
+            "engine": "<span>Moteur de jeu : </span>Unreal Engine 5",
+            "date": "<span>Date : </span>Hiver 2023",
+            "explications_01": "Project Bloom est un prototype de jeu vidéo développé en 7 semaines. En équipe, nous avions pour mission de créer un <span class=\"bold highlight\">niveau tutoriel inspiré du jeu Doom Eternal</span> à l'aide d'<span class=\"bold highlight\">Unreal Engine 5.0</span>. Ainsi, Project Bloom est un first-person shooter (FPS) dans lequel le joueur incarne un militaire intergalactique qui doit éliminer des mutations abyssales dans une station spatiale abandonnée.",
+            "explications_02": "Au cours de ce projet, j'ai pu développer mes compétences de programmation en Blueprint en travaillant principalement sur les mécaniques du personnage-joueur. J'ai aussi développé une <span class=\"bold highlight\">intelligence artificielle</span> d'ennemi aérien, et contribué à l'<span class=\"bold highlight\">intégration d'interfaces</span> et d'options de jouabilité."
+        },
+        "content_01": {
+            "title": "Système de grappin",
+            "explications_01": "Dans le but d'augmenter la vitesse de déplacement et la rapidité du jeu, j'ai développé un <span class=\"bold highlight\">système de grappin</span> ayant différents états pour permettre de <span class=\"bold highlight\">déplacer le joueur</span> ou <span class=\"bold highlight\">tirer un objet</span> en fonction du type d'acteur ciblé. De plus, afin de garder la mobilité rapide, j'ai développé un système d'<span class=\"bold highlight\">accélération et de déccélération</span> de la vélocité du joueur en fonction de la <span class=\"bold highlight\">distance parcourue</span> avec son grappin.",
+            "comment_01": "Grappin comme méthode de déplacement",
+            "comment_02": "Grappin pour attirer des objets vers le joueur"
+        },
+        "content_02": {
+            "title": "Système de prise de rebord",
+            "explications_01": "Afin de garder le momentum du mouvement du joueur, j'ai développé un système de prise de rebord. Ce système <span class=\"bold highlight\">détecte</span> d'abord si le joueur se trouve au <span class=\"bold highlight\">rebord d'une plateforme</span> ou d'un mur, pour ensuite <span class=\"bold highlight\">propulser le joueur</span> au-dessus de l'obstacle.",
+            "comment_01": "Détection de rebord et propulsion du joueur"
+        },
+        "content_03": {
+            "title": "Système d'exécutions",
+            "explications_01": "Pour permettre au joueur de se <span class=\"bold highlight\">soigner ou d'obtenir des munitions</span>, j'ai développé le système d'exécution des ennemis. Il y a deux types d'exécution : celui de munition lié à un <span class=\"bold highlight\">délai d'utilisation</span> et celui de soin utilisable uniquement contre les ennemis <span class=\"bold highlight\">faibles en vie</span>.",
+            "explications_02": "Lorsque l'abilité est exécutée contre un ennemi à portée, le joueur est déplacé vers celui-ci avant d'infliger des dégâts. Lors de la mort de l'ennemi, des ressources sont instanciées en fonction du type d'exécution utilisé.",
+            "comment_01": "Démonstration d'exécution donnant des objets de soin"
+        },
+        "content_04": {
+            "title": "Comportement d'IA",
+            "explications_01": "Afin d'ajouter de la variété de contenu, j'ai développé le comportement d'un <span class=\"bold highlight\">ennemi aérien</span>. Lorsque le joueur est détecté, l'ennemi <span class=\"bold highlight\">flotte</span> directement vers le personnage, tout en se <span class=\"bold highlight\">téléportant</span> de droite à gauche selon un délai régulier pour augmenter la difficulté de l'affrontement. Lorsque le joueur se situe dans la <span class=\"bold highlight\">portée d'attaque</span> de l'ennemi, celui dernier propulse un <span class=\"bold highlight\">projectile</span> vers la position du joueur.",
+            "comment_01": "Arbre de comportement"
+        },
+        "content_05": {
+            "title": "Affordances et accessibilité",
+            "explications_01": "Afin d'ajouter des affordances, j'ai développé un <span class=\"bold highlight\">système de prompt</span> affichant un <span class=\"bold highlight\">widget éditable</span> pour inciter le joueur à faire une action spécifique. Aussi, j'ai contribué au développement d'options pour l'accessibilité. Par exemple, je me suis assurée d'intégrer un modificateur pour l'intensité des mouvements de caméra afin d'éviter les sensations de mal de transport des joueurs et des membres de l'équipe plus sensibles à certains effets d'occlusion.",
+            "comment_01": "Exemple de prompt"
+        }
+    },
+    "animalheist": {
+        "card": {
+            "summary": "Animal Heist est un prototype de jeu réalisé en 10 semaines par une équipe de 6 étudiants à l'aide du moteur de jeu Unity. J'ai développé les intelligences artificielles et les interfaces."
+        },
+        "hero": {
+            "tags": "Étudiant | Jeu co-op"
+        },
+        "summary": {
+            "title": "Résumé",
+            "role": "<span>Rôles : </span>Programmation d'IA, Intégration",
+            "engine": "<span>Moteur de jeu : </span>Unity",
+            "date": "<span>Date : </span>Automne 2022",
+            "explications_01": "Animal Heist est un <span class=\"bold highlight\">prototype de jeu</span> réalisé en 10 semaines par une équipe de 6 étudiants à l'aide du moteur de jeu <span class=\"bold highlight\">Unity</span>. C'est un <span class=\"bold highlight\">jeu 2D de furtivité et de coopération avec écran partagé</span> dans lequel les joueurs incarnent des ratons-laveurs cherchant à cambrioler des espaces occupés par l'homme. Ensemble, ils doivent se faufiler, résoudre des énigmes et déjouer les gardes pour atteindre le butin et le rapporter sains et sauf.",
+            "explications_02": "Pour ce projet, j'ai eu la responsabilité de <span class=\"bold highlight\">programmer, en C#,ml'intelligence artificielle des gardes</span>, devant détecter des sons, poursuivre le joueur et suivre des chemins prédéfinis. De plus, j'ai eu à développer des <span class=\"bold highlight\">systèmes de sécurité</span>, comme les caméras, afin de bloquer les joueurs dans leur chemin. Finalement, j'ai aussi porté la responsabilité <span class=\"bold highlight\">d'intégrer les interfaces</span> et de scripter le <span class=\"bold highlight\">système de dialogue</span> afin de communiquer efficacement l'information aux joueurs."
+        },
+        "content_01": {
+            "title": "Gardes",
+            "explications_01": "J'ai conçu l'intelligence artificielle des gardes pour qu'elle <span class=\"bold highlight\">navigue</span> en utilisant des <span class=\"bold highlight\">systèmes de waypoints</span>, ce qui permet des patrouilles. L'intelligence artificielle <span class=\"bold highlight\">détecte</span> aussi les <span class=\"bold highlight\">bruits et les alarmes</span>, déclenchant une réaction immédiate des gardes qui se lancent en alerte ou à la poursuite du joueur. J'ai aussi implémenté le <span class=\"bold highlight\">pathfinding basé sur l'algorithme A*</span>, assurant ainsi que les gardes trouvent le chemin le plus rapide vers le joueur. Ainsi, l'IA adapte sa méthode de déplacement en fonction de son état courant.",
+            "explications_02": "J'ai relevé un gros défi en développant le <span class=\"bold highlight\">système de lumière, où l'ombre réduit le champ de vision (fov) des gardes tandis que les zones éclairées l'augmentent</span>. J'ai également mis en place la détection du joueur en utilisant des <span class=\"bold highlight\">raycasts à l'intérieur du fov</span>, déterminé par des point lights. Cette approche a permis de créer un environnement où les joueurs doivent constamment évaluer leur exposition à la lumière pour éviter d'être repérés par les gardes.",
+            "comment_01": "Déplacement par waypoints",
+            "comment_02": "État d'alerte et détection du joueur"
+        },
+        "content_02": {
+            "title": "Caméras",
+            "explications_01": "Tout d'abord, les caméras utilisent la <span class=\"bold highlight\">même méthode de détection que les gardes</span>, en utilisant des raycasts dans leur champ de vision. De plus, j'ai introduit une fonctionnalité de <span class=\"bold highlight\">rotation paramétrable</span> par le level designer, offrant ainsi une flexibilité accrue dans la configuration des caméras.",
+            "comment_01": "Édition d'une instance de caméra"
+        },
+        "content_03": {
+            "title": "Interfaces (UI/UX)",
+            "explications_01": "J'ai été responsable de <span class=\"bold highlight\">l'intégration et de la programmation</span> des interfaces du prototype, y compris les menus et les dialogues, en assurant une expérience de navigation fluide. De plus, j'ai assuré un <span class=\"bold highlight\">support complet pour les manettes</span> de jeu.",
+            "comment_01": "Menu principal",
+            "comment_02": "Règles",
+            "comment_03": "Sélection de niveau",
+            "comment_04": "Introduction de niveau",
+            "comment_05": "HUD",
+            "comment_06": "Tableau de score"
+        }
+    },
+    "charactercreator": {
+        "card": {
+            "summary": "Programmation d'un système de création de personnage ayant un impact sur la jouabilité du personnage-joueur."
+        },
+        "hero": {
+            "title": "Créateur de personnage",
+            "tags": "Personnel | Recherche"
+        },
+        "summary": {
+            "title": "Résumé",
+            "role": "<span>Rôles : </span>Programmation et design technique",
+            "engine": "<span>Moteur de jeu : </span>Unity",
+            "date": "<span>Date : </span>Hiver 2023",
+            "explications_01": "Dans le cadre d'une recherche personnelle, j'ai <span class=\"highlight bold\">désigné, puis programmé</span> un système de personnalisation de personnage, inspiré de jeux RPGs, à l'aide de <span class=\"highlight bold\">Unity</span>. Mon objectif était d'<span class=\"highlight bold\">explorer l'implémentation</span> d'un système de création de personnage et de ses <span class=\"highlight bold\">impacts</span> sur le gameplay, principalement le <span class=\"highlight bold\">CCC</span>."
+        },
+        "content_01": {
+            "title": "Système de personnalisation",
+            "explications_01": "Le grand défi de cette recherche a été le développement du système de personnalisation permettant de <span class=\"highlight bold\">modifier un mesh</span> ou d'<span class=\"highlight bold\">instancier un game object</span> avec des attributs à un os précis du SkeletalMesh. J'ai aussi développé un <span class=\"highlight bold\">sélectionneur de couleur</span> permettant de modifier la couleur de base de matériaux PBR. Tous ces changements sont rendus à temps réel à l'aide d'une texture de rendu.",
+            "explications_02": "Pour pouvoir augmenter ou diminuer facilement les options de personnalisation disponibles, j'ai programmé un script permettant d'<span class=\"highlight bold\">instancier des boutons selon un Scriptable Object</span> et de leur <span class=\"highlight bold\">assigner les événements</span> liés.",
+            "comment_01": "Créateur de personnage"
+        },
+        "content_02": {
+            "title": "Système de classe",
+            "explications_01": "Afin d'explorer l'influence d'un créateur de personnage sur un CCC, j'ai créé un <span class=\"highlight bold\">système de classe</span> inspiré de The Legend of Zelda : Breath of the Wild. Bref, l'arme choisie modifie le <span class=\"highlight bold\">contrôleur d'animation, les types d'attaque (à distance ou rapproché) et leur modèle</span>.",
+            "comment_01": "Classe Épéiste",
+            "comment_02": "Classe Mage",
+            "comment_03": "Classe Gardien"
+        },
+        "content_03": {
+            "title": "Système de statistiques",
+            "explications_01": "J'ai aussi développé un système de statistiques <span class=\"highlight bold\">modifiant la valeur des abilités</span> du CCC, comme sa vitesse, son énergie, sa défense, etc. Bref, chaque pièce d'équipement possède des <span class=\"highlight bold\">paramètres modifiant les statistiques de base</span> de la classe sélectionnée.",
+            "comment_01": "Aperçu des statistiques du personnage lors de sa création"
+        }
+    }
+}

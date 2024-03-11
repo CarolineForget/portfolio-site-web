@@ -3,11 +3,11 @@
    ========================================================================== */
 /// Font family
 :root {
-    --font-primary: 'Dosis', sans-serif;
-    --font-secondary: 'Inter', sans-serif;
+    --font-primary: 'Inter', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
     --font-tertiary: 'DM Mono', monospace;
 
-    --font-size-content-desktop: 1.4rem;
+    --font-size-content-desktop: 1.3rem;
     --font-size-content-mobile: 1.25rem;
     --font-size-comment: 1rem;
 
@@ -17,13 +17,13 @@
     --font-size-animate-sm: 3.125rem;
 
     /// Grosseur des textes
-    --font-size-h1-desktop: 6.25rem;
+    --font-size-h1-desktop: 3.125rem;
     --font-size-h1-mobile: 2.5rem;
 
-    --font-size-h2-desktop: 4.375rem;
-    --font-size-h2-mobile: 2.5rem;
+    --font-size-h2-desktop: 3.125rem;
+    --font-size-h2-mobile: 2.15rem;
 
-    --font-size-h3-desktop: 2.5rem;
+    --font-size-h3-desktop: 2rem;
     --font-size-h3-mobile: 1.6875rem;
 
     --font-size-h4-desktop: 1.5625rem;

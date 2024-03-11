@@ -21,6 +21,27 @@
 
 .demo-reel {
     pointer-events: none;
+    padding-bottom: 56.25%;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    opacity: 0.25;
+
+    @media screen and (min-width: $breakpoint-lg) {
+        padding-bottom: 37.65%;
+
+        top: 3vh;
+        right: 0;
+        left: 33vw;
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+        top: 5vh;
+    }
 }
 
 .video__about {

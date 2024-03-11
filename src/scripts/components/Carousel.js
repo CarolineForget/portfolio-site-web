@@ -41,7 +41,26 @@ export default class Carousel {
               slidesPerView: 2,
             },
           },
+          scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: 'true',
+          },
           loop: false,
+        },
+      };
+    }
+
+    if (this.element.dataset.carousel == 'split-loop') {
+      options = {
+        ...this.defaultOptions,
+        ...{
+          slidesPerView: 1,
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+            },
+          },
+          loop: true,
         },
       };
     }

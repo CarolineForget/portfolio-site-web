@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Répertoire de tous les projets de mon portfolio." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projets | Caroline Forget</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R3KL8VDY75"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-R3KL8VDY75");
+    </script>
+
+    <!-- Hotjar Tracking Code for https://cforget.com -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj =
+                h.hj ||
+                function () {
+                    (h.hj.q = h.hj.q || []).push(arguments);
+                };
+            h._hjSettings = { hjid: 2632129, hjsv: 6 };
+            a = o.getElementsByTagName("head")[0];
+            r = o.createElement("script");
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" async></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <div class="site-container" data-component="Scrolly">
+        <header data-component="Header" data-scroll-limit="0.05" data-auto-hide="true">
+            <div class="wrapper">
+                <div class="toggle__bar">
+                    <div class="logo__header">
+                        <a href="index.html">
+                            <p>CF.</p>
+                        </a>
+                    </div>
+
+                    <div class="button">
+                        <button class="header__toggle js-toggle" aria-label="Afficher ou cacher le menu">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <nav class="nav-primary">
+                    <ul>
+                        <li>
+                            <a href="projects.html" class="nav-primary__item">
+                                <div class="content__select">
+                                    <div class="content__hover"></div>
+                                </div>
+                                <var>NAV.CONTENT.ITEM_01</var>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="content"></div>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-primary__item">
+                                <div class="content__hover"></div>
+                                <var>NAV.CONTENT.ITEM_02</var>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="content"></div>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-primary__item hide-in-mobile">
+                                <div class="content__hover"></div>
+                                |
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-primary__item" data-component="Language" data-reload>
+                                <div class="content__hover"></div>
+                                <var>NAV.CONTENT.LANG</var>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero_about">
+            <h1><var>PROJECTS.CONTENT.TITLE</var></h1>
+        </section>
+
+
+        <section class="wrapper wrapper__project">
+            <a href="single-deep-down.html" class="card__link">
+                <div class="card card__project">
+                    <div class="wrapper">
+                        <img src="assets/images/projets/deepDown/DD_Thumbnail.jpg" alt="Deep Down key art">
+                        <div class="info">
+                            <div class="title">
+                                <p><var>DEEPDOWN.HERO.TAGS</var></p>
+                                <h2>DEEP DOWN</h2>
+                                <div class="more">
+                                    <div class="flex">
+                                        <ul>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-unreal"></use>
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-cpp"></use>
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-perforce"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                        <a href="single-deep-down.html" class="btn btn__link">
+                                            <span class="btn__more">
+                                                <var>PROJECTS.CONTENT.CTA</var>
+                                                <svg class="icon icon--sm">
+                                                    <use xlink:href="#icon-plus"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="content__link"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    <var>DEEPDOWN.CARD.SUMMARY</var>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="single-guano.html" class="card__link">
+                <div class="card card__project" data-component="Clip">
+                    <div class="wrapper">
+                        <video muted loop preload="metadata">
+                            <source src="assets/videos/projects/guano/G_Video_07.webm" type="video/mp4">
+                        </video>
+                        <div class="info">
+                            <div class="title">
+                                <p><var>GUANO.HERO.TAGS</var></p>
+                                <h2>GUANO</h2>
+                                <div class="more">
+                                    <div class="flex">
+                                        <ul>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-unreal"></use>
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-perforce"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                        <a href="single-guano.html" class="btn btn__link">
+                                            <span class="btn__more">
+                                                <var>PROJECTS.CONTENT.CTA</var>
+                                                <svg class="icon icon--sm">
+                                                    <use xlink:href="#icon-plus"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="content__link"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    <var>GUANO.CARD.SUMMARY</var>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="single-project-bloom.html" class="card__link">
+                <div class="card card__project" data-component="Clip">
+                    <div class="wrapper">
+                        <video muted loop preload="metadata">
+                            <source src="assets/videos/projects/projectBloom/BP_Video_00.mp4" type="video/mp4">
+                        </video>
+                        <div class="info">
+                            <div class="title">
+                                <p><var>PROJECTBLOOM.HERO.TAGS</var></p>
+                                <h2>Project Bloom</h2>
+                                <div class="more">
+                                    <div class="flex">
+                                        <ul>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-unreal"></use>
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-perforce"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                        <a href="single-project-bloom.html" class="btn btn__link">
+                                            <span class="btn__more">
+                                                <var>PROJECTS.CONTENT.CTA</var>
+                                                <svg class="icon icon--sm">
+                                                    <use xlink:href="#icon-plus"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="content__link"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    <var>PROJECTBLOOM.CARD.SUMMARY</var>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="single-animal-heist.html" class="card__link">
+                <div class="card card__project" data-component="Clip">
+                    <div class="wrapper">
+                        <video muted loop preload="metadata">
+                            <source src="assets/videos/projects/animalHeist/AH_Video_02.webm">
+                        </video>
+                        <div class="info">
+                            <div class="title">
+                                <p><var>ANIMALHEIST.HERO.TAGS</var></p>
+                                <h2>Animal Heist</h2>
+                                <div class="more">
+                                    <div class="flex">
+                                        <ul>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-unity"></use>
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-c-sharp"></use>
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-perforce"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                        <a href="single-animal-heist.html" class="btn btn__link">
+                                            <span class="btn__more">
+                                                <var>PROJECTS.CONTENT.CTA</var>
+                                                <svg class="icon icon--sm">
+                                                    <use xlink:href="#icon-plus"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="content__link"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    <var>ANIMALHEIST.CARD.SUMMARY</var>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="single-character-creator.html" class="card__link">
+                <div class="card card__project" data-component="Clip">
+                    <div class="wrapper">
+                        <video muted loop preload="metadata">
+                            <source src="assets/videos/projects/characterCreator/CC_Video_00.mp4">
+                        </video>
+                        <div class="info">
+                            <div class="title">
+                                <p><var>CHARACTERCREATOR.HERO.TAGS</var></p>
+                                <h2><var>CHARACTERCREATOR.HERO.TITLE</var></h2>
+                                <div class="more">
+                                    <div class="flex">
+                                        <ul>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-unity"></use>
+                                                </svg>
+                                            </li>
+                                            <li>
+                                                <svg class="icon icon--md">
+                                                    <use xlink:href="#icon-c-sharp"></use>
+                                                </svg>
+                                            </li>
+                                        </ul>
+                                        <a href="single-character-creator.html" class="btn btn__link">
+                                            <span class="btn__more">
+                                                <var>PROJECTS.CONTENT.CTA</var>
+                                                <svg class="icon icon--sm">
+                                                    <use xlink:href="#icon-plus"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="content__link"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary">
+                                <p>
+                                    <var>CHARACTERCREATOR.CARD.SUMMARY</var>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <section class="sct-contact-footer" data-scrolly="fromBottom">
+            <div class="wrapper">
+                <h2><var>CONTACT.CONTENT.TITLE</var></h2>
+                <a href="#" target="_blank" class="btn__link btn btn__final"><var>CONTACT.CONTENT.CTA</var><span
+                        class="content__link"></span></a>
+            </div>
+        </section>
+
+        <footer class="footer-primary">
+            <div class="wrapper">
+                <div class="footer__top">
+
+                    <div class="title">
+                        <p class=" logo">CF.</p>
+                        <div>
+                            <p><var>FOOTER.CONTENT.ROLE_01</var></p>
+                            <p><var>FOOTER.CONTENT.ROLE_02</var></p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="mailto:info@cforget.com" target="_blank" rel="noopener" aria-label="Email"><svg
+                                        class="icon icon--lg">
+                                        <use xlink:href="#icon-envelope"></use>
+                                    </svg>
+                                    <div class="content__link"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:5147948932" target="_blank" rel="noopener" aria-label="Telephone"><svg
+                                        class="icon icon--lg">
+                                        <use xlink:href="#icon-telephone"></use>
+                                    </svg>
+                                    <div class="content__link"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/c-forget" target="_blank" rel="noopener"
+                                    aria-label="Voir LinkedIn"><svg class="icon icon--lg">
+                                        <use xlink:href="#icon-linkedin"></use>
+                                    </svg>
+                                    <div class="content__link"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/CarolineForget" target="_blank" rel="noopener"
+                                    aria-label="Voir GitHub"><svg class="icon icon--lg">
+                                        <use xlink:href="#icon-github"></use>
+                                    </svg>
+                                    <div class="content__link"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="copyright">Copyright ©
+                        <script>document.write(new Date().getFullYear());</script> Caroline Forget
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <div class="cursor" data-component="Cursor"></div>
+    </div>
+</body>
+
+</html>

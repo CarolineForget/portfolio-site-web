@@ -7,7 +7,8 @@ import Type from './components/Type';
 import Modal from './components/Modal';
 import Grid from './components/Grid';
 import Cursor from './components/Cursor';
-import Clip from './components/Clip'; // 
+import Clip from './components/Clip';
+import Language from './components/Language';
 
 export default class ComponentFactory {
   constructor() {
@@ -22,7 +23,8 @@ export default class ComponentFactory {
       Grid,
       Cursor,
       Modal,
-      Clip, //
+      Clip,
+      Language,
     };
     this.init();
   }

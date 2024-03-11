@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Salut! Je suis Caroline Forget, designer technique et programmeuse gameplay." />
+    <meta name="description" content="Salut! Je suis Caroline Forget, designer technique et programmeuse jouabilité." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accueil | Caroline Forget</title>
 
@@ -38,8 +38,6 @@
             a.appendChild(r);
         })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" async></script>
     <script src="scripts/main.js" defer></script>
 </head>
 
@@ -60,184 +58,59 @@
                     </button>
                 </div>
             </div>
-
-            <div class="nav">
-                <nav class="nav-primary">
-                    <ul>
-                        <li>
-                            <a href="page-projects.html" class="nav-primary__item">
-                                <div class="content__hover"></div>
-                                Mes projets
-                            </a>
-                        </li>
-                        <li>
-                            <div class="content"></div>
-                        </li>
-                        <li>
-                            <a href="page-about.html" class="nav-primary__item">
-                                <div class="content__hover"></div>
-                                À propos
-                            </a>
-                        </li>
-                        <li>
-                            <div class="content"></div>
-                        </li>
-                        <li>
-                            <a href="assets/download/Forget_Caroline_CV.pdf" target="_blank" class="nav-primary__item">
-                                <div class="content__hover"></div>
-                                <svg class="icon icon--sm">
-                                    <use xlink:href="#icon-download"></use>
-                                </svg>
-                                CV
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <a href="projects.html" class="nav-primary__item">
+                            <div class="content__hover"></div>
+                            <var>NAV.CONTENT.ITEM_01</var>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="content"></div>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-primary__item">
+                            <div class="content__hover"></div>
+                            <var>NAV.CONTENT.ITEM_02</var>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="content"></div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-primary__item hide-in-mobile">
+                            <div class="content__hover"></div>
+                            |
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-primary__item" data-component="Language" data-reload>
+                            <div class="content__hover"></div>
+                            <var>NAV.CONTENT.LANG</var>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <section class="hero">
-        <div class="grid-wrapper">
-            <div class="grid" data-component="Grid">
-                <div class="grid__item pos-1">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/minescape/thumbnail.jpg)"></div>
-                </div>
-                <div class="grid__item pos-2">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/projetBloom/thumbnail.jpg)"></div>
-                </div>
-                <div class="grid__item pos-3">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/rexMontis/thumbnail.jpg)"></div>
-                </div>
-                <div class="grid__item pos-4">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/coneRush/thumbnail.jpg)"></div>
-                </div>
-                <div class="grid__item pos-5">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/recettesEnPot/thumbnail.jpg)"></div>
-                </div>
-                <div class="grid__item pos-6">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/coneRush/thumbnail.jpg)"></div>
-                </div>
-                <div class="grid__item pos-7">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/characterCreator/image01.jpg)">
-                    </div>
-                </div>
-                <div class="grid__item pos-8">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/rexMontis/thumbnail.jpg)">
-                    </div>
-                </div>
-                <div class="grid__item pos-9">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/minescape/thumbnail.jpg)">
-                    </div>
-                </div>
-                <div class="grid__item pos-10">
-                    <div class="grid__item-img"
-                        style="background-image: url(assets/images/projets/projetBloom/thumbnail.jpg)"></div>
-                </div>
-            </div>
+    <section class="hero hero_main">
+        <div class="video demo-reel" data-component="Video" data-video-id="4yhZkRdxPN0" data-show-controls="false"
+            data-auto-play="true" data-is-looping="true">
+            <div class="video__media js-video"></div>
         </div>
-
-        <div class="hero_single wrapper">
-            <div class="headline">
-                <div class="title">
-                    <h1>Caroline Forget
-                    </h1>
-                    <h2>Designer technique | Programmeuse gameplay</h2>
-                    <a href="page-projects.html" target="_blank" class="btn__link btn btn__final">
-                        Découvrir mes projets
-                        <span class="content__link"></span>
-                    </a>
-                </div>
-                <div class="video demo-reel" data-component="Video" data-video-id="4yhZkRdxPN0"
-                    data-show-controls="false" data-auto-play="true" data-is-looping="true">
-
-                    <div class="video__media js-video"></div>
-                    <svg class="icon icon--lg button--mute">
-                        <use xlink:href="#icon-muted"></use>
-                    </svg>
-                    <svg class="icon icon--lg button--unmute switch">
-                        <use xlink:href="#icon-unmuted"></use>
-                    </svg>
-                    <svg class="icon icon--lg button--play switch">
-                        <use xlink:href="#icon-play-small"></use>
-                    </svg>
-                    <svg class="icon icon--lg button--pause">
-                        <use xlink:href="#icon-pause"></use>
-                    </svg>
-                </div>
+        <div class="wrapper">
+            <div class="title">
+                <h1><var>INDEX.CONTENT.NAME</var></h1>
+                <h2><var>INDEX.CONTENT.ROLE</var></h2>
+                <a href="projects.html" class="btn__link btn">
+                    <var>INDEX.CONTENT.CTA</var>
+                    <span class="content__link"></span>
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="footer-primary">
-        <div class="content content__gradient"></div>
-        <div class="content"></div>
-
-        <div class="wrapper">
-            <div class="footer__top">
-                <div class="logo__footer">
-                    <a href="index.html">
-                        <p>CF.</p>
-                        <p class="title">Designer technique | Programmeuse gameplay</p>
-                    </a>
-                </div>
-                <div class="footer__contact">
-                    <h2>Me contacter</h2>
-                    <ul>
-                        <li>
-                            <p><a href="mailto:info@cforget.com" class="info">info@cforget.com</a></p>
-                        </li>
-                        <li>
-                            <p>&#8226;</p>
-                        </li>
-                        <li>
-                            <p><a href="tel:5147948932" class="info">(514) 794-8932</a></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content"></div>
-            <div class="footer__bottom">
-                <div class="social">
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/c-forget" target="_blank" rel="noopener"
-                                aria-label="Voir LinkedIn"><svg class="icon icon--lg">
-                                    <use xlink:href="#icon-linkedin"></use>
-                                </svg>
-                                <div class="content__link"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://sketchfab.com/Unicone" target="_blank" rel="noopener"
-                                aria-label="Voir SketchFab"><svg class="icon icon--lg">
-                                    <use xlink:href="#icon-sketchfab"></use>
-                                </svg>
-                                <div class="content__link"></div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/CarolineForget" target="_blank" rel="noopener"
-                                aria-label="Voir GitHub"><svg class="icon icon--lg">
-                                    <use xlink:href="#icon-github"></use>
-                                </svg>
-                                <div class="content__link"></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <p class="copyright">Copyright © 2023 Caroline Forget</p>
-            </div>
-        </div>
-    </footer>
     <div class="cursor" data-component="Cursor"></div>
 </body>
 

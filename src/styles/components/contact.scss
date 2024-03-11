@@ -139,61 +139,24 @@
     }
 }
 
-.sct-contact_footer {
-    position: relative;
-    margin-top: var(--spacing-lg);
+.sct-contact-footer {
+    margin-top: var(--spacing-sm);
 
-    .content {
-        display: block;
-        height: 65px;
-        width: 100vw;
+    @media screen and (min-width: $breakpoint-sm) {
+        margin-top: var(--spacing-l);
+    }
 
-        position: absolute;
-        z-index: -1;
-        top: -25%;
-
+    .wrapper {
         background-color: var(--color-bg-primary-dark);
+        border-top: solid 2px var(--color-black);
 
-        @media screen and (min-width: $breakpoint-md) {
-            top: -16px;
-        }
-    }
-
-    h2 {
         text-align: center;
-        margin: 0;
 
-        @media screen and (min-width: $breakpoint-md) {
-            font-size: 3.75rem;
-        }
-    }
+        padding: var(--spacing-lg) 0;
 
-    .contact-info ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        h2 {
+            margin-top: 0;
 
-        margin: 0;
-        padding: 0;
-        list-style: none;
-
-        li {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-
-            padding: 0 var(--spacing-s);
-        }
-
-        .icon {
-            fill: var(--color-icons);
-            margin-right: var(--spacing-xs);
-        }
-
-        .info {
-            color: var(--color-text-primary);
-            font-weight: 400;
-            text-decoration: none;
         }
     }
 }

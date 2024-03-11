@@ -27,6 +27,15 @@ export default class Type {
   init() {
     let options = this.defaultOptions;
 
+    if (localStorage.getItem('preferredLanguage') != 'fr-CA') {
+      options = {
+        ...this.defaultOptions,
+        ...{
+          strings: ['autonomous.', 'persevering.', 'versatile.', 'curious.', 'proactive.', 'Caroline.'],
+        },
+      };
+    }
+
     if (this.element.dataset.type == '404') {
       options = {
         ...this.defaultOptions,

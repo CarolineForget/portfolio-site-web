@@ -8,6 +8,7 @@
 .single--carousel {
     .title {
         background: var(--color-bg-primary-dark);
+        border-right: solid 2px var(--color-black);
         padding: var(--spacing-s) var(--spacing-xs);
 
         h2 {
@@ -23,6 +24,11 @@
             width: 40%;
             padding: var(--spacing-sm);
         }
+    }
+
+    .media p {
+        border-bottom: solid 2px var(--color-bg-primary-dark);
+        margin: 0;
     }
 
     video {
@@ -130,7 +136,9 @@
     .content {
         display: block;
         height: 2px;
-        background-color: var(--color-bg-secondary);
+        background-color: var(--color-black);
+
+        opacity: 0.25;
     }
 
     ul {
@@ -245,23 +253,13 @@
    SINGLE-CAROUSEL
    ========================================================================== */
 .single--carousel {
-    .color-columns {
-        display: grid;
-        grid-template-rows: repeat(2, 0.2fr);
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-s);
+    .extra {
+        padding: 0 var(--spacing-s) var(--spacing-sm);
+        margin-top: var(--spacing-sm);
 
         @media screen and (min-width: $breakpoint-md) {
-            grid-template-rows: 1fr;
-            grid-template-columns: repeat(4, 1fr);
-        }
-    }
-
-    .color_item {
-        padding: var(--spacing-s);
-
-        p {
-            margin: 0;
+            padding: 0;
+            margin-top: var(--spacing-l);
         }
     }
 
@@ -269,14 +267,20 @@
         margin-top: var(--spacing-sm);
     }
 
-    .extra {
-        background: var(--color-bg-primary-dark);
-        padding: var(--spacing-s) var(--spacing-s) var(--spacing-sm);
-        margin-top: var(--spacing-sm);
+    img {
+        width: 100%;
+    }
 
-        @media screen and (min-width: $breakpoint-md) {
-            padding: var(--spacing-md);
-            margin-top: var(--spacing-l);
+    .comment {
+        text-align: left;
+    }
+
+
+    @media screen and (min-width: $breakpoint-md) {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
         }
     }
 }
