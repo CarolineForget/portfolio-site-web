@@ -59,27 +59,15 @@ export default class Cursor {
    * Méthode hoverCursorCarousel - Contrôle l'effet d'hover du curseur sur les flèches de navigation du carousel
    */
   hoverCursorCarousel() {
-    const btnPrevArray = this.html.querySelectorAll('.swiper-button-prev');
-    const btnNextArray = this.html.querySelectorAll('.swiper-button-next');
+    const carousels = this.html.querySelectorAll('.swiper-container');
 
-    for (let i = 0; i < btnPrevArray.length; i++) {
-      const btn = btnPrevArray[i];
+    for (let i = 0; i < carousels.length; i++) {
+      const carousel = carousels[i];
 
-      btn.addEventListener('mouseover', (e) => {
+      carousel.addEventListener('mouseover', (e) => {
         this.element.classList.add('hover__cursor-carousel');
       });
-      btn.addEventListener('mouseout', (e) => {
-        this.element.classList.remove('hover__cursor-carousel');
-      });
-    }
-
-    for (let i = 0; i < btnNextArray.length; i++) {
-      const btn = btnNextArray[i];
-
-      btn.addEventListener('mouseover', (e) => {
-        this.element.classList.add('hover__cursor-carousel');
-      });
-      btn.addEventListener('mouseout', (e) => {
+      carousel.addEventListener('mouseout', (e) => {
         this.element.classList.remove('hover__cursor-carousel');
       });
     }

@@ -147,6 +147,9 @@
     }
 
     .wrapper {
+        position: relative;
+        z-index: -1;
+
         background-color: var(--color-bg-primary-dark);
         border-top: solid 2px var(--color-black);
 
