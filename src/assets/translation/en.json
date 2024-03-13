@@ -9,7 +9,7 @@
     "index": {
         "content": {
             "name": "Caroline Forget",
-            "role": "Technical designer | Gameplay programmer",
+            "role": "Programmer | Technical Designer",
             "cta": "See my projects"
         }
     },
@@ -24,7 +24,7 @@
             "subtitle_01": "Programming",
             "desc_01": "I learned to program in <span class=\"bold highlight\">C# (Unity)</span> and <span class=\"bold highlight\">Blueprint (Unreal Engine)</span>. Currently, I'm deepening my skills by <span class=\"bold highlight\">getting started with the C++ language</span>, aiming to strengthen my capabilities as a developer.",
             "subtitle_02": "Other skills",
-            "desc_02": "I consider myself <span class=\"bold highlight\">bilingual (french/english)</span> and am comfortable working in both languages. I have knowledge in <span class=\"bold highlight\">3D modeling (Blender), game design, and user interface (UI/UX) design</span>.",
+            "desc_02": "I consider myself <span class=\"bold highlight\">bilingual (French/English)</span> and am comfortable working in both languages. I have knowledge in <span class=\"bold highlight\">3D modeling (Blender), game design, and user interface (UI/UX) design</span>.",
             "subtitle_03": "Teamwork",
             "desc_03": "My <span class=\"bold highlight\">familiarity with various media </span>in the field allows me to navigate easily between departments. I've worked with tools such as <span class=\"bold highlight\">Notion, Miro and Figma</span>, and I'm proficient in using <span class=\"bold highlight\">Perforce and GitHub</span> for version control.",
             "subtitle_04": "Hobbies",
@@ -45,13 +45,13 @@
     },
     "footer": {
         "content": {
-            "role_01": "Technical designer",
-            "role_02": "Gameplay programmer"
+            "role_01": "Programmer",
+            "role_02": "Technical designer"
         }
     },
     "deepdown": {
         "card": {
-            "summary": "Deep Down is a narrative deckbuilder roguelike about emotional resilience developed by Devil Studios. I took on the role of a junior programmer."
+            "summary": "Deep Down is a narrative deck builder roguelike about emotional resilience developed by Devil Studios. I took on the role of a <span class=\"bold\">junior programmer</span>."
         },
         "hero": {
             "tags": "Professional | Card game",
@@ -61,65 +61,65 @@
             "title": "Summary",
             "role": "<span>Role : </span>Junior programmer",
             "engine": "<span>Game engine : </span>Unreal Engine",
-            "explications_01": "Deep Down is a narrative roguelike deckbuilder about emotional resilience. Restore your relationships through card-based dialogues, express, transform and even repress emotions conveyed through cards, and confront buried memories to break the cycle. Deep Down is also the first IP of <a href=\"https://www.devil-studios.com/\" target=\"_blank\" rel=\"noopener\">Devil Studios</a>.",
-            "explications_02": "Starting as an intern, I undertook the development of a proof of concept while closely collaborating with a game designer, a concept artist, and a technical animator and Blueprint scripter. My responsibilities also extended to establishing the project's architecture based on the MVC (Model-View-Controller) model, in addition to programming the game mechanics within Unreal Engine 5, using both C++ and Blueprint. To more closely tailor the project to our specific needs, I took on the task of refactoring an existing Unreal template and also converted Blueprint code into C++ to optimize performance and integration."
+            "explications_01": "Deep Down is a narrative roguelike deck builder about emotional resilience. Restore your relationships through card-based dialogues, express, transform and even repress emotions conveyed through cards, and confront buried memories to break the cycle. Deep Down is also the first IP of <a href=\"https://www.devil-studios.com/\" target=\"_blank\" rel=\"noopener\">Devil Studios</a>.",
+            "explications_02": "Starting as an intern, I undertook the development of a proof of concept while closely collaborating with a game designer, a concept artist, and a technical animator and Blueprint programmer. My responsibilities also extended to establishing the project's architecture based on the MVC (Model-View-Controller) model, in addition to programming the game mechanics within Unreal Engine 5, using both C++ and Blueprint. To more closely tailor the project to our specific needs, I took on the task of refactoring an existing Unreal template and also converted Blueprint code into C++ to optimize performance and integration."
         }
     },
     "guano": {
         "card": {
-            "summary": "Development of a game published on Steam as part of a team. I primarily developed the AIs and their reactions to the player's actions."
+            "summary": "Development of a game published on Steam as part of a team. I primarily developed the <span class=\"bold\">artificial intelligence and development tools</span>."
         },
         "hero": {
-            "tags": "Student | Navigation Game",
+            "tags": "Student | Navigation game",
             "cta": "See on Steam"
         },
         "summary": {
             "title": "Summary",
             "role": "<span>Role: </span> AI Programmer",
             "engine": "<span>Game Engine: </span>Unreal 5.2",
-            "date": "Fall 2023 - Winter 2024",
+            "date": "<span>Date: </span>Fall 2023 - Winter 2024",
             "explications_01": "Guano is a <span class=\"bold highlight\">navigation game</span> published on Steam created by a <a href=\"https://guanothegame.com/credits.html\" target=\"_blank\" rel=\"noopener\">team of 27 students</a>. In this game, the player embodies a seagull that must steal food from humans by any means, whether by defecating or screaming, and complete quests to reclaim the island.",
             "explications_02": "In the project, I worked on the <span class=\"bold highlight\">artificial intelligence</span> of human characters and the development of quest archetypes, in collaboration with <a href=\"https://audreylanglois.ca/\" target=\"_blank\" rel=\"noopener\">Audrey Langlois</a>. I also contributed to the <span class=\"bold highlight\">development of tools</span> designed to facilitate the creation and management of quests, such as quest managers and editor utility widgets, thus improving development efficiency. I also took part in <span class=\"bold highlight\">integrating and programming the user interface (UI)</span>, working together with the team to ensure that the UI is both intuitive and aesthetically pleasing."
         },
         "content_01": {
             "title": "Human Archetypes (1/2)",
-            "explications_01": "I set up a hierarchical artificial intelligence architecture for our game, creating a <span class=\"bold highlight\">parent that groups common functionalities</span> such as movement method, optimization, and appearance. This provided a unified base upon which I then built <span class=\"bold highlight\">specific functionalities for each type of child AI</span>, each with its own <span class=\"bold highlight\">behavior tree</span>. Thus, the 3 main archetypes I developed are: citizens, military, and runners.",
-            "explications_02": "For the runners, I implemented a <span class=\"bold highlight\">rubberbanding system that adjusts the AI's speed based on the distance</span> from the player in relation to a spline. This ensures a balanced and dynamic competition. For the military, their <span class=\"bold highlight\">shooting behavior</span> was designed to include a specific range as well as <span class=\"bold highlight\">prediction of the player's trajectory</span>.",
+            "explications_01": "I set up a hierarchical artificial intelligence architecture for our game, creating a <span class=\"bold highlight\">parent that groups common functionalities</span> such as movement method, optimization, and appearance. This provided a unified base upon which I then built <span class=\"bold highlight\">specific functionalities for each type of child AI</span>, each with its own <span class=\"bold highlight\">behavior tree</span>. Thus, the 3 main archetypes I developed are citizens, military, and runners.",
+            "explications_02": "For the runners, I implemented a <span class=\"bold highlight\">rubber banding system that adjusts the AI's speed based on the distance</span> from the player in relation to a spline. This ensures a balanced and dynamic competition. For the military, their <span class=\"bold highlight\">shooting behavior</span> was designed to include a specific range as well as <span class=\"bold highlight\">prediction of the player's trajectory</span>.",
             "comment_01": "Runner",
             "comment_02": "Military"
         },
         "content_02": {
             "title": "Human Archetypes (2/2)",
-            "explications_01": "Finally, for the citizens, I also developed <span class=\"bold highlight\">specific reactions to various player actions</span>, such as groundpound and scream, as well as interactions with other AIs. The need to ensure a variety of behaviors and reactions was a good challenge. My goal was to ensure smooth transitions between states and tasks to avoid any unwanted behavior. Facing <span class=\"bold highlight\">limited resources in terms of assets and time</span>, I had to be creative in varying and nuancing the AI behaviors. This included interactions of AIs with nearby humans, allowing them to converse with each other or remember the player's previous actions towards them to energize interactions.",
+            "explications_01": "Finally, for the citizens, I also developed <span class=\"bold highlight\">specific reactions to various player actions</span>, such as ground pounds and scream, as well as interactions with other AIs. The need to ensure a variety of behaviors and reactions was a good challenge. My goal was to ensure smooth transitions between states and tasks to avoid any unwanted behavior. Facing <span class=\"bold highlight\">limited resources in terms of assets and time</span>, I had to be creative in varying and nuancing the AI behaviors. This included interactions of AIs with nearby humans, allowing them to converse with each other or remember the player's previous actions towards them to energize interactions.",
             "comment_01": "Fleeing during a scream",
-            "comment_02": "Ragdoll during a super scream",
+            "comment_02": "Ragdoll after a super scream",
             "comment_03": "Pursuit of the player following defecation",
-            "comment_04": "Fall",
-            "comment_05": "Crush"
+            "comment_04": "Falling",
+            "comment_05": "Squished when ground pounded"
         },
         "content_03": {
             "title": "AI Parameters",
-            "explications_01": "To meet the flexibility requirements of the designers, the behaviors of the artificial intelligences are <span class=\"bold highlight\">fully configurable</span>. Thus, designers can customize the movement speed, escape speed, stopping points in their path, etc. This approach greatly facilitated the adaptation of AIs to different game scenarios and improved the integration of these elements into level design. In support of level design and level art, I implemented a <span class=\"bold highlight\">random appearance generation system</span>, while also offering the option to customize it. This includes the selection of clothing archetypes managed by a database to enrich visual diversity.",
+            "explications_01": "To meet the flexibility requirements of the designers, the behaviors of the artificial intelligence are <span class=\"bold highlight\">fully configurable</span>. Thus, designers can customize the movement speed, escape speed, stopping points in their path, etc. This approach greatly facilitated the adaptation of AIs to different game scenarios and improved the integration of these elements into level design. In support of level design and level art, I implemented a <span class=\"bold highlight\">random appearance generation system</span>, while also offering the option to customize it. This includes the selection of clothing archetypes managed by a database to enrich visual diversity.",
             "explications_02": "I ensured that everything was <span class=\"bold highlight\">fully documented and regularly updated</span> to include all modifications or improvements made, in order to maintain consistency in the development and updating of AI features.",
             "comment_01": "Appearance generation",
             "comment_02": "Example of documentation for modifying appearance"
         },
         "content_04": {
             "title": "AI Optimization",
-            "explications_01": "Developing an open-world game confronted me with <span class=\"bold highlight\">a significant optimization challenge</span>, especially due to managing a large number of artificial intelligences (AI) and the need to dynamically construct the navmesh, not to mention the Animation Blend Space (ABP) that was constantly operational. These elements were among the most demanding in terms of performance.",
+            "explications_01": "Developing an open-world game confronted me with <span class=\"bold highlight\">a significant optimization challenge</span>, especially due to managing a large number of artificial intelligence and the need to dynamically construct the navmesh, not to mention the Animation Blend Space (ABP) that was constantly operational. These elements were among the most demanding in terms of performance.",
             "explications_02": "The first solution implemented to address this issue was to <span class=\"bold highlight\">detect the player's proximity to activate or deactivate certain components or behaviors of the AIs</span>. This approach was significantly improved through the integration of a plugin, operating on the same basic principle but bringing up to 3 waves of optimization, offering more flexibility. This evolution allowed for the optimization of resources and the improvement of the fluidity of the open-world game.",
             "comment_01": "AIs are active when the player is near.",
             "comment_02": "AIs are inactive when the player is far away."
         },
         "content_05": {
             "title": "Path Component",
-            "explications_01": "I developed a <span class=\"bold highlight\">component intended to be integrated into an actor whose function is to follow a spline</span>, initially designed for artificial intelligences (AI) such as boatrucks or human characters. This component allows for <span class=\"bold highlight\">precisely detecting the location of a specific point or a ground point</span> in relation to the distance traveled along the spline. Its modular design and ease of reuse allowed us to easily extend its application to other actors needing to follow a spline, like the lava wall introduced in the last phase of the game.",
+            "explications_01": "I developed a <span class=\"bold highlight\">component intended to be integrated into an actor whose function is to follow a spline</span>, initially designed for artificial intelligence such as boatrucks or human characters. This component allows for <span class=\"bold highlight\">precisely detecting the location of a specific point or a ground point</span> in relation to the distance traveled along the spline. Its modular design and ease of reuse allowed us to easily extend its application to other actors needing to follow a spline, like the lava wall introduced in the last phase of the game.",
             "explications_02": "This system also offers the <span class=\"bold highlight\">possibility to manage multiple splines</span>, thus providing developers the flexibility to randomly alternate actors between different paths, depending on the spline actor references. It also supports the incorporation of <span class=\"bold highlight\">stopping points</span>, thus enriching gameplay possibilities and the variety of interactions within the game environment.",
             "comment_01": "Example of movement variations"
         },
         "content_06": {
             "title": "Editor Utility Widget",
-            "explications_01": "Since the game's artificial intelligences do not all use a mesh navigation system, issues with poorly placed splines occurred. Thus, to <span class=\"bold highlight\">aid in integrating splines for AI movement</span>, I developed an editor utility widget that allows for <span class=\"bold highlight\">adjusting the height of spline points</span> based on the actor following it, such as boatrucks or human characters. Moreover, this editor utility widget detects <span class=\"bold highlight\">allows for simulating an actor's movement</span> in the environment to detect objects with which the actor may come into contact.",
+            "explications_01": "Since the game's artificial intelligence do not all use a navigational mesh system, issues with poorly placed splines occurred. Thus, to <span class=\"bold highlight\">aid in integrating splines for AI movement</span>, I developed an editor utility widget that allows for <span class=\"bold highlight\">adjusting the height of spline points</span> based on the actor following it, such as boatrucks or human characters. Moreover, this editor utility widget detects <span class=\"bold highlight\">allows for simulating an actor's movement</span> in the environment to detect objects with which the actor may come into contact.",
             "comment_01": "Adjusting spline height",
             "comment_02": "Movement simulation to detect contact points"
         },
@@ -135,7 +135,7 @@
     },
     "projectbloom": {
         "card": {
-            "summary": "Development, as part of a team, of a tutorial level prototype inspired by the game Doom Eternal, during which I worked on the CCC and the AI of enemies."
+            "summary": "Development, as part of a team, of a tutorial level prototype inspired by the game Doom Eternal, during which I worked on the <span class=\"bold\">3C and the AI</span> of enemies."
         },
         "hero": {
             "tags": "Student | FPS",
@@ -151,7 +151,7 @@
         },
         "content_01": {
             "title": "Grapple System",
-            "explications_01": "To increase movement speed and game pace, I developed a  <span class=\"bold highlight\">grapple system</span>  with different states allowing the player to <span class=\"bold highlight\">move</span> or <span class=\"bold highlight\">pull an object</span> depending on the target type. Additionally, to maintain quick mobility, I developed a system for <span class=\"bold highlight\">accelerating and decelerating</span> player velocity based on the <span class=\"bold highlight\">distance traveled </span>with the grapple",
+            "explications_01": "To increase movement speed and game pace, I developed a  <span class=\"bold highlight\">grapple system</span>  with different states allowing the player to <span class=\"bold highlight\">move</span> or <span class=\"bold highlight\">pull an object</span> depending on the target type. Additionally, to maintain quick mobility, I developed a system for <span class=\"bold highlight\">accelerating and decelerating</span> player velocity based on the <span class=\"bold highlight\">distance traveled </span>with the grapple.",
             "comment_01": "Grapple as a movement method",
             "comment_02": "Grapple to pull objects towards the player"
         },
@@ -162,7 +162,7 @@
         },
         "content_03": {
             "title": "Execution System",
-            "explications_01": "To enable the player to <span class=\"bold highlight\">heal or obtain munition</span>,  I developed an enemy execution system. There are two types of executions: one for ammunition with a <span class=\"bold highlight\">cooldown</span> and one for healing, usable only against enemies <span class=\"bold highlight\">low on health</span>.",
+            "explications_01": "To enable the player to <span class=\"bold highlight\">heal or obtain munitions</span>,  I developed an enemy execution system. There are two types of executions: one for ammunition with a <span class=\"bold highlight\">cooldown</span> and one for healing, usable only against enemies <span class=\"bold highlight\">low on health</span>.",
             "explications_02": "When the ability is executed against an enemy within range, the player is moved towards them before inflicting damage. Upon the enemy's death, resources are spawned according to the type of execution used.",
             "comment_01": "Execution demonstration giving healing items"
         },
@@ -179,23 +179,23 @@
     },
     "animalheist": {
         "card": {
-            "summary": "Animal Heist is a game prototype developed in 10 weeks by a team of 6 students using the Unity game engine. I developed the artificial intelligences and the interfaces."
+            "summary": "Animal Heist is a game prototype developed in 10 weeks by a team of 6 students using the Unity game engine. I developed the <span class=\"bold\">artificial intelligence and the interfaces</span>."
         },
         "hero": {
-            "tags": "Student | Co-op Game"
+            "tags": "Student | Co-op game"
         },
         "summary": {
             "title": "Summary",
             "role": "<span>Roles: </span>AI Programming, Integration",
             "engine": "<span>Game Engine: </span>Unity",
             "date": "<span>Date: </span>Fall 2022",
-            "explications_01": "Animal Heist is a <span class=\"bold highlight\">game prototype</span> developed in 10 weeks by a team of 6 students using the <span class=\"bold highlight\">Unity</span> game engine. It is a <span class=\"bold highlight\">2D stealth and cooperative game with split-screen</span> in which players embody raccoons attempting to burglarize human-occupied spaces. Together, they must sneak, solve puzzles, and outwit guards to secure the loot and return it safely.",
+            "explications_01": "Animal Heist is a <span class=\"bold highlight\">game prototype</span> developed in 10 weeks by a team of 6 students using the <span class=\"bold highlight\">Unity</span> game engine. It is a <span class=\"bold highlight\">2D stealth and cooperative game with a split screen</span> in which players embody raccoons attempting to burglarize human-occupied spaces. Together, they must sneak, solve puzzles, and outwit guards to secure the loot and return it safely.",
             "explications_02": "For this project, I was responsible for <span class=\"bold highlight\">programming, in C#, the artificial intelligence of the guards</span>, which needed to detect sounds, pursue the player, and follow predetermined paths. Additionally, I developed <span class=\"bold highlight\">security systems</span>, such as cameras, to block the players' progress. Lastly, I also took on the responsibility of <span class=\"bold highlight\">integrating the interfaces</span> and scripting the <span class=\"bold highlight\">dialogue system</span> to efficiently communicate information to the players."
         },
         "content_01": {
             "title": "Guards",
             "explications_01": "I designed the artificial intelligence of the guards to <span class=\"bold highlight\">navigate</span> using <span class=\"bold highlight\">waypoint systems</span>, which allows for patrols. The artificial intelligence also <span class=\"bold highlight\">detects</span> <span class=\"bold highlight\">noises and alarms</span>, triggering an immediate reaction from the guards who go into alert or pursue the player. I also implemented <span class=\"bold highlight\">pathfinding based on the A* algorithm</span>, ensuring that the guards find the quickest path to the player. Thus, the AI adapts its movement method according to its current state.",
-            "explications_02": "I faced a big challenge in developing the <span class=\"bold highlight\">lighting system, where shadows reduce the guards' field of view (fov) while illuminated areas increase it</span>. I also set up player detection using <span class=\"bold highlight\">raycasts within the fov</span>, determined by point lights. This approach created an environment where players must constantly assess their exposure to light to avoid being detected by the guards.",
+            "explications_02": "I faced a big challenge in developing the <span class=\"bold highlight\">lighting system, where shadows reduce the guards' field of view (FOV) while illuminated areas increase it</span>. I also set up player detection using <span class=\"bold highlight\">raycasts within the FOV</span>, determined by point lights. This approach created an environment where players must constantly assess their exposure to light to avoid being detected by the guards.",
             "comment_01": "Movement by waypoints",
             "comment_02": "Alert state and player detection"
         },
@@ -228,12 +228,12 @@
             "role": "<span>Roles : </span>Programming (C#), Technical design",
             "engine": "<span>Game engine : </span>Unity",
             "date": "<span>Date : </span>Winter 2023",
-            "explications_01": "As part of personal research, I <span class=\"highlight bold\">designer and programmed (C#)</span>  a character customization system, inspired by RPG games, using <span class=\"highlight bold\">Unity</span>. My goal was to <span class=\"highlight bold\"> explore the implementation</span> of a character creation system and its <span class=\"highlight bold\">impacts</span> on gameplay, mainly on <span class=\"highlight bold\">CCC</span>."
+            "explications_01": "As part of personal research, I <span class=\"highlight bold\">designed and programmed (C#)</span>  a character customization system, inspired by RPG games, using <span class=\"highlight bold\">Unity</span>. My goal was to <span class=\"highlight bold\"> explore the implementation</span> of a character creation system and its <span class=\"highlight bold\">impacts</span> on gameplay, mainly on <span class=\"highlight bold\">CCC</span>."
         },
         "content_01": {
             "title": "Customization System",
             "explications_01": "The major challenge of this research was developing the customization system that allows for <span class=\"highlight bold\">modifying a mesh</span> or <span class=\"highlight bold\">instantiating a game object</span> with attributes to a specific bone of the SkeletalMesh. I also developed a <span class=\"highlight bold\">color picker</span> that enables the modification of the base color of PBR materials.",
-            "explications_02": "All these changes are rendered in real-time using a render texture. To easily increase or decrease the available customization options, I programmed a script that can <span class=\"highlight bold\">instantiate buttons based on a Scriptable Object</span> and <span class=\"highlight bold\">assign related events </span> to them.",
+            "explications_02": "All these changes are rendered in real time using a render texture. To easily increase or decrease the available customization options, I programmed a script that can <span class=\"highlight bold\">instantiate buttons based on a Scriptable Object</span> and <span class=\"highlight bold\">assign related events </span> to them.",
             "comment_01": "Character creator"
         },
         "content_02": {
@@ -245,7 +245,7 @@
         },
         "content_03": {
             "title": "Statistics System",
-            "explications_01": "I also developed a statistics system that  <span class=\"highlight bold\">odifies the values of the CCC's abilities</span> such as speed, energy, defense, etc. In short, each piece of equipment has <span class=\"highlight bold\">parameters that modify the base statistics </span> of the selected class.",
+            "explications_01": "I also developed a statistic system that  <span class=\"highlight bold\">modifies the values of the CCC's abilities</span> such as speed, energy, defense, etc. In short, each piece of equipment has <span class=\"highlight bold\">parameters that modify the base statistics </span> of the selected class.",
             "comment_01": "Overview of character statistics during creation"
         }
     }
