@@ -9,7 +9,7 @@
     "index": {
         "content": {
             "name": "Caroline Forget",
-            "role": "Programmer | Technical Designer",
+            "role": "Technical designer | Programmer",
             "cta": "See my projects"
         }
     },
@@ -45,8 +45,8 @@
     },
     "footer": {
         "content": {
-            "role_01": "Programmer",
-            "role_02": "Technical designer"
+            "role_01": "Technical designer",
+            "role_02": "Programmer"
         }
     },
     "deepdown": {
