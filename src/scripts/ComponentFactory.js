@@ -2,13 +2,12 @@ import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Scrolly from './components/Scrolly';
 import Video from './components/Video';
-import Form from './components/Form';
 import Type from './components/Type';
 import Modal from './components/Modal';
-import Grid from './components/Grid';
 import Cursor from './components/Cursor';
 import Clip from './components/Clip';
 import Language from './components/Language';
+import Filter from './components/Filter';
 
 export default class ComponentFactory {
   constructor() {
@@ -18,13 +17,12 @@ export default class ComponentFactory {
       Header,
       Scrolly,
       Video,
-      Form,
       Type,
-      Grid,
       Cursor,
       Modal,
       Clip,
       Language,
+      Filter,
     };
     this.init();
   }

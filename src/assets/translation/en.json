@@ -35,6 +35,11 @@
         "content": {
             "title": "Projects",
             "cta": "Learn"
+        },
+        "nav": {
+            "item_01": "All",
+            "item_02": "Programming",
+            "item_03": "Technical design"
         }
     },
     "contact": {

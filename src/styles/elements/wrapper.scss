@@ -16,7 +16,7 @@
     position: relative;
 
     width: 100%;
-    margin: var(--spacing-l) auto;
+    margin: var(--spacing-s) auto var(--spacing-l);
 
     @media screen and (min-width: $breakpoint-md) {
         display: flex;

@@ -286,3 +286,38 @@ header {
         display: block;
     }
 }
+
+.nav_projects {
+
+    display: none;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        display: block;
+
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: normal;
+
+        padding-top: 10px;
+
+        &:hover,
+        &:focus {
+            color: var(--color-text-primary);
+        }
+    }
+}

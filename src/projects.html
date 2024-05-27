@@ -100,14 +100,44 @@
             </div>
         </header>
 
-        <section class="hero_about">
+        <section class="hero_projects">
             <h1><var>PROJECTS.CONTENT.TITLE</var></h1>
+            <div class="wrapper">
+                <nav class="nav_projects" data-component="Filter">
+                    <ul>
+                        <li>
+                            <a href="#" class="nav-primary__item" data-filter="all">
+                                <div class="content__select" data-filter-selected>
+                                    <div class="content__hover"></div>
+                                </div>
+                                <var>PROJECTS.NAV.ITEM_01</var>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-primary__item" data-filter="prog">
+                                <div data-filter-selected>
+                                    <div class="content__hover"></div>
+                                </div>
+                                <var>PROJECTS.NAV.ITEM_02</var>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-primary__item" data-filter="techDesign">
+                                <div>
+                                    <div class="content__hover" data-filter-selected></div>
+                                </div>
+                                <var>PROJECTS.NAV.ITEM_03</var>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </section>
 
 
         <section class="wrapper wrapper__project">
             <a href="single-deep-down.html" class="card__link">
-                <div class="card card__project">
+                <div class="card card__project" data-filter-item="prog">
                     <div class="wrapper">
                         <img src="assets/images/projets/deepDown/DD_Thumbnail.jpg" alt="Deep Down key art">
                         <div class="info">
@@ -160,7 +190,7 @@
                 </div>
             </a>
             <a href="single-guano.html" class="card__link">
-                <div class="card card__project" data-component="Clip">
+                <div class="card card__project" data-component="Clip" data-filter-item="all">
                     <div class="wrapper">
                         <video muted loop preload="metadata">
                             <source src="assets/videos/projects/guano/G_Video_07.webm" type="video/mp4">
@@ -210,7 +240,7 @@
                 </div>
             </a>
             <a href="single-project-bloom.html" class="card__link">
-                <div class="card card__project" data-component="Clip">
+                <div class="card card__project" data-component="Clip" data-filter-item="prog">
                     <div class="wrapper">
                         <video muted loop preload="metadata">
                             <source src="assets/videos/projects/projectBloom/BP_Video_00.mp4" type="video/mp4">
@@ -255,7 +285,7 @@
                 </div>
             </a>
             <a href="single-animal-heist.html" class="card__link">
-                <div class="card card__project" data-component="Clip">
+                <div class="card card__project" data-component="Clip" data-filter-item="prog">
                     <div class="wrapper">
                         <video muted loop preload="metadata">
                             <source src="assets/videos/projects/animalHeist/AH_Video_02.webm">
@@ -305,7 +335,7 @@
                 </div>
             </a>
             <a href="single-character-creator.html" class="card__link">
-                <div class="card card__project" data-component="Clip">
+                <div class="card card__project" data-component="Clip" data-filter-item="all">
                     <div class="wrapper">
                         <video muted loop preload="metadata">
                             <source src="assets/videos/projects/characterCreator/CC_Video_00.mp4">

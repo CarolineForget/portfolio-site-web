@@ -41,6 +41,11 @@
         "content": {
             "title": "Projets",
             "cta": "Voir"
+        },
+        "nav": {
+            "item_01": "Tout",
+            "item_02": "Programmation",
+            "item_03": "Design technique"
         }
     },
     "footer": {
@@ -77,7 +82,7 @@
             "title": "Résumé",
             "role": "<span>Rôle : </span> Programmeuse d'IA",
             "engine": "<span>Moteur de jeu : </span>Unreal 5.2",
-            "date": "Automne 2023 - Hiver 2024",
+            "date": "<span>Date : </span>Automne 2023 - Hiver 2024",
             "explications_01": "Guano est un <span class=\"bold highlight\">jeu de navigation</span> publié sur Steam réalisé par une <a href=\"https://guanothegame.com/credits.html\" target=\"_blank\" rel=\"noopener\">équipe de 27 étudiants</a>. Dans ce jeu, le joueur incarne in goéland devant dérober de la nourriture aux humains par tous les moyens, que ce soit en déféquant ou en criant, et accomplir des quêtes afin de reconquérir l'île.",
             "explications_02": "Dans le cadre du projet, j'ai travaillé sur <span class=\"bold highlight\">l'intelligence artificielle</span> des personnages humains et sur le développement d'archétypes de quête, en collaboration avec <a href=\"https://audreylanglois.ca/\" target=\"_blank\" rel=\"noopener\">Audrey Langlois</a>. J'ai aussi contribué au <span class=\"bold highlight\">développement d'outils</span> destinés à faciliter la création et la gestion des quêtes, tels que des gestionnaires de quêtes et des editor utility widgets, améliorant ainsi l'efficacité du développement. J'ai également participé à <span class=\"bold highlight\">l'intégration et à la programmation de l'interface utilisateur (UI)</span>, travaillant de concert avec l'équipe pour s'assurer que l'UI soit à la fois intuitive et esthétiquement agréable."
         },

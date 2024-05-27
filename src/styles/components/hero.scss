@@ -89,7 +89,17 @@
             border-bottom: var(--color-black) solid 2px;
         }
     }
+}
 
+.hero_projects {
+    .wrapper {
+        border-top: var(--color-black) solid 2px;
+        border-bottom: var(--color-black) solid 2px;
+    }
+}
+
+.hero_about,
+.hero_projects {
     img {
         display: inline;
         width: 100%;
