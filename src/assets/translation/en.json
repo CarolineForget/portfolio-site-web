@@ -237,9 +237,10 @@
         },
         "content_01": {
             "title": "Customization System",
-            "explications_01": "The major challenge of this research was developing the customization system that allows for <span class=\"highlight bold\">modifying a mesh</span> or <span class=\"highlight bold\">instantiating a game object</span> with attributes to a specific bone of the SkeletalMesh. I also developed a <span class=\"highlight bold\">color picker</span> that enables the modification of the base color of PBR materials.",
-            "explications_02": "All these changes are rendered in real time using a render texture. To easily increase or decrease the available customization options, I programmed a script that can <span class=\"highlight bold\">instantiate buttons based on a Scriptable Object</span> and <span class=\"highlight bold\">assign related events </span> to them.",
-            "comment_01": "Character creator"
+            "explications_01": "The major challenge of this research was developing the customization system that allows for <span class=\"highlight bold\">modifying a mesh</span> or <span class=\"highlight bold\">instantiating a game object</span> with attributes to a specific bone of the SkeletalMesh. I also developed a <span class=\"highlight bold\">color picker</span> that enables the modification of the base color of PBR materials. All these changes are rendered in real time using a render texture.",
+            "explications_02": "To easily increase or decrease the available customization options without manually modifying the interface, I programmed a script that <span class=\"highlight bold\">generates buttons</span> at launch and assigns them events <span class=\"highlight bold\">based on a ScriptableObject</span>. This ScriptableObject acts as a reference list for GameObjects and their data. In short, this script has allowed me to <span class=\"highlight bold\">speed up the process of adding content</span>.",
+            "comment_01": "Character creator",
+            "comment_02": "Generation of the interface from a ScriptableObject"
         },
         "content_02": {
             "title": "Class System",

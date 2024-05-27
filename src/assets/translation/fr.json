@@ -237,9 +237,10 @@
         },
         "content_01": {
             "title": "Système de personnalisation",
-            "explications_01": "Le grand défi de cette recherche a été le développement du système de personnalisation permettant de <span class=\"highlight bold\">modifier un mesh</span> ou d'<span class=\"highlight bold\">instancier un game object</span> avec des attributs à un os précis du SkeletalMesh. J'ai aussi développé un <span class=\"highlight bold\">sélectionneur de couleur</span> permettant de modifier la couleur de base de matériaux PBR. Tous ces changements sont rendus à temps réel à l'aide d'une texture de rendu.",
-            "explications_02": "Pour pouvoir augmenter ou diminuer facilement les options de personnalisation disponibles, j'ai programmé un script permettant d'<span class=\"highlight bold\">instancier des boutons selon un Scriptable Object</span> et de leur <span class=\"highlight bold\">assigner les événements</span> liés.",
-            "comment_01": "Créateur de personnage"
+            "explications_01": "Le grand défi de cette recherche a été le développement du système de personnalisation permettant de <span class=\"highlight bold\">modifier un mesh</span> ou d'<span class=\"highlight bold\">instancier un GameObject</span> avec des attributs à un os précis du SkeletalMesh. J'ai aussi développé un <span class=\"highlight bold\">sélectionneur de couleur</span> permettant de modifier la couleur de base de matériaux PBR. Tous ces changements sont rendus à temps réel à l'aide d'une texture de rendu.",
+            "explications_02": "Pour pouvoir augmenter ou diminuer facilement les options de personnalisation disponibles sans modifier manuellement l'interface, j'ai programmé un script permettant de <span class=\"highlight bold\">générer des boutons</span> au lancement et de leurs assigner des événements <span class=\"highlight bold\">en fonction d'un ScriptableObject</span>. Ce ScriptableObject agit en tant que liste de référence à des GameObjects et leurs données. Bref, ce script m'a permis d'<span class=\"highlight bold\">accélérer le processus d'ajout de contenu</span>.",
+            "comment_01": "Créateur de personnage",
+            "comment_02": "Génération de l'interface à partir d'un ScriptableObject"
         },
         "content_02": {
             "title": "Système de classe",
